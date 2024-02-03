@@ -1,1 +1,68 @@
-/*# sourceMappingURL=Navbar.css.map */
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100dvw;
+  height: 10dvh;
+  font-size: 0.8rem;
+  background-color: #1aa7ec;
+}
+.navbar .logo__section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  width: 6.5%;
+  margin-left: 2%;
+}
+.navbar .logo__section .main-logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.navbar .search__section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 55%;
+}
+.navbar .search__section .input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  color: #575757;
+}
+.navbar .search__section .search-icon {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 0.3%;
+  z-index: 5;
+  background-color: #ffc400;
+  padding: 8px;
+  border-radius: 20px;
+}
+.navbar .user-icons-navigation__section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  margin-right: 2%;
+}
+.navbar .user-icons-navigation__section .nav-icon {
+  width: 8%;
+}/*# sourceMappingURL=Navbar.css.map */

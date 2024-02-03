@@ -1,0 +1,70 @@
+@import '../Sass/config';
+
+@function fontSizes($font-size) {
+    @return map-get($font-sizes, $font-size)
+};
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+};
+
+.navbar{
+    @include flexBox;
+    width: 100dvw;
+    height: 10dvh;
+    font-size: fontSizes(regular);
+    background-color: $sky-blue;
+    .logo__section{
+        @include flexBox();
+        justify-content: center;
+        // background-color: red;
+        width: 6.5%;
+        margin-left: 2%;
+        // height: 70px;
+        .main-logo{
+            object-fit: contain;
+            width: 100%
+        };  
+    };
+    .search__section{
+        @include flexBox();
+        width: 50%;
+        height: 55%;
+        // background-color: violet;
+        .input{
+            @include flexBox();
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            text-align: center;
+            border-radius: 20px;
+            border: none;
+            font-size: fontSizes(regular);
+            font-weight: bolder;
+            color: $font-color;
+        };
+        .search-icon{
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            right: .3%;
+            z-index: 5;
+            background-color: #ffc400;
+            padding: 8px;
+            border-radius: 20px;
+        };
+    };
+    .user-icons-navigation__section{
+        @include flexBox();
+        width: 20%;
+        margin-right: 2%;
+        // background-color: teal;
+        .nav-icon{
+            width: 8%;
+            // background-color: sandybrown
+        }
+    }
+};
