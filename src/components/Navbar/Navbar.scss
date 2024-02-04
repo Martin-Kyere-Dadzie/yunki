@@ -13,8 +13,9 @@
 
 .navbar{
     @include flexBox;
+    flex-direction: column;
     width: 100dvw;
-    height: 10dvh;
+    height: 15dvh;
     font-size: fontSizes(regular);
     background-color: $sky-blue;
     .logo__section{
@@ -26,13 +27,46 @@
         // height: 70px;
         .main-logo{
             object-fit: contain;
-            width: 100%
+            width: 100%;
+            cursor: pointer;
         };  
     };
+    .navbar-news__section{
+        @include flexBox();
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        height: 13%;
+        width: 100%;
+        z-index: 5;
+        font-size: fontSizes(small);
+        font-weight: bold;
+        color: white;
+    //     background-image: linear-gradient(
+    //     to right,
+    //     #F09333,
+    //     #F09333,
+    //     #EA7B38,
+    //     #E5623D,
+    //     #E14740,
+    //     #DD2943,
+    //     #D22458,
+    //     #BF1A81
+    //   );
+    background-image: linear-gradient( 67.2deg,  rgba(37,208,199,1) -7.5%, rgba(165,90,240,1) 62.7% );
+    }
+    .navbar-icons__section{
+        @include flexBox();
+        margin-top: 1.3%;
+        width: 100%;
+        height: 55%;
+        // background-color: #ffc400
+    }
     .search__section{
         @include flexBox();
         width: 50%;
-        height: 55%;
+        height: 68%;
         // background-color: violet;
         .input{
             @include flexBox();
@@ -55,6 +89,7 @@
             background-color: #ffc400;
             padding: 8px;
             border-radius: 20px;
+            cursor: pointer;
         };
     };
     .user-icons-navigation__section{
@@ -63,8 +98,33 @@
         margin-right: 2%;
         // background-color: teal;
         .nav-icon{
-            width: 8%;
-            // background-color: sandybrown
+            @include flexBox();
+            width: 26%;
+            cursor: pointer;
+            text-decoration: none;
+            // background-color: sandybrown;
+            img{
+                width: 30%;
+                object-fit: contain;
+            };
+            .shoppingBag__section, 
+            .heartIcon__section{
+                @include flexBox();
+            }
+            .bag-icon{
+                margin-right: 8%;
+                // background-color: rebeccapurple
+            }
+            .icon-text{
+                @include flexBox();
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: fontSizes(regular);
+                color: white;
+                span{
+                    font-size: fontSizes(small)
+                };
+            };
         }
     }
 };
