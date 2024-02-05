@@ -13,6 +13,9 @@
 
 .navbar{
     @include flexBox;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
     flex-direction: column;
     width: 100dvw;
     height: 15dvh;
@@ -36,28 +39,28 @@
         justify-content: center;
         text-align: center;
         position: absolute;
-        top: 0;
         height: 13%;
         width: 100%;
         z-index: 5;
         font-size: fontSizes(small);
         font-weight: bold;
         color: white;
-    //     background-image: linear-gradient(
-    //     to right,
-    //     #F09333,
-    //     #F09333,
-    //     #EA7B38,
-    //     #E5623D,
-    //     #E14740,
-    //     #DD2943,
-    //     #D22458,
-    //     #BF1A81
-    //   );
-    background-image: linear-gradient( 67.2deg,  rgba(37,208,199,1) -7.5%, rgba(165,90,240,1) 62.7% );
+        background-image: linear-gradient(
+        to right,
+        #ffa939,
+        #F09333,
+        #EA7B38,
+        #E5623D,
+        #E14740,
+        #DD2943,
+        #D22458,
+        #BF1A81
+      );
+    // background-image: linear-gradient( 67.2deg,  rgba(37,208,199,1) -7.5%, rgba(165,90,240,1) 62.7% );
     }
     .navbar-icons__section{
         @include flexBox();
+        top: 0;
         margin-top: 1.3%;
         width: 100%;
         height: 55%;
@@ -65,7 +68,9 @@
     }
     .search__section{
         @include flexBox();
-        width: 50%;
+        position: absolute;
+        left: 30%;
+        width: 40%;
         height: 68%;
         // background-color: violet;
         .input{
@@ -86,7 +91,7 @@
             position: absolute;
             right: .3%;
             z-index: 5;
-            background-color: #ffc400;
+            background-color: $yellow-dark;
             padding: 8px;
             border-radius: 20px;
             cursor: pointer;
@@ -103,6 +108,10 @@
             cursor: pointer;
             text-decoration: none;
             // background-color: sandybrown;
+            &:hover .icon-text{
+                color: lighten($hover-color, 5);
+                transition: .5s ease-in-out;
+            }
             img{
                 width: 30%;
                 object-fit: contain;
@@ -120,11 +129,64 @@
                 flex-direction: column;
                 align-items: flex-start;
                 font-size: fontSizes(regular);
-                color: white;
+                color: #fff;
                 span{
                     font-size: fontSizes(small)
                 };
             };
+        }
+    };
+    .nav-links__section{
+        @include flexBox();
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 5px;
+        // background-color: lawngreen
+        ul{
+            @include flexBox();
+            width: 30%;
+            :hover{
+                color: $hover-color;
+                transition: .5s ease-in-out
+            }
+        }
+        // li{
+        //     background-color: greenyellow;
+        //     text-decoration: none;
+        // }
+        .main-link{
+            text-decoration: none;
+            color: white;
+            font-size: fontSizes(regular);
+            font-weight: bold;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        };
+        .location-section{
+            @include flexBox();
+            position: absolute;
+            left: 2%;
+            width: 15%;
+            // background-color: aqua
+        }
+        .location-image{
+            width: 8%;
+            margin-bottom: 6px;
+        }
+        p{
+            font-size: .7rem;
+            color: white
+        }
+        .telephone-section{
+            @include flexBox();
+            position: absolute;
+            right: 2%;
+            width: 7.6%;
+            // background-color: saddlebrown;
+        }
+        .telephone-icon{
+            width: 16%;
+            margin-bottom: 7px;
         }
     }
 };

@@ -1,0 +1,42 @@
+@import '../Sass/config';
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.home-section{
+    @include flexBox;
+    flex-direction: column;
+    width: 100dvw;
+    .stores-shortcut__links{
+        @include flexBox;
+        flex-direction: column;
+        width: 100dvw;
+        height: 100vh;
+        // background-color: $font-color;
+        .small-shortcut__links{
+            width: 90%;
+            height: 30%;
+            // background-color: aqua;
+            .topLinks-container{
+                @include flexBox;
+                width: 100%;
+                height: 100%;
+                .topLinks{
+                    @include flexBox;
+                    flex-direction: column;
+                    width: 150px;
+                    height: 150px;
+                    background-color: $light-red;
+                    border-radius: 100px;
+                    .img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+};

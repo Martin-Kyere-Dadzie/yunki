@@ -1,1 +1,40 @@
-/*# sourceMappingURL=Home.css.map */
+.home-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100dvw;
+}
+.home-section .stores-shortcut__links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100dvw;
+  height: 100vh;
+}
+.home-section .stores-shortcut__links .small-shortcut__links {
+  width: 90%;
+  height: 30%;
+}
+.home-section .stores-shortcut__links .small-shortcut__links .topLinks-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.home-section .stores-shortcut__links .small-shortcut__links .topLinks-container .topLinks {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  background-color: #ffd4db;
+  border-radius: 100px;
+}/*# sourceMappingURL=Home.css.map */

@@ -4,8 +4,12 @@ import yunkiLogoIcon from '../../public/icons/yunki-white-logo.svg';
 import searchIcon from '../../public/icons/search-white-icon.svg';
 import userIcon from '../../public/icons/user-icon.svg';
 import bagIcon from '../../public/icons/shopping-bag-icon.svg';
+import locationIcon from '../../public/icons/location-icon.svg';
+import telephoneIcon from '../../public/icons/telephone-icon.svg';
 import heartIcon from '../../public/icons/heart-icon.svg';
 import { NavLink } from "react-router-dom";
+import navLinks from "./NavLinks";
+import { activeLinkStyle } from "../ActiveConfig/ActiveConfig";
 
 
 const Navbar = () => {
@@ -57,7 +61,7 @@ const Navbar = () => {
                         <h5 className="icon-text"><span>Order</span>Checkout</h5>
                     </div>
                 </NavLink>
-                <NavLink className="nav-icon">                
+                <NavLink className="nav-icon" to="/wishlist">                
                     <div className="heartIcon__section">            
                         <img 
                             className="heart-icon" 
@@ -67,6 +71,33 @@ const Navbar = () => {
                         <h5 className="icon-text"><span>Like</span>Wishlist</h5>
                     </div>
                 </NavLink>
+            </div>
+        </div>
+        <div className="nav-links__section">
+            <div className="location-section">
+                <img 
+                    className="location-image" 
+                    src={locationIcon} 
+                    alt="location icon"
+                ></img>
+                <p className="location-text">Tema community20 L19 Lions Loop st GH.</p>
+            </div>
+            <ul>
+                {
+                    navLinks.map(link => {
+                            return <NavLink 
+                            style={activeLinkStyle} 
+                            key={link.name} 
+                            className='main-link' 
+                            to={link.route} 
+                            href={link.route}
+                        >{link.name}</NavLink>
+                    })
+                }
+            </ul>
+            <div className="telephone-section">
+                <p>+233 535 321 753</p>
+                <img className="telephone-icon" src={telephoneIcon} alt="telephone icon"></img>
             </div>
         </div>
     </div>
