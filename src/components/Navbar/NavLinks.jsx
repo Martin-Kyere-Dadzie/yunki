@@ -1,26 +1,29 @@
-import petsImage from '../../public/images/pngaaa.com-3037481.png';
+// import petsImage from '../../public/images/pngaaa.com-3037481.png';
 
 const navLinks = [
     {
         name: 'BLOG',
         route: '/blog',
         to: '/Blog',
-        image: petsImage,
+        url: '../../public/images/pngaaa.com-3037481.png',
     },
     {
         name: 'SERVICES',
         route: '/services',
-        to: '/Services'
+        to: '/Services',
+        url: '../../public/images/pngaaa.com-3037481.png',
     },
     {
         name: 'WHOLESALES',
         route: '/wholesales',
-        to: '/Wholesales'
+        to: '/Wholesales',
+        url: '../../public/images/pngaaa.com-3037481.png',
     },
     {
         name: 'ABOUT',
         route: '/about',
-        to: '/About'
+        to: '/About',
+        url: '../../public/images/pngaaa.com-3037481.png',
     },
 ];
 

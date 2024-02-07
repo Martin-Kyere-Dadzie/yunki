@@ -10,15 +10,15 @@ const Home = () => {
         <div className="small-shortcut__links">
           <ul className="topLinks-container">          
             {
-              HomeTopLinks.map(topLinks => {
+              HomeTopLinks.map((topLinks, i) => {
                 return <NavLink 
-                  key={topLinks.name} 
+                  key={i} 
                   to={topLinks.route} 
                   href={topLinks.route} 
                   className='topLinks'
                 >
                   <h5>{topLinks.name}</h5>
-                  <img src={topLinks.image} alt='link'></img>
+                  <img src={topLinks.url} alt='link'></img>
                 </NavLink>
               })
             }
