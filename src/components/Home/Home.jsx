@@ -18,7 +18,7 @@ const Home = () => {
                   className='topLinks'
                 >
                   <h5>{topLinks.name}</h5>
-                  <img src={topLinks.image} alt='link'></img>
+                  <img src={topLinks.imgUrl} alt='link'></img>
                 </NavLink>
               })
             }

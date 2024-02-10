@@ -1,21 +1,21 @@
+import image from '../../public/images/pngaaa.com-3037481.png'
+
 const HomeTopLinks = [
     {
         name: "Kids",
         route: "/kids",
         to: "/Kids",
-        image: "../../public/images/pngaaa.com-3037481.png"
+        imgUrl: image
     },
     {
         name: "Pest",
         route: "/pets",
-        to: '/Pets',
-        image: "../../public/images/pngaaa.com-3037481.png"
+        to: '/Pets'
     },
     {
         name: "Fashion",
         route: "/fashion",
-        to: "/Fashion",
-        image: "../../public/images/pngaaa.com-3037481.png"
+        to: "/Fashion"
     },
     {
         name: "Food",
