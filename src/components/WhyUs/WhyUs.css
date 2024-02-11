@@ -1,0 +1,21 @@
+.small-shortcut__links {
+  width: 90%;
+  height: 30%;
+}
+.small-shortcut__links .topLinks-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.small-shortcut__links .topLinks-container .topLinks {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #ffd4db;
+  border-radius: 100px;
+}
+.small-shortcut__links .topLinks-container .topLinks .img {
+  width: 50%;
+}/*# sourceMappingURL=WhyUs.css.map */

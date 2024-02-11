@@ -1,30 +1,18 @@
 import React from "react";
 import './Home.scss';
-import HomeTopLinks from "./HomeTopLinks";
+// import HomeTopLinks from "../WhyUs/HomeTopLinks";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="home-section">
       <div className="stores-shortcut__links">
-        <div className="small-shortcut__links">
-          <ul className="topLinks-container">          
-            {
-              HomeTopLinks && HomeTopLinks.map(topLinks => {
-                return <NavLink 
-                  key={topLinks.id} 
-                  to={topLinks.route} 
-                  href={topLinks.route} 
-                  className='topLinks'
-                >
-                  <h5>{topLinks.name}</h5>
-                  <img src={topLinks.imgUrl} alt='link'></img>
-                </NavLink>
-              })
-            }
-          </ul>
-        </div>
-        <div className="big-shortcut__links"></div>
+        <NavLink to="/pets"  className="store-shortcut pets"><div></div></NavLink>
+        <NavLink to="/women" className="store-shortcut women"><div></div></NavLink>
+        <NavLink to="/food" className="store-shortcut food"><div></div></NavLink>
+        <NavLink to="/fashionAndBeauty" className="store-shortcut fashion-and-beauty"><div></div></NavLink>
+        <NavLink to="/men" className="store-shortcut men"><div></div></NavLink>
+        <NavLink to="/electronics" className="store-shortcut Electrics"><div></div></NavLink>
       </div>
     </div>
   )

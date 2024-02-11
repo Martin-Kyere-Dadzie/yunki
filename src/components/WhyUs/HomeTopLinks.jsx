@@ -1,11 +1,15 @@
-import image from '../../public/images/pngaaa.com-3037481.png'
 
 const HomeTopLinks = [
     {
         name: "Kids",
         route: "/kids",
-        to: "/Kids",
-        imgUrl: image
+        to: "/Kids"
+        // imgUrl: image
+    },
+    {
+        name: "Women",
+        route: "/women",
+        to: "/Women"
     },
     {
         name: "Pest",
@@ -21,6 +25,11 @@ const HomeTopLinks = [
         name: "Food",
         route: "/food",
         to: "/Food"
+    },
+    {
+        name: "Men",
+        route: "/men",
+        to: "/Men"
     }
 ];
 
