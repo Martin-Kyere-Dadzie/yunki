@@ -14,18 +14,87 @@
     .stores-shortcut__links{
         // @include flexBox;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, minmax(150px, auto));
-        grid-gap: 10px;
+        grid-gap: 30px;
         margin: 0 auto;
         flex-direction: column;
         width: 100dvw;
+        padding: 30px;
         // height: 100vh;
         // background-color: $font-color;
         .store-shortcut{
+            position: relative;
             width: 100%;
-            height: 50vh;
-            background-color: $light-red
+            // height: 40vh;
+            border-radius: 15px;
+            background-color: $light-red;
+            text-decoration: none;
+            h5{
+                font-size: large;
+            }
+            .imageText-container{
+                @include flexBox;
+                flex-direction: column;
+                // background-color: ;
+            }
+        }
+        .pets{
+            // background-color: $font-color;
+            grid-column: span 1;
+            grid-row: span 2;
+            .petImage{
+                width: 100%;
+            }
+        }
+        .women{
+            // background-color: $font-color;
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .kids{
+            // background-color: $font-color;
+            grid-column: span 1;
+            grid-row: span 2;
+            .kidsImage{
+                width: 50%;
+            }
+        }
+        .food{
+            // background-color: $font-color;
+            grid-column: span 1;
+            .foodImage{
+                width: 50%;
+            }
+        }
+        .phones-laptops{
+            // background-color: $font-color;
+            grid-column: span 1;
+            grid-row: span 2;
+            .phoneImage{
+                width: 80%;
+            }
+        }
+        .fashion-and-beauty{
+            // background-color: $font-color;
+            grid-column: span 1;
+            grid-row: span 3;
+            .skinCareImage{
+                width: 100%;
+            }
+        }
+        .men{
+            // background-color: $font-color;
+            grid-column: span 1;
+            grid-row: span 3;
+        }
+        .electronics{
+            // background-color: $font-color;
+            grid-column: span 1;
+            grid-row: span 1;
+            .electronicsImage{
+                width: 80%
+            }
         }
     }
 };
