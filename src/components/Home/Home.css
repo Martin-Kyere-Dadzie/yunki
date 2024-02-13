@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, minmax(150px, auto));
-  grid-gap: 30px;
+  grid-gap: 15px;
   margin: 0 auto;
   flex-direction: column;
   width: 100dvw;
@@ -19,7 +19,7 @@
 .home-section .stores-shortcut__links .store-shortcut {
   position: relative;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #ffd4db;
   text-decoration: none;
 }
@@ -38,18 +38,25 @@
   grid-row: span 2;
 }
 .home-section .stores-shortcut__links .pets .petImage {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
 }
 .home-section .stores-shortcut__links .women {
   grid-column: span 1;
   grid-row: span 2;
 }
+.home-section .stores-shortcut__links .women .womenImage {
+  width: 60%;
+}
 .home-section .stores-shortcut__links .kids {
   grid-column: span 1;
   grid-row: span 2;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .home-section .stores-shortcut__links .kids .kidsImage {
-  width: 50%;
+  width: 60%;
 }
 .home-section .stores-shortcut__links .food {
   grid-column: span 1;
@@ -74,6 +81,9 @@
 .home-section .stores-shortcut__links .men {
   grid-column: span 1;
   grid-row: span 3;
+}
+.home-section .stores-shortcut__links .men .menImage {
+  width: 90%;
 }
 .home-section .stores-shortcut__links .electronics {
   grid-column: span 1;

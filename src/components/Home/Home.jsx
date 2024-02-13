@@ -3,12 +3,15 @@ import './Home.scss';
 // import HomeTopLinks from "../WhyUs/HomeTopLinks";
 import { NavLink } from "react-router-dom";
 //store images
-import PetsImage from "../../public/images/pngaaa.com-3037673.png";
+import PetsImage from "../../public/images/adorable-white-little-puppy.jpg";
 import foodImage from "../../public/images/pngaaa.com-89266.png";
 import phonesAndLaptops from "../../public/images/pngaaa.com-3403934.png";
 import electronicImage from "../../public/images/pngaaa.com-3403775.png";
 import skinCareImage from "../../public/images/pngaaa.com-4674620.png";
-import kidsImage from "../../public/images/pngaaa.com-2739313.png";
+import kidsImage from "../../public/images/children-girlfriends-smiling-happiness-friendship-togetherness-studio-portrait_53876-38427.jpg";
+import womenImage from "../../public/images/portrait-smiley-woman-posing-studio.jpg";
+import menImage from "../../public/images/medium-shot-boy-posing-with-monochrome-outfit.jpg";
+
 //store images end
 
 const Home = () => {
@@ -23,6 +26,7 @@ const Home = () => {
         </NavLink>
         <NavLink to="/women" className="store-shortcut women">
           <div className="imageText-container">
+            <img className="womenImage" src={womenImage} alt="womenImage"></img>
             <h5>women</h5>
           </div>
         </NavLink>
@@ -36,12 +40,13 @@ const Home = () => {
           <div className="imageText-container">
             <img className="foodImage" src={foodImage} alt="food"></img>
             <h5>
-              food
+              groceries
             </h5>
           </div>
         </NavLink>
         <NavLink to="/men" className="store-shortcut men">
           <div className="imageText-container">
+            <img className="menImage" src={menImage} alt="men"></img>
             <h5>men</h5>
           </div>
         </NavLink>  
