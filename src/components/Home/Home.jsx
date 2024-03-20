@@ -21,13 +21,15 @@ const Home = () => {
         <NavLink to="/pets"  className="store-shortcut pets">
           <div className="imageText-container">
             <img className="petImage" src={PetsImage} alt="pet"></img>
-            <h5>pets</h5>
+            <h5>pets days save big</h5>
+            <p></p>
           </div>
         </NavLink>
         <NavLink to="/women" className="store-shortcut women">
           <div className="imageText-container">
             <img className="womenImage" src={womenImage} alt="womenImage"></img>
-            <h5>women</h5>
+            <h5>save on women fashion & more</h5>
+            <p></p>
           </div>
         </NavLink>
         <NavLink to="/electronics" className="store-shortcut electronics">
@@ -40,14 +42,14 @@ const Home = () => {
           <div className="imageText-container">
             <img className="foodImage" src={foodImage} alt="food"></img>
             <h5>
-              groceries
+              buy on discount groceries & essentials
             </h5>
           </div>
         </NavLink>
         <NavLink to="/men" className="store-shortcut men">
           <div className="imageText-container">
             <img className="menImage" src={menImage} alt="men"></img>
-            <h5>men</h5>
+            <h5>low prices on men fashion and more</h5>
           </div>
         </NavLink>  
         <NavLink to="/fashionAndBeauty" className="store-shortcut fashion-and-beauty">
@@ -68,6 +70,11 @@ const Home = () => {
             <h5>kids</h5>
           </div>
         </NavLink>
+      </div>
+      <div className="whyUs">
+        <div className="trends">
+          <div className="trends-items">trends</div>
+        </div>
       </div>
     </div>
   )
