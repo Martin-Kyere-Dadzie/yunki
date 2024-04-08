@@ -1,0 +1,46 @@
+@import '../Sass/config';
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.trends__section{
+    position: relative;
+    width: 15%;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: red;  
+    .productImage{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: blue;
+        .product__image{
+            width: 100%;
+        }
+    };
+    .text-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .product-name{
+            font-display: .7rem;
+            color: $font-color;
+        }
+        .product-title{
+            font-size: .9rem;
+        }
+    };
+    .rating-section{
+        width: 70%;
+        // display: flex;
+        background-color: lightgreen;
+    }
+}

@@ -107,4 +107,10 @@
 }
 .home-section .stores-shortcut__links .electronics .electronicsImage {
   width: 80%;
+}
+.home-section .trends-container {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=Home.css.map */

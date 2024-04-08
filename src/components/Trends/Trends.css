@@ -1,1 +1,34 @@
-/*# sourceMappingURL=Trends.css.map */
+.trends__section {
+  position: relative;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.trends__section .productImage {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trends__section .productImage .product__image {
+  width: 100%;
+}
+.trends__section .text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.trends__section .text-section .product-name {
+  font-display: 0.7rem;
+  color: #575757;
+}
+.trends__section .text-section .product-title {
+  font-size: 0.9rem;
+}
+.trends__section .rating-section {
+  width: 70%;
+  background-color: lightgreen;
+}/*# sourceMappingURL=Trends.css.map */

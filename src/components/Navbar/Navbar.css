@@ -41,7 +41,7 @@
   font-size: 0.7rem;
   font-weight: bold;
   color: white;
-  background-image: linear-gradient(to right, #ffa939, #F09333, #EA7B38, #E5623D, #E14740, #DD2943, #D22458, #BF1A81);
+  background-image: linear-gradient(to right, #F8B817, #F09333, #EA7B38, #E5623D, #E14740, #DD2943, #D22458, #BF1A81);
 }
 .navbar .navbar-icons__section {
   position: relative;
@@ -84,7 +84,7 @@
   position: absolute;
   right: 0.3%;
   z-index: 5;
-  background-color: #ffa939;
+  background-color: #F8B817;
   padding: 8px;
   border-radius: 20px;
   cursor: pointer;

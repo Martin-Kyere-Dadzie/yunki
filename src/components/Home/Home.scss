@@ -120,5 +120,13 @@
                 width: 80%
             }
         }
+    };
+
+    .trends-container{
+        width: 96%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // background-color: salmon
     }
 };

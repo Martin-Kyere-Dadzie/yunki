@@ -18,8 +18,13 @@ import Electronics from './components/Electronics/Electronics';
 //pages links ends
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function App() {
+
+  const trendItems = useSelector(state => state.topTrends.itemList)
+    console.log(trendItems);
+
   return (
     <BrowserRouter>
       <div className="App">

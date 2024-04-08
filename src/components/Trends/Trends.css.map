@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Trends.css"}
+{"version":3,"sources":["Trends.scss","Trends.css","../Sass/_config.scss"],"names":[],"mappings":"AASA;EACI,kBAAA;EACA,UAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,8BAAA;ACRJ;ADUI;EACI,UAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;ACRR;ADUQ;EACI,WAAA;ACRZ;ADWI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,8BAAA;ACTR;ADUQ;EACI,oBAAA;EACA,cEhCC;ADwBb;ADUQ;EACI,iBAAA;ACRZ;ADWI;EACI,UAAA;EAEA,4BAAA;ACVR","file":"Trends.css"}

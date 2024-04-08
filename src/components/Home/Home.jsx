@@ -11,6 +11,8 @@ import skinCareImage from "../../public/images/pngaaa.com-4674620.png";
 import kidsImage from "../../public/images/children-girlfriends-smiling-happiness-friendship-togetherness-studio-portrait_53876-38427.jpg";
 import womenImage from "../../public/images/portrait-smiley-woman-posing-studio.jpg";
 import menImage from "../../public/images/medium-shot-boy-posing-with-monochrome-outfit.jpg";
+import { trendsData } from "../Trends/TrendsData";
+import Trends from "../Trends/Trends";
 
 //store images end
 
@@ -71,10 +73,14 @@ const Home = () => {
           </div>
         </NavLink>
       </div>
-      <div className="whyUs">
-        <div className="trends">
-          <div className="trends-items">trends</div>
-        </div>
+      <div className="trends-container">
+        {
+          trendsData.map(product => {
+            return(
+              <Trends key={product.id} {...product}/>
+            )
+          })
+        }
       </div>
     </div>
   )
