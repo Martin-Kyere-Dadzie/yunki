@@ -10,12 +10,16 @@
 .trends__section{
     position: relative;
     width: 15%;
+    border: 1px solid rgb(231, 230, 230);
+    border-radius: 10px;
+    padding: 10px;
     display:  flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    // background-color: red;  
-    .productImage{
+    background-color: #ffffff;  
+    .product-image{
+        position: relative;
         width: 90%;
         display: flex;
         align-items: center;
@@ -24,23 +28,78 @@
         .product__image{
             width: 100%;
         }
+        .new-discount{
+            position: absolute;
+            width: 35%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            // background-color: yellow;
+            left: 0;
+            top: 0;
+            color: white;
+            .new-text,.discount-text{
+                padding: 1px;
+                width: 43%;
+                text-align: center;
+            }
+            .new-text{
+                background-color: $yellow-dark;
+            }
+            .discount-text{
+                background-color: $sky-blue;
+            }
+        }
     };
+    .product-details{
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
     .text-section{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
         .product-name{
-            font-display: .7rem;
-            color: $font-color;
+            font-display: .3rem;
+            color: #bfbfbf;
         }
         .product-title{
-            font-size: .9rem;
+            font-size: .8rem;
+            
         }
     };
     .rating-section{
-        width: 70%;
-        // display: flex;
-        background-color: lightgreen;
+        width: 30%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        // background-color: lightgreen;
+        img{
+            // position: absolute;
+            width: 100%;
+        }
+    }
+    .product-price{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 40%;
+        .new-price,
+        .old-price{
+            font-size: 1.2rem;
+            color: $sky-blue;
+        }
+        .old-price{
+            text-decoration: line-through;
+            font-size: 1rem;
+            color: #797979;
+            margin-top: 5px;
+            font-weight: light;
+        }
     }
 }

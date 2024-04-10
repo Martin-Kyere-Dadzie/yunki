@@ -74,13 +74,16 @@ const Home = () => {
         </NavLink>
       </div>
       <div className="trends-container">
-        {
-          trendsData.map(product => {
-            return(
-              <Trends key={product.id} {...product}/>
-            )
-          })
-        }
+        <h3>top trends of the week</h3>
+        <div className="main-trends">
+          {
+            trendsData.map(product => {
+              return(
+                <Trends key={product.id} {...product}/>
+              )
+            })
+          }
+        </div>
       </div>
     </div>
   )

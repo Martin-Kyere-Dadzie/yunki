@@ -1,19 +1,53 @@
 .trends__section {
   position: relative;
   width: 15%;
+  border: 1px solid rgb(231, 230, 230);
+  border-radius: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
 }
-.trends__section .productImage {
+.trends__section .product-image {
+  position: relative;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.trends__section .productImage .product__image {
+.trends__section .product-image .product__image {
   width: 100%;
+}
+.trends__section .product-image .new-discount {
+  position: absolute;
+  width: 35%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  color: white;
+}
+.trends__section .product-image .new-discount .new-text, .trends__section .product-image .new-discount .discount-text {
+  padding: 1px;
+  width: 43%;
+  text-align: center;
+}
+.trends__section .product-image .new-discount .new-text {
+  background-color: #F8B817;
+}
+.trends__section .product-image .new-discount .discount-text {
+  background-color: #DB2847;
+}
+.trends__section .product-details {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .trends__section .text-section {
   display: flex;
@@ -22,13 +56,36 @@
   justify-content: space-between;
 }
 .trends__section .text-section .product-name {
-  font-display: 0.7rem;
-  color: #575757;
+  font-display: 0.3rem;
+  color: #bfbfbf;
 }
 .trends__section .text-section .product-title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .trends__section .rating-section {
-  width: 70%;
-  background-color: lightgreen;
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.trends__section .rating-section img {
+  width: 100%;
+}
+.trends__section .product-price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 40%;
+}
+.trends__section .product-price .new-price,
+.trends__section .product-price .old-price {
+  font-size: 1.2rem;
+  color: #DB2847;
+}
+.trends__section .product-price .old-price {
+  text-decoration: line-through;
+  font-size: 1rem;
+  color: #797979;
+  margin-top: 5px;
+  font-weight: light;
 }/*# sourceMappingURL=Trends.css.map */

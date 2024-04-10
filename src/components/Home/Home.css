@@ -109,8 +109,20 @@
   width: 80%;
 }
 .home-section .trends-container {
-  width: 96%;
+  position: relative;
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(237, 237, 237);
+}
+.home-section .trends-container .main-trends {
+  position: relative;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
 }/*# sourceMappingURL=Home.css.map */

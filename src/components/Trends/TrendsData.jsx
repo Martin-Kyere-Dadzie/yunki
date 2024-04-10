@@ -6,8 +6,9 @@ import blackAndWhiteSneaker2 from '../../public/images/black_and_white2.png'
 import blackAndWhiteSneaker1 from '../../public/images/black_and_white1.png'
 import blackAndWhiteSneaker3 from '../../public/images/black-and-white-sneaker-back.png';
 import blackAndWhiteSneaker4 from '../../public/images/black_and_white4.png';
-
-
+import ladiesRedBag from '../../public/images/ladies-red-bag.png';
+import jeanJacket from '../../public/images/Jean-Jacket-PNG-Isolated-Photos.png'
+import leatherTraveller from '../../public/images/leather-traveller.png'
 
 // const Rating = ({ratings}) => {
 //     const heartRating = Array.from({length: 5}, (elem, index) => {
@@ -48,12 +49,12 @@ export const trendsData = [
         ProductType: 'food',
         title: 'rolled oats granola',
         // colors: 0,
-        oldPrice: 80,
-        newPrice: 100,
+        oldPrice: 100,
+        newPrice: 80,
         id: 1,
-        ratings: 2.5,
+        ratings: 2,
         discount: '-20%',
-        priceTag: 0
+        newItem: 1
     },
     {
         images:[
@@ -74,12 +75,90 @@ export const trendsData = [
         ProductType: 'apparel',
         title: 'brown leather back pack',
         // colors: 0,
-        oldPrice: 150,
-        newPrice: 200,
+        oldPrice: 200,
+        newPrice: 150,
         id: 2,
-        ratings: 4,
+        ratings: 3,
         discount: '-05%',
-        priceTag: 0
+        newItem: 0
+    },
+    {
+        images:[
+            {
+                image:  jeanJacket,
+                image1: jeanJacket,
+                image2: jeanJacket,            
+                image3: jeanJacket,
+            }
+        ],
+        imageOnclick:[
+            {imageDisplay: jeanJacket},
+            {imageDisplay: jeanJacket},
+            {imageDisplay: jeanJacket},
+            {imageDisplay: jeanJacket},
+        ],
+        name: 'men jeans jacket',
+        ProductType: 'apparel',
+        title: 'men jean jacket for occasions',
+        // colors: 0,
+        // oldPrice: 320,
+        newPrice: 450,
+        id: 3,
+        ratings: 4,
+        discount: 0,
+        newItem: 1
+    },
+    {
+        images:[
+            {
+                image:  ladiesRedBag,
+                image1: ladiesRedBag,
+                image2: ladiesRedBag,            
+                image3: ladiesRedBag,
+            }
+        ],
+        imageOnclick:[
+            {imageDisplay: ladiesRedBag},
+            {imageDisplay: ladiesRedBag},
+            {imageDisplay: ladiesRedBag},
+            {imageDisplay: ladiesRedBag},
+        ],
+        name: 'ladies hand bag',
+        ProductType: 'apparel',
+        title: 'red ladies bag for occasions and offices',
+        // colors: 0,
+        // oldPrice: 320,
+        newPrice: 300,
+        id: 3,
+        ratings: 4.5,
+        discount: 0,
+        newItem: 0
+    },
+    {
+        images:[
+            {
+                image:  leatherTraveller,
+                image1: leatherTraveller,
+                image2: leatherTraveller,            
+                image3: leatherTraveller,
+            }
+        ],
+        imageOnclick:[
+            {imageDisplay: leatherTraveller},
+            {imageDisplay: leatherTraveller},
+            {imageDisplay: leatherTraveller},
+            {imageDisplay: leatherTraveller},
+        ],
+        name: 'ladies hand bag',
+        ProductType: 'apparel',
+        title: 'red ladies bag for occasions and offices',
+        // colors: 0,
+        // oldPrice: 320,
+        newPrice: 300,
+        id: 3,
+        ratings: 3,
+        discount: 0,
+        newItem: 1
     }
 
 ];

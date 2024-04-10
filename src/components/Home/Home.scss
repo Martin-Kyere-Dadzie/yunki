@@ -123,10 +123,22 @@
     };
 
     .trends-container{
-        width: 96%;
+        position: relative;
+        width: 100%;
+        padding: 1%;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        // background-color: salmon
+        justify-content: center;
+        background-color: rgb(237, 237, 237);
+        .main-trends{
+            position: relative;
+            // width: 95%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+        }
     }
 };
