@@ -50,7 +50,9 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
                     <img
                         src={image.image}
                         alt='img'
-                        className='product__image'
+                        className='main__image'
+                        onMouseOver={e => (e.currentTarget.src= image.image1)}
+                        onMouseLeave={e => (e.currentTarget.src= image.image)}
                     ></img>
                 ))
             }

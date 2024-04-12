@@ -17,8 +17,9 @@
   align-items: center;
   justify-content: center;
 }
-.trends__section .product-image .product__image {
+.trends__section .product-image .main__image {
   width: 100%;
+  cursor: pointer;
 }
 .trends__section .product-image .new-discount {
   position: absolute;

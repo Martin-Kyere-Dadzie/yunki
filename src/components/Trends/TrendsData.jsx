@@ -1,6 +1,6 @@
 // import React from 'react'
-import rolledOats from '../../public/images/Oats-PNG-HD.png';
-import brownLeatherBag from '../../public/images/6265151552d56e4117c09280_2.png'
+import rolledOats from '../../public/images/Oats-PNG-Photos.png';
+import woofers from '../../public/images/Jean-Jacket-PNG-Isolated-Photos.png'
 
 import blackAndWhiteSneaker2 from '../../public/images/black_and_white2.png'
 import blackAndWhiteSneaker1 from '../../public/images/black_and_white1.png'
@@ -9,6 +9,7 @@ import blackAndWhiteSneaker4 from '../../public/images/black_and_white4.png';
 import ladiesRedBag from '../../public/images/ladies-red-bag.png';
 import jeanJacket from '../../public/images/Jean-Jacket-PNG-Isolated-Photos.png'
 import leatherTraveller from '../../public/images/leather-traveller.png'
+import leatherTravellerOne from '../../public/images/leather-traveller1.png'
 
 // const Rating = ({ratings}) => {
 //     const heartRating = Array.from({length: 5}, (elem, index) => {
@@ -53,27 +54,27 @@ export const trendsData = [
         newPrice: 80,
         id: 1,
         ratings: 2,
-        discount: '-20%',
+        discount: '-02%',
         newItem: 1
     },
     {
         images:[
             {
-                image:  brownLeatherBag,
-                image1: brownLeatherBag,
-                image2: brownLeatherBag,            
-                image3: brownLeatherBag,
+                image:  woofers,
+                image1: woofers,
+                image2: woofers,            
+                image3: woofers,
             }
         ],
         imageOnclick:[
-            {imageDisplay: brownLeatherBag},
-            {imageDisplay: brownLeatherBag},
-            {imageDisplay: brownLeatherBag},
-            {imageDisplay: brownLeatherBag},
+            {imageDisplay: woofers},
+            {imageDisplay: woofers},
+            {imageDisplay: woofers},
+            {imageDisplay: woofers},
         ],
         name: 'brown bag',
         ProductType: 'apparel',
-        title: 'brown leather back pack',
+        title: 'woofer sets for interiors',
         // colors: 0,
         oldPrice: 200,
         newPrice: 150,
@@ -138,7 +139,7 @@ export const trendsData = [
         images:[
             {
                 image:  leatherTraveller,
-                image1: leatherTraveller,
+                image1: leatherTravellerOne,
                 image2: leatherTraveller,            
                 image3: leatherTraveller,
             }

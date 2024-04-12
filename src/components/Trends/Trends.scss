@@ -10,6 +10,7 @@
 .trends__section{
     position: relative;
     width: 15%;
+    // height: 50dvh;
     border: 1px solid rgb(231, 230, 230);
     border-radius: 10px;
     padding: 10px;
@@ -25,8 +26,9 @@
         align-items: center;
         justify-content: center;
         // background-color: blue;
-        .product__image{
+        .main__image{
             width: 100%;
+            cursor: pointer;
         }
         .new-discount{
             position: absolute;
