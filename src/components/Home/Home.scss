@@ -131,6 +131,16 @@
         align-items: center;
         justify-content: center;
         background-color: rgb(237, 237, 237);
+        .offers-section{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            img{
+                width: 10%;
+            }
+        }
         .main-trends{
             position: relative;
             // width: 95%;

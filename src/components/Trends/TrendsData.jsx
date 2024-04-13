@@ -53,7 +53,7 @@ export const trendsData = [
         oldPrice: 100,
         newPrice: 80,
         id: 1,
-        ratings: 2,
+        ratings: 2.5,
         discount: '-02%',
         newItem: 1
     },

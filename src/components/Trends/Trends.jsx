@@ -82,9 +82,7 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
                 <h5 className='old-price'>{oldPrice}</h5>
             </div>
         </div>
-        <div className='button-section'>
-            <button onClick={addToTrends} className='bag-btn'>add to bag</button>
-        </div>
+        <button onClick={addToTrends} className='bag-btn'>add to bag</button>
     </div>
   )
 }

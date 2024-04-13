@@ -11,6 +11,8 @@ import skinCareImage from "../../public/images/pngaaa.com-4674620.png";
 import kidsImage from "../../public/images/children-girlfriends-smiling-happiness-friendship-togetherness-studio-portrait_53876-38427.jpg";
 import womenImage from "../../public/images/portrait-smiley-woman-posing-studio.jpg";
 import menImage from "../../public/images/medium-shot-boy-posing-with-monochrome-outfit.jpg";
+//icons images
+import safePaymentIcon from "../../public/icons/safe-payment.svg"
 import { trendsData } from "../Trends/TrendsData";
 import Trends from "../Trends/Trends";
 
@@ -74,7 +76,23 @@ const Home = () => {
         </NavLink>
       </div>
       <div className="trends-container">
-        <h3>top trends of the week</h3>
+        <div className="offers-section">
+          <div className="offer-content">
+            <img className="offer-img" alt="img" src={safePaymentIcon}></img>
+            <h4 className="offer-header">safe payment</h4>
+            <p className="offer-text">100% secure payment</p>
+          </div>
+          <div className="offer-content">
+            <img className="offer-img" alt="img"></img>
+            <h4 className="offer-header">help center</h4>
+            <p className="offer-text">dedicated 24/7 support</p>
+          </div>
+          <div className="offer-content">
+            <img className="offer-img" alt="img"></img>
+            <h4 className="offer-header">online discount</h4>
+            <p className="offer-text">add multi-buy discounts</p>
+          </div>
+        </div>
         <div className="main-trends">
           {
             trendsData.map(product => {
