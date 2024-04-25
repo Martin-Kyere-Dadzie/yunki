@@ -1,0 +1,48 @@
+@import '../Sass/config';
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.popup{
+    /* background-color: indianred; */
+    position: fixed;
+    top: 12vh;
+    left: 0;
+    width: 100vw;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.279);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.popup-inner{
+    position: relative;
+    padding: 20px;
+    width: 60%;
+    height: 85%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.popup-inner .close-btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import starFill from '../../public/icons/star-fill.svg';
 import starHalve from '../../public/icons/star-outline-half.svg';
 import starOutline from '../../public/icons/star-outline.svg';
 import './Trends.scss';
 import { useDispatch, useSelector } from 'react-redux';
+import ProductPopUp from '../PopUps/ProductPopUp';
+//icons images
+import heartDarkIcon from '../../public/icons/heart-black-icon.svg';
+import shoppingBagDarkIcon from '../../public/icons/shopping-bag-black-icon.svg';
+import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
+import quickViewIcon from '../../public/icons/quick-view-icon.svg'
 // import { trendActions } from '../Redux/trendSlice';
 import { trendActions } from '../Redux/trendSlice';
 // import { UseDispatch, useSelector } from 'react-redux';
 
 const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newItem}) => {
+
+    const [productPupUp, setProductPupUp] = useState(false);
 
     const dispatch = useDispatch();
     const addToTrends = () => {
@@ -68,6 +76,14 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
                     ))
                 }
             </div>
+            <div className='icons__section'>
+                <div className='heart-icon icon-container'>
+                    <img className='icon-img' src={heartDarkIcon} alt='img'></img>
+                </div>
+                <div className='shopping-bag icon-container' onClick={addToTrends}>
+                    <img className='icon-img' alt='img' src={shoppingBagDarkIcon}></img>
+                </div>
+            </div>
         </div>
         <div className='product-details'>
             <div className='text-section'>
@@ -82,7 +98,22 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
                 <h5 className='old-price'>{oldPrice}</h5>
             </div>
         </div>
-        <button onClick={addToTrends} className='bag-btn'>add to bag</button>
+        <button 
+            onClick={() => setProductPupUp(true)} 
+            className='bag-btn'
+        >
+         <img 
+            alt='img' 
+            className='bag-icon' 
+            src={quickViewIcon}
+            onMouseOver={e => (e.currentTarget.src= shoppingBagWhite)}
+            onMouseLeave={e => (e.currentTarget.src= shoppingBagDarkIcon)}>
+         </img>
+         <p>quick view</p>
+        </button>
+        <div className='popup-holder'>
+            <ProductPopUp trigger={productPupUp} setTrigger={setProductPupUp} id='product-popup'></ProductPopUp>
+        </div>
     </div>
   )
 }

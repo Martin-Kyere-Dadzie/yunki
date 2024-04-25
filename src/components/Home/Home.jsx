@@ -76,6 +76,7 @@ const Home = () => {
         </NavLink>
       </div>
       <div className="trends-container">
+      <div className="trends-contents-holder">
         <div className="offers-section">
           <div className="offer-content">
             <img className="offer-img" alt="img" src={safePaymentIcon}></img>
@@ -92,6 +93,7 @@ const Home = () => {
             <h4 className="offer-header">online discount</h4>
             <p className="offer-text">add multi-buy discounts</p>
           </div>
+      </div>
         </div>
         <div className="main-trends">
           {

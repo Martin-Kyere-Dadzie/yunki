@@ -12,14 +12,14 @@
 }
 .trends__section .product-image {
   position: relative;
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .trends__section .product-image .main__image {
-  width: 100%;
-  cursor: pointer;
+  width: 80%;
 }
 .trends__section .product-image .new-discount {
   position: absolute;
@@ -37,13 +37,19 @@
   text-align: center;
 }
 .trends__section .product-image .new-discount .new-text {
-  background-color: #F8B817;
+  background-color: #F9E10E;
 }
 .trends__section .product-image .new-discount .discount-text {
-  background-color: #DB2847;
+  background-color: #11ACD3;
 }
-.trends__section .product-image .trends__section:hover .bag-btn {
-  opacity: 1;
+.trends__section .product-image .icons__section {
+  position: absolute;
+  width: 10%;
+  right: 0;
+  top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .trends__section .product-details {
   width: 100%;
@@ -103,6 +109,16 @@
   opacity: 0;
   font-size: 0.6rem;
   background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trends__section .bag-btn .bag-icon {
+  width: 5%;
+  margin-left: 35%;
+}
+.trends__section .bag-btn p {
+  margin-right: 35%;
 }
 .trends__section .bag-btn:hover {
   background-color: #F8B817;

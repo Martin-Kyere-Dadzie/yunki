@@ -130,7 +130,7 @@ export const trendsData = [
         // colors: 0,
         // oldPrice: 320,
         newPrice: 300,
-        id: 3,
+        id: 4,
         ratings: 4.5,
         discount: 0,
         newItem: 0
@@ -156,7 +156,7 @@ export const trendsData = [
         // colors: 0,
         // oldPrice: 320,
         newPrice: 300,
-        id: 3,
+        id: 5,
         ratings: 3,
         discount: 0,
         newItem: 1

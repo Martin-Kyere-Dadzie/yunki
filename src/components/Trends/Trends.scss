@@ -18,17 +18,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;  
+    background-color: #ffffff;
     .product-image{
         position: relative;
-        width: 90%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         // background-color: blue;
+        cursor: pointer;
         .main__image{
-            width: 100%;
-            cursor: pointer;
+            width: 80%;
         }
         .new-discount{
             position: absolute;
@@ -46,14 +46,21 @@
                 text-align: center;
             }
             .new-text{
-                background-color: $yellow-dark;
+                background-color: #F9E10E;
             }
             .discount-text{
-                background-color: $sky-blue;
+                background-color: #11ACD3;
             }
         }
-        .trends__section:hover .bag-btn{
-            opacity: 1;
+        .icons__section{
+            position: absolute;
+            width: 10%;
+            right: 0;
+            top: 0;
+            // display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
         }
     };
     .product-details{
@@ -117,6 +124,16 @@
         opacity: 0;;
         font-size: .6rem;
         background-color: #ebebeb;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .bag-icon{
+            width: 5%;
+            margin-left: 35%;
+        }
+        p{
+            margin-right: 35%;
+        }
     }
     .bag-btn:hover{
         background-color: $yellow-dark;

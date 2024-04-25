@@ -118,6 +118,16 @@
   justify-content: center;
   background-color: rgb(237, 237, 237);
 }
+.home-section .trends-container .offers-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.home-section .trends-container .offers-section img {
+  width: 10%;
+}
 .home-section .trends-container .main-trends {
   position: relative;
   padding: 20px;

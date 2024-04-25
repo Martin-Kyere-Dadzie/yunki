@@ -20,7 +20,7 @@
     width: 100dvw;
     height: 15dvh;
     font-size: fontSizes(regular);
-    background-color: $sky-blue;
+    background-color: #1e1e1e;
     .logo__section{
         @include flexBox();
         justify-content: center;
