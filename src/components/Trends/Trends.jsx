@@ -10,8 +10,8 @@ import heartDarkIcon from '../../public/icons/heart-black-icon.svg';
 import shoppingBagDarkIcon from '../../public/icons/shopping-bag-black-icon.svg';
 import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 import quickViewIcon from '../../public/icons/quick-view-icon.svg'
-// import { trendActions } from '../Redux/trendSlice';
 import { trendActions } from '../Redux/trendSlice';
+import Ratings from '../Ratings/Ratings';
 // import { UseDispatch, useSelector } from 'react-redux';
 
 const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newItem}) => {
