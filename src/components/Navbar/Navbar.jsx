@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import './Navbar.scss';
-import yunkiLogoIcon from '../../public/icons/yunki-white-logo.svg';
+import yunkiLogoIcon from '../../public/icons/yunki-black-logo.svg';
 import searchIcon from '../../public/icons/search-white-icon.svg';
-import userIcon from '../../public/icons/user-icon.svg';
-import bagIcon from '../../public/icons/shopping-bag-icon.svg';
+import userIcon from '../../public/icons/user-black.svg';
+import bagIcon from '../../public/icons/shopping-bag-black-icon.svg';
 import locationIcon from '../../public/icons/location-icon.svg';
 import telephoneIcon from '../../public/icons/telephone-icon.svg';
-import heartIcon from '../../public/icons/heart-icon.svg';
+import heartIcon from '../../public/icons/heart-black-icon.svg';
+import closeBtn from '../../public/icons/close-btn.svg';
+import menuIcon from '../../public/icons/humbegar-icon.svg';
 import { NavLink } from "react-router-dom";
 import navLinks from "./NavLinks";
 import { activeLinkStyle } from "../ActiveConfig/ActiveConfig";
 
 
 const Navbar = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const closeMenu = () => setIsOpen(false);
+    const openMenu = () => setIsOpen(!isOpen);
+
   return (
     <div className="navbar">
         <div className="navbar-news__section">
@@ -20,6 +27,7 @@ const Navbar = () => {
                 Shop on Yunki for Exclusive Offers and Discounts-Absolute Limited Offers.
             </p>
         </div>
+        {isOpen ? <img src={closeBtn} className="close-btn" alt="img" onClick={closeMenu}></img> : <img src={menuIcon} className="menu-icon" alt="img" onClick={openMenu}></img>}
         <div className="navbar-icons__section">
             <div className="logo__section">
                 <NavLink to="/">                 
@@ -34,7 +42,7 @@ const Navbar = () => {
                 <input 
                     type='search' 
                     className='input' 
-                    placeholder="search all your products here..."
+                    placeholder="search your products"
                 ></input>
                 <img 
                     className="search-icon" 
@@ -60,6 +68,7 @@ const Navbar = () => {
                         ></img>
                         <h5 className="icon-text"><span>Order</span>Checkout</h5>
                     </div>
+                    <div className="checkout__indicator">1</div>
                 </NavLink>
                 <NavLink className="nav-icon" to="/wishlist">                
                     <div className="heartIcon__section">            
@@ -90,11 +99,13 @@ const Navbar = () => {
                             key={link.name} 
                             className='main-link' 
                             to={link.route} 
-                            href={link.route}
-                        >{link.name}</NavLink>
+                            href={link.route}>
+                            {link.name}
+                            </NavLink>
                     })
                 }
             </ul>
+
             <div className="telephone-section">
                 <p>+233 535 321 753</p>
                 <img className="telephone-icon" src={telephoneIcon} alt="telephone icon"></img>

@@ -52,6 +52,13 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
 
   return (
     <div className='trends__section'>
+        <div className='search-container'>
+            <h3 className='header'>top trends of the week</h3>
+            <div className='search-box'>
+                <h6>All</h6>
+                <h6>All</h6>
+            </div>
+        </div>
         <div className='product-image'>
             {
                 images.map((image) => (
