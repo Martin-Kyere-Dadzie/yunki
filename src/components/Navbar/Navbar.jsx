@@ -89,8 +89,8 @@ const Navbar = () => {
                     src={locationIcon} 
                     alt="location icon"
                 ></img>
-                <p className="location-text">Tema community20 L19 Lions Loop st GH.</p>
-            </div>
+                <p className="lotion-text">Tema community20 L19 Lions Loop st GH.</p>
+            </div>  
             <ul>
                 {
                     navLinks.map(link => {
@@ -105,7 +105,23 @@ const Navbar = () => {
                     })
                 }
             </ul>
-
+            {isOpen ? (
+                <div className="mobile-menu__dropdown" isOpen={isOpen} setIsOpen={setIsOpen}>
+                    <div className="link-container">
+                        {
+                            navLinks.map(link => {
+                                return <NavLink 
+                                    key={link.name} 
+                                    className="mobile-menu-link" 
+                                    to={link.route}
+                                    href={link.route}>
+                                    {link.name}
+                                </NavLink>
+                            })
+                        }
+                    </div>
+                </div>
+            ) : null}
             <div className="telephone-section">
                 <p>+233 535 321 753</p>
                 <img className="telephone-icon" src={telephoneIcon} alt="telephone icon"></img>

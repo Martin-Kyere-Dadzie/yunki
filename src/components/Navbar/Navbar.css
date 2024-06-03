@@ -10,7 +10,8 @@
   width: 100dvw;
   height: 15dvh;
   font-size: 0.8rem;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
+  box-shadow: 0px 0.3px 9px 0px gray;
 }
 .navbar .logo__section {
   position: relative;
@@ -41,7 +42,7 @@
   font-size: 0.7rem;
   font-weight: bold;
   color: white;
-  background-image: linear-gradient(to right, #F8B817, #F09333, #EA7B38, #E5623D, #E14740, #DD2943, #D22458, #BF1A81);
+  background-image: linear-gradient(to right, #F8B817, #F09333, #EA7B38, #ff671b, #ff5500, #E14740, #DD2943, #D22458, #BF1A81);
 }
 .navbar .navbar-icons__section {
   position: relative;
@@ -77,6 +78,7 @@
   font-size: 0.8rem;
   font-weight: bolder;
   color: #575757;
+  background-color: #e8e8e8;
 }
 .navbar .search__section .search-icon {
   width: 35px;
@@ -84,7 +86,7 @@
   position: absolute;
   right: 0.3%;
   z-index: 5;
-  background-color: #F8B817;
+  background-color: #242424;
   padding: 8px;
   border-radius: 20px;
   cursor: pointer;
@@ -98,6 +100,7 @@
   margin-right: 2%;
 }
 .navbar .user-icons-navigation__section .nav-icon {
+  position: relative;
   position: relative;
   display: flex;
   align-items: center;
@@ -133,10 +136,23 @@
   flex-direction: column;
   align-items: flex-start;
   font-size: 0.8rem;
-  color: #fff;
+  color: #575757;
 }
 .navbar .user-icons-navigation__section .nav-icon .icon-text span {
   font-size: 0.7rem;
+}
+.navbar .user-icons-navigation__section .checkout__indicator {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #ff5500;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navbar .nav-links__section {
   position: relative;
@@ -160,7 +176,7 @@
 }
 .navbar .nav-links__section .main-link {
   text-decoration: none;
-  color: white;
+  color: #575757;
   font-size: 0.8rem;
   font-weight: bold;
   transition: 0.5s ease-in-out;
@@ -181,7 +197,7 @@
 }
 .navbar .nav-links__section p {
   font-size: 0.7rem;
-  color: white;
+  color: #575757;
 }
 .navbar .nav-links__section .telephone-section {
   position: relative;
@@ -195,4 +211,116 @@
 .navbar .nav-links__section .telephone-icon {
   width: 16%;
   margin-bottom: 7px;
-}/*# sourceMappingURL=Navbar.css.map */
+}
+.navbar .close-btn,
+.navbar .menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 595px) {
+  .navbar {
+    width: 100dvw;
+    height: 10dvh;
+  }
+  .navbar .navbar-news__section {
+    height: 16%;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .navbar .logo__section {
+    margin-top: 14px;
+    width: 20%;
+  }
+  .navbar .search__section {
+    margin-top: 10px;
+    width: 35%;
+    margin-left: -18px;
+  }
+  .navbar .search__section .input {
+    border-radius: 20px;
+    font-size: 0.55rem;
+    background-color: #e8e8e8;
+  }
+  .navbar .search__section .search-icon {
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+  }
+  .navbar .close-btn,
+  .navbar .menu-icon {
+    display: block;
+    right: 2%;
+    margin-top: 12px;
+    width: 5%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+  }
+  .navbar .main-link {
+    display: none;
+  }
+  .navbar .nav-links__section .mobile-menu__dropdown {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    background-color: #BF1A81;
+  }
+  .navbar .nav-links__section .mobile-menu__dropdown ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .navbar .nav-links__section .mobile-menu__dropdown ul .mobile-menu-link {
+    color: #575757;
+    text-decoration: none;
+  }
+  .navbar .user-icons-navigation__section {
+    position: absolute;
+    right: 10%;
+    margin-top: 10px;
+    width: 25%;
+  }
+  .navbar .user-icons-navigation__section .nav-icon .icon-text {
+    display: none;
+  }
+  .navbar .user-icons-navigation__section .nav-icon img {
+    width: 84%;
+  }
+  .navbar .user-icons-navigation__section .nav-icon .user-icon {
+    width: 90%;
+  }
+  .navbar .nav-links__section .location-section {
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .navbar .nav-links__section .telephone-section {
+    width: 24%;
+    margin-bottom: 9px;
+  }
+  .navbar .nav-links__section .telephone-section img {
+    width: 14%;
+    margin-top: 5px;
+  }
+  .navbar .nav-links__section .location-section img {
+    margin-top: 5px;
+    width: 7%;
+  }
+  .navbar .nav-links__section .location-section p, .navbar .telephone-section p {
+    font-size: 0.55rem;
+  }
+  .navbar .nav-links__section .location-section p {
+    margin-left: 5px;
+  }
+}
+/* Small screen devices (600px and above) */
+/* @media only screen and (min-width: 600px) {...} */
+/* Medium screen devices (768px and above) */
+/* @media only screen and (min-width: 768px) {...} */
+/* Big screen devices (889px and above) */
+/* @media only screen and (min-width: 889px) {...} */
+/* Extra big screen devices (1200px and above) */
+/* @media only screen and (min-width: 1200px) {...} *//*# sourceMappingURL=Navbar.css.map */
