@@ -52,13 +52,6 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
 
   return (
     <div className='trends__section'>
-        <div className='search-container'>
-            <h3 className='header'>top trends of the week</h3>
-            <div className='search-box'>
-                <h6>All</h6>
-                <h6>All</h6>
-            </div>
-        </div>
         <div className='product-image'>
             {
                 images.map((image) => (
@@ -85,10 +78,10 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
             </div>
             <div className='icons__section'>
                 <div className='heart-icon icon-container'>
-                    <img className='icon-img' src={heartDarkIcon} alt='img'></img>
+                    <img className='icon-img heart-img' src={heartDarkIcon} alt='img'></img>
                 </div>
                 <div className='shopping-bag icon-container' onClick={addToTrends}>
-                    <img className='icon-img' alt='img' src={shoppingBagDarkIcon}></img>
+                    <img className='icon-img bag-img' alt='img' src={shoppingBagDarkIcon}></img>
                 </div>
             </div>
         </div>

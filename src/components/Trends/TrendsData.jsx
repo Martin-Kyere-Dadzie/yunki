@@ -1,6 +1,6 @@
 // import React from 'react'
-import rolledOats from '../../public/images/Oats-PNG-Photos.png';
-import woofers from '../../public/images/Jean-Jacket-PNG-Isolated-Photos.png'
+import rolledOats from '../../public/images/pngaaa.com-6964235.png';
+import woofers from '../../public/images/pngaaa.com-2902482.png'
 
 import blackAndWhiteSneaker2 from '../../public/images/black_and_white2.png'
 import blackAndWhiteSneaker1 from '../../public/images/black_and_white1.png'

@@ -262,21 +262,40 @@
   .navbar .main-link {
     display: none;
   }
-  .navbar .nav-links__section .mobile-menu__dropdown {
-    position: absolute;
-    width: 50%;
-    height: 80%;
-    background-color: #BF1A81;
+  .navbar .nav-links__section {
+    position: relative;
   }
-  .navbar .nav-links__section .mobile-menu__dropdown ul {
+  .navbar .mobile-menu__dropdown {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 9.3%;
+    width: 100dvw;
+    height: 100vh;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.431372549);
+  }
+  .navbar .mobile-menu__dropdown .link-container {
+    width: 38%;
+    height: 25%;
+    padding: 4%;
+    border-radius: 6.3px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    background-color: white;
+    margin-bottom: 20vh;
   }
-  .navbar .nav-links__section .mobile-menu__dropdown ul .mobile-menu-link {
+  .navbar .mobile-menu__dropdown .link-container .mobile-menu-link {
     color: #575757;
     text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .navbar .user-icons-navigation__section {
     position: absolute;
@@ -317,7 +336,11 @@
   }
 }
 /* Small screen devices (600px and above) */
-/* @media only screen and (min-width: 600px) {...} */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    background-color: #BF1A81;
+  }
+}
 /* Medium screen devices (768px and above) */
 /* @media only screen and (min-width: 768px) {...} */
 /* Big screen devices (889px and above) */

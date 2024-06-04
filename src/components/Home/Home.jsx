@@ -97,9 +97,9 @@ const Home = () => {
         </div>
         <div className="main-trends">
           {
-            trendsData.map(product => {
+            trendsData.map((product, index) => {
               return(
-                <Trends key={product.id} {...product}/>
+                <Trends key={index} {...product}/>
               )
             })
           }

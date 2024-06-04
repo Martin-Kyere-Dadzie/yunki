@@ -130,7 +130,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgb(237, 237, 237);
+        background-color: #ededed;
         .offers-section{
             width: 100%;
             display: flex;
@@ -148,7 +148,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: white;
+            background-color: #ededed;
         }
     }
 };
@@ -186,6 +186,16 @@
             .phones-laptops{
                 grid-column: span 1;
                 grid-row: span 2;
+            }
+        }
+        .trends-container{
+            // background-color: $sky-blue;
+            .offers-section{
+                flex-direction: column;
+            }
+            .main-trends{
+                flex-direction: column;
+                width: 90vw;
             }
         }
     }

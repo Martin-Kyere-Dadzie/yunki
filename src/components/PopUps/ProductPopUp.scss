@@ -46,3 +46,10 @@
     justify-content: center;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 595px) {
+    .popup{
+        background-color: $sky-blue;
+        // height: 100dvh;
+    }
+}

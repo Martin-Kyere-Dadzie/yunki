@@ -12,14 +12,14 @@
   grid-template-rows: repeat(3, minmax(150px, auto));
   grid-gap: 15px;
   margin: 0 auto;
-  flex-direction: column;
   width: 100dvw;
   padding: 30px;
+  height: 100vh;
 }
 .home-section .stores-shortcut__links .store-shortcut {
   position: relative;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffd4db;
   text-decoration: none;
   overflow: hidden;
@@ -47,7 +47,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3215686275);
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .home-section .stores-shortcut__links .pets {
   grid-column: span 1;
@@ -135,4 +135,43 @@
   align-items: center;
   justify-content: space-between;
   background-color: white;
+}
+
+@media only screen and (max-width: 595px) {
+  .home-section .stores-shortcut__links {
+    padding: 10px;
+    height: 40%;
+    width: 95%;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, minmax(10px, auto));
+    grid-gap: 10px;
+  }
+  .home-section .stores-shortcut__links .store-shortcut h5 {
+    font-size: 0.8rem;
+  }
+  .home-section .stores-shortcut__links .men {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .home-section .stores-shortcut__links .fashion-and-beauty {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .home-section .stores-shortcut__links .kids {
+    grid-column: span 2;
+    grid-row: span 4;
+  }
+  .home-section .stores-shortcut__links .phones-laptops {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .home-section .trends-container {
+    background-color: #DB2847;
+  }
+  .home-section .trends-container .offers-section {
+    flex-direction: column;
+  }
+  .home-section .trends-container .main-trends {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Home.css.map */
