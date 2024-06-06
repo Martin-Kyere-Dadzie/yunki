@@ -38,4 +38,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 595px) {
+  .popup {
+    background-color: #DB2847;
+  }
 }/*# sourceMappingURL=ProductPopUp.css.map */

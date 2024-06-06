@@ -116,7 +116,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(237, 237, 237);
+  background-color: #ededed;
 }
 .home-section .trends-container .offers-section {
   width: 100%;
@@ -134,7 +134,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: #ededed;
 }
 
 @media only screen and (max-width: 595px) {
@@ -165,13 +165,11 @@
     grid-column: span 1;
     grid-row: span 2;
   }
-  .home-section .trends-container {
-    background-color: #DB2847;
-  }
   .home-section .trends-container .offers-section {
     flex-direction: column;
   }
   .home-section .trends-container .main-trends {
     flex-direction: column;
+    width: 90vw;
   }
 }/*# sourceMappingURL=Home.css.map */
