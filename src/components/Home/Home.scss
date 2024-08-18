@@ -194,8 +194,13 @@
                 flex-direction: column;
             }
             .main-trends{
-                flex-direction: column;
+                // flex-direction: column;
+                overflow: hidden;
                 width: 90vw;
+                .marquee{
+                    background-color: $sky-blue;
+                    height: 30%;
+                }
             }
         }
     }

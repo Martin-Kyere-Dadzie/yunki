@@ -169,7 +169,11 @@
     flex-direction: column;
   }
   .home-section .trends-container .main-trends {
-    flex-direction: column;
+    overflow: hidden;
     width: 90vw;
+  }
+  .home-section .trends-container .main-trends .marquee {
+    background-color: #DB2847;
+    height: 30%;
   }
 }/*# sourceMappingURL=Home.css.map */
