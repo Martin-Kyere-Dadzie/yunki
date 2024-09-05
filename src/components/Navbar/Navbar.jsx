@@ -54,6 +54,7 @@ const Navbar = () => {
                 <div className="userIcon__section nav-icon">            
                     <img 
                         className="user-icon" 
+                        id="main-icon"
                         src={userIcon} 
                         alt="user-icon"
                     ></img>
@@ -63,6 +64,7 @@ const Navbar = () => {
                     <div className="shoppingBag__section">            
                         <img 
                             className="bag-icon" 
+                            id="main-icon"
                             src={bagIcon} 
                             alt="bag-icon"
                         ></img>
@@ -74,6 +76,7 @@ const Navbar = () => {
                     <div className="heartIcon__section">            
                         <img 
                             className="heart-icon" 
+                            id="main-icon"
                             src={heartIcon} 
                             alt="search-icon"
                         ></img>
@@ -83,7 +86,7 @@ const Navbar = () => {
             </div>
         </div>
         <div className="nav-links__section">
-            <div className="location-section">
+            <div className="location-section" id="location">
                 <img 
                     className="location-image" 
                     src={locationIcon} 
@@ -91,7 +94,7 @@ const Navbar = () => {
                 ></img>
                 <p className="lotion-text">Tema community20 L19 Lions Loop st GH.</p>
             </div>  
-            <ul>
+            <ul id="main-nav-links">
                 {
                     navLinks.map(link => {
                             return <NavLink 

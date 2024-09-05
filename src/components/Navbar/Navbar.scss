@@ -343,12 +343,58 @@
 /* Small screen devices (600px and above) */
 @media only screen and (min-width: 600px) {
     .navbar{
-        background-color: #BF1A81;
+        height: 10dvh;
+    }
+    .navbar .logo__section{
+        width: 15%;
+    }
+    // .search__section{
+    //     background-color: #DD2943;
+    // }
+    .user-icons-navigation__section{
+        // right: 5%;
+        .nav-icon{
+            // background-color: #DD2943;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // width: 20%;
+            // position: relative;
+        }
+        .nav-icon #main-icon{
+            width: 70%;
+            margin-left: 15%;
+        }
+        .nav-icon .icon-text{
+            opacity: 0;
+            // background-color: #BF1A81;
+        }
+    }
+    .nav-links__section{
+        // background-color: #E14740;
+        margin-bottom: 10px;
+        height: 25%;
+        #location{
+            width: 25%;
+            // background-color: #F8B817;
+            img{
+                width: 10%;
+            }
+            p{
+                font-size: .9rem;
+                margin-left: 5px;
+                margin-bottom: 8px;
+            }
+        }
+        #main-nav-links{
+            // background-color: #EA7B38;
+            width: 40%;
+        }
     }
 } 
 
 /* Medium screen devices (768px and above) */
-/* @media only screen and (min-width: 768px) {...} */
+/* @media only screen  b and (min-width: 768px) {...} */
 
 /* Big screen devices (889px and above) */
 /* @media only screen and (min-width: 889px) {...} */

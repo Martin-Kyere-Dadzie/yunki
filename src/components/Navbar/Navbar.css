@@ -338,11 +338,44 @@
 /* Small screen devices (600px and above) */
 @media only screen and (min-width: 600px) {
   .navbar {
-    background-color: #BF1A81;
+    height: 10dvh;
+  }
+  .navbar .logo__section {
+    width: 15%;
+  }
+  .user-icons-navigation__section .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-icons-navigation__section .nav-icon #main-icon {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .user-icons-navigation__section .nav-icon .icon-text {
+    opacity: 0;
+  }
+  .nav-links__section {
+    margin-bottom: 10px;
+    height: 25%;
+  }
+  .nav-links__section #location {
+    width: 25%;
+  }
+  .nav-links__section #location img {
+    width: 10%;
+  }
+  .nav-links__section #location p {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    margin-bottom: 8px;
+  }
+  .nav-links__section #main-nav-links {
+    width: 40%;
   }
 }
 /* Medium screen devices (768px and above) */
-/* @media only screen and (min-width: 768px) {...} */
+/* @media only screen  b and (min-width: 768px) {...} */
 /* Big screen devices (889px and above) */
 /* @media only screen and (min-width: 889px) {...} */
 /* Extra big screen devices (1200px and above) */
