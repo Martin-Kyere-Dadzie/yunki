@@ -130,8 +130,10 @@
 }
 .home-section .trends-container .main-trends {
   position: relative;
+  width: 80%;
   padding: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background-color: #ededed;
@@ -181,30 +183,82 @@
 @media only screen and (min-width: 600px) {
   .home-section .stores-shortcut__links {
     padding: 10px;
-    height: 40%;
     width: 95%;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 3fr);
     grid-template-rows: repeat(3, minmax(10px, auto));
     grid-gap: 10px;
   }
-  .home-section .men {
-    grid-column: span 3;
-    grid-row: span 1;
-  }
-  .home-section .fashion-and-beauty {
-    grid-column: span 1;
-    grid-row: span 3;
-  }
-  .home-section .kids {
-    grid-column: span 1;
-    grid-row: span 3;
-  }
-  .home-section .phones-laptops {
+  .home-section #men-store {
     grid-column: span 1;
     grid-row: span 2;
   }
-  .home-section .pets {
+  .home-section #electronic-store {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .home-section #phones-laptops {
     grid-column: span 1;
     grid-row: span 3;
   }
-}/*# sourceMappingURL=Home.css.map */
+  .home-section #food-store {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .home-section .stores-shortcut__links {
+    padding: 10px;
+    width: 95%;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, minmax(10px, auto));
+    grid-gap: 10px;
+  }
+  .home-section #men-store {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .home-section #electronic-store {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .home-section #phones-laptops {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .home-section #food-store {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+/* Big screen devices (889px and above) */
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .home-section .stores-shortcut__links {
+    padding: 10px;
+    width: 95%;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: repeat(3, minmax(10px, auto));
+    grid-gap: 10px;
+  }
+  .home-section .stores-shortcut__links #men-store {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .home-section .stores-shortcut__links #electronic-store {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .home-section .stores-shortcut__links #phones-laptops {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .home-section .stores-shortcut__links #food-store {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .home-section .stores-shortcut__links #pet-store {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+}
+/* Extra big screen devices (1200px and above) *//*# sourceMappingURL=Home.css.map */

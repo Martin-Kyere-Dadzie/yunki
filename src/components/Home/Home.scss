@@ -143,9 +143,10 @@
         }
         .main-trends{
             position: relative;
-            // width: 95%;
+            width: 80%;
             padding: 20px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: space-between;
             background-color: #ededed;
@@ -316,3 +317,4 @@
 
 /* Extra big screen devices (1200px and above) */
 // @media only screen and (min-width: 1300px) {}
+
