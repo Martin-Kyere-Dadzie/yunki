@@ -40,18 +40,20 @@ const Navbar = () => {
             </div>
             <div className="search__section">
                 <input 
+                    id="main-input"
                     type='search' 
                     className='input' 
                     placeholder="search your products"
                 ></input>
                 <img 
-                    className="search-icon" 
+                    className="search-icon"
+                    id="search" 
                     src={searchIcon} 
                     alt="search-icon"
                 ></img>
             </div>
             <div className="user-icons-navigation__section">
-                <div className="userIcon__section nav-icon">            
+                <div className="userIcon__section nav-icon" id="link">            
                     <img 
                         className="user-icon" 
                         id="main-icon"
@@ -60,7 +62,7 @@ const Navbar = () => {
                     ></img>
                     <h5 className="icon-text"><span>Create</span>Account</h5>
                 </div>
-                <NavLink className="nav-icon" to="/Checkout">                
+                <NavLink className="nav-icon" id="link" to="/Checkout">                
                     <div className="shoppingBag__section">            
                         <img 
                             className="bag-icon" 
@@ -70,9 +72,9 @@ const Navbar = () => {
                         ></img>
                         <h5 className="icon-text"><span>Order</span>Checkout</h5>
                     </div>
-                    <div className="checkout__indicator">1</div>
+                    <div className="checkout__indicator" id="count-indicator">1</div>
                 </NavLink>
-                <NavLink className="nav-icon" to="/wishlist">                
+                <NavLink className="nav-icon" id="link" to="/wishlist">                
                     <div className="heartIcon__section">            
                         <img 
                             className="heart-icon" 
@@ -125,8 +127,8 @@ const Navbar = () => {
                     </div>
                 </div>
             ) : null}
-            <div className="telephone-section">
-                <p>+233 535 321 753</p>
+            <div className="telephone-section" id="telephone">
+                <p id="number">+233 535 321 753</p>
                 <img className="telephone-icon" src={telephoneIcon} alt="telephone icon"></img>
             </div>
         </div>

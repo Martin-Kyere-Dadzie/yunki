@@ -143,7 +143,6 @@
 }
 .navbar .user-icons-navigation__section .checkout__indicator {
   position: absolute;
-  left: 15px;
   bottom: 0;
   width: 15px;
   height: 15px;
@@ -340,6 +339,15 @@
   .navbar {
     height: 10dvh;
   }
+  .navbar .navbar-news__section {
+    height: 1.4dvh;
+  }
+  .navbar .navbar-news__section p {
+    font-size: 0.85rem;
+  }
+  .navbar .search__section .input {
+    font-size: 1rem;
+  }
   .navbar .logo__section {
     width: 15%;
   }
@@ -348,12 +356,32 @@
     align-items: center;
     justify-content: center;
   }
+  .user-icons-navigation__section #link {
+    width: 100%;
+  }
+  .user-icons-navigation__section #count-indicator {
+    width: 22px;
+    height: 22px;
+    font-size: 1rem;
+  }
   .user-icons-navigation__section .nav-icon #main-icon {
     width: 70%;
     margin-left: 15%;
   }
+  .user-icons-navigation__section .heartIcon__section,
+  .user-icons-navigation__section .shoppingBag__section,
+  .user-icons-navigation__section .userIcon__section {
+    width: 100%;
+  }
+  .user-icons-navigation__section .shoppingBag__section {
+    width: 85%;
+  }
   .user-icons-navigation__section .nav-icon .icon-text {
     opacity: 0;
+  }
+  .user-icons-navigation__section #count-indicator {
+    width: 20px;
+    height: 20px;
   }
   .nav-links__section {
     margin-bottom: 10px;
@@ -373,10 +401,46 @@
   .nav-links__section #main-nav-links {
     width: 40%;
   }
+  .nav-links__section #telephone {
+    width: 20%;
+  }
+  .nav-links__section #telephone p {
+    font-size: 0.9rem;
+    margin-left: 5px;
+  }
 }
-/* Medium screen devices (768px and above) */
-/* @media only screen  b and (min-width: 768px) {...} */
+@media only screen and (min-width: 820px) {
+  #search {
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+  }
+  #main-nav-links .main-link {
+    font-size: 0.9rem;
+  }
+  .telephone-icon {
+    margin-right: 9px;
+  }
+}
 /* Big screen devices (889px and above) */
-/* @media only screen and (min-width: 889px) {...} */
+@media only screen and (min-width: 1024px) {
+  .navbar #main-input {
+    border-radius: 50px;
+  }
+  .navbar #search {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  .navbar .telephone-icon {
+    margin-right: 13%;
+  }
+}
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1250px) {
+  .navbar {
+    background-color: #D22458;
+  }
+}
 /* Extra big screen devices (1200px and above) */
 /* @media only screen and (min-width: 1200px) {...} *//*# sourceMappingURL=Navbar.css.map */
