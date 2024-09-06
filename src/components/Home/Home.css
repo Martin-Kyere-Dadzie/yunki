@@ -176,4 +176,35 @@
     background-color: #DB2847;
     height: 30%;
   }
+}
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .home-section .stores-shortcut__links {
+    padding: 10px;
+    height: 40%;
+    width: 95%;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, minmax(10px, auto));
+    grid-gap: 10px;
+  }
+  .home-section .men {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+  .home-section .fashion-and-beauty {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .home-section .kids {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .home-section .phones-laptops {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .home-section .pets {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
 }/*# sourceMappingURL=Home.css.map */

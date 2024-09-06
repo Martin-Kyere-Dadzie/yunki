@@ -165,9 +165,9 @@
             grid-template-columns: repeat(2, 2fr);
             grid-template-rows: repeat(3, minmax(10px, auto));
             grid-gap: 10px;
-            .stores-shortcut__links .store-shortcut{
-                // background-color: $font-color;
-            }
+            // .stores-shortcut__links .store-shortcut{
+            //     background-color: $font-color;
+            // }
             .store-shortcut h5{
                 font-size: .8rem;
             }
@@ -205,3 +205,114 @@
         }
     }
 }
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    .home-section{
+        // height: 100%;
+        // background-color: $sky-blue;
+        .stores-shortcut__links{
+            // background-color: $yellow-dark;
+            padding: 10px;
+            // height: 40%;
+            width: 95%;
+            grid-template-columns: repeat(3, 3fr);
+            grid-template-rows: repeat(3, minmax(10px, auto));
+            grid-gap: 10px;
+                // background-color: $font-color;
+            }
+            #men-store{
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+            #electronic-store{
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+            #phones-laptops{
+                grid-column: span 1;
+                grid-row: span 3;
+            }
+            #food-store{
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+    }
+}
+
+// Medium screen devices (768px and above)
+@media only screen and (min-width: 820px) {
+    .home-section{
+        // height: 100%;
+        // background-color: $sky-blue;
+        .stores-shortcut__links{
+            // background-color: $yellow-dark;
+            padding: 10px;
+            // height: 40%;
+            width: 95%;
+            grid-template-columns: repeat(3, 3fr);
+            grid-template-rows: repeat(3, minmax(10px, auto));
+            grid-gap: 10px;
+                // background-color: $font-color;
+            }
+            #men-store{
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+            #electronic-store{
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+            #phones-laptops{
+                grid-column: span 1;
+                grid-row: span 3;
+            }
+            #food-store{
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+    }
+}
+/* Big screen devices (889px and above) */
+// @media only screen and (min-width: 1024px) {}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .home-section{
+        // background-color: $yellow-dark;
+        .stores-shortcut__links{
+            // background-color: $yellow-dark;
+            padding: 10px;
+            // height: 40%;
+            width: 95%;
+            grid-template-columns: repeat(4, 3fr);
+            grid-template-rows: repeat(3, minmax(10px, auto));
+            grid-gap: 10px;
+                // background-color: $font-color;
+                #men-store{
+                    grid-column: span 2;
+                    grid-row: span 1;
+                }
+                #electronic-store{
+                    grid-column: span 1;
+                    grid-row: span 2;
+                }
+                #phones-laptops{
+                    grid-column: span 2;
+                    grid-row: span 2;
+                }
+                #food-store{
+                    grid-column: span 1;
+                    grid-row: span 2;
+                }
+                #pet-store{
+                    grid-column: span 1;
+                    grid-row: span 3;
+                }
+            }
+            
+    }
+}
+
+/* Extra big screen devices (1200px and above) */
+// @media only screen and (min-width: 1300px) {}
