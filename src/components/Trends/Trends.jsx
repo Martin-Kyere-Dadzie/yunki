@@ -85,7 +85,7 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
                 </div>
             </div>
         </div>
-        <div className='product-details'>
+        <div className='product-details' id='details'>
             <div className='text-section'>
                 <p className='product-name'>{name}</p>
                 <p className='product-title'>{title}</p>

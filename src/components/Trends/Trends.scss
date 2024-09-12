@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
+    margin-left: 10%;
     .product-image{
         position: relative;
         width: 100%;
@@ -46,9 +47,9 @@
                 text-align: center;
             }
             .new-text{
-                background-color: $sky-blue;
+                background-color: #ff5500;
             }
-            .discount-text{
+            .discount-text{ 
                 background-color: #11ACD3;
             }
         }
@@ -78,7 +79,7 @@
         justify-content: space-between;
         .product-name{
             font-size: .7rem;
-            color: #bfbfbf;
+            color: #000000;
         }
         .product-title{
             font-size: .75rem;
@@ -104,7 +105,7 @@
         .new-price,
         .old-price{
             font-size: .9rem;
-            color: $sky-blue;
+            color: #ff671b;
         }
         .old-price{
             text-decoration: line-through;
@@ -123,7 +124,7 @@
         border-radius: 0px 0px 5px 5px;
         opacity: 0;;
         font-size: .6rem;
-        background-color: #11ACD3;
+        background-color: #ff671b;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -161,13 +162,35 @@
         // background-color: #11ACD3;
         // .new-discount{}
     }
-    .product-details{
+    #details{
+        margin-bottom: 10px;
+        // background-color: $sky-blue;
         .text-section{
+            margin-bottom: 10px;
             // font-size: 1rem;
             .product-name{
-                font-size: 1rem;
+                font-size: 1.1rem;
+                font-weight: bold;
                 // background-color: #11ACD3;
+                margin-bottom: 2px;
             }
+            .product-title{
+                font-size: 1rem;
+            }
+        }
+        .product-price{
+            // background-color: #11ACD3;   
+            // width: 40%;
+            .new-price{
+                font-size: 1.2rem;
+            }
+            .old-price{
+                font-size: 1rem;
+                margin-left: 30px;
+            }
+        }
+        .rating-section{
+            width: 35%;
         }
     }
     .product-image .icons__section{
@@ -183,5 +206,160 @@
     }
     .trends__section .popup-holder{
         background-color: red;
+    }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    .trends__section{
+        // background-color: #11ACD3;
+        width: 50%;
+        margin: 2%;
+        .product-image{
+            .new-discount{
+                h6{
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+            .icons__section{
+                .shopping-bag{
+                    margin-top: 70%;
+                }
+            }
+        }
+        #details{
+            .text-section{
+                .product-name{
+                    font-size: 1.3rem;
+                    margin-bottom: 3%;
+                    // font-weight: bold;
+                }
+                .product-title{
+                    margin-bottom: 5%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .rating-section{
+            width: 37%;
+        }
+        .product-price{
+            .new-price{
+                font-size: 1.4rem;
+            }
+            .old-price{
+                font-size: 1.1rem;
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+// Medium screen devices (768px and above)
+@media only screen and (min-width: 820px) {
+    .trends__section{
+        #details{
+            .text-section{
+                .product-name{
+                    font-size: 1.5rem;
+                }
+                .product-title{
+                    font-size: 1.2rem;
+                }
+            }
+            .rating-section{
+                width: 33%;
+            }
+        }
+    }
+}
+
+/* Big screen devices (889px and above) */
+// @media only screen and (min-width: 1024px) {}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .trends__section{
+        .product-image{
+            .new-discount{
+                h6{
+                    font-size: .7rem;
+                    text-align: center;
+                }
+            }
+        }
+        // background-color: #11ACD3;
+        width: 27%;
+        #details{
+            .text-section{
+                height: 20%;
+                // background-color: #ff5500;
+                .product-name{
+                    // margin-top: 50px;
+                    font-size: 1.1rem;
+                }
+                .product-title{
+                    font-size: 1rem;
+                }
+            }
+            .rating-section{
+                width: 33%;
+            }
+        }
+        .product-price{
+            .new-price{
+                font-size: 1.2rem;
+            }
+            .old-price{
+                font-size: 1rem;
+                margin-left: 40px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .trends__section{
+        .product-image{
+            .new-discount{
+                h6{
+                    font-size: .6rem;
+                    text-align: center;
+                }
+            }
+            // .icons__section{
+            //     .shopping-bag{
+            //         margin-top: 70%;
+            //     }
+            // }
+        }
+        width: 17%;
+        #details{
+            .text-section{
+                // height: 20%;
+                // background-color: #ff5500;
+                .product-name{
+                    // margin-top: 50px;
+                    font-size: 1rem;
+                }
+                .product-title{
+                    font-size: .7rem;
+                }
+            }
+            // .rating-section{
+            //     width: 33%;
+            // }
+        }
+        .product-price{
+            .new-price{
+                font-size: 1rem;
+            }
+            .old-price{
+                font-size: .75rem;
+                margin-left: 40px;
+            }
+        }
     }
 }

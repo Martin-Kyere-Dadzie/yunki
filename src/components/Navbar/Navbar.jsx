@@ -84,6 +84,7 @@ const Navbar = () => {
                         ></img>
                         <h5 className="icon-text"><span>Like</span>Wishlist</h5>
                     </div>
+                    <div className="checkout__indicator" id="count-indicator">1</div>
                 </NavLink>
             </div>
         </div>

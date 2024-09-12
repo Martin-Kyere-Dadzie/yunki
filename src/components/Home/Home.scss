@@ -210,6 +210,16 @@
 /* Small screen devices (600px and above) */
 @media only screen and (min-width: 600px) {
     .home-section{
+        #trends{
+            width: 85%;
+            // display: grid;
+            // grid-template-columns: repeat(3, 2fr);
+            // grid-template-rows: repeat(3, minmax(150px, auto));
+            grid-gap: 0px;
+            // background-color: red;
+            margin: 0 auto;
+            padding: 0;
+        }
         // height: 100%;
         // background-color: $sky-blue;
         .stores-shortcut__links{
