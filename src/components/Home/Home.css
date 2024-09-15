@@ -181,6 +181,12 @@
 }
 /* Small screen devices (600px and above) */
 @media only screen and (min-width: 600px) {
+  .home-section #trends {
+    width: 85%;
+    grid-gap: 0px;
+    margin: 0 auto;
+    padding: 0;
+  }
   .home-section .stores-shortcut__links {
     padding: 10px;
     width: 95%;

@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
+  margin-left: 10%;
 }
 .trends__section .product-image {
   position: relative;
@@ -37,7 +38,7 @@
   text-align: center;
 }
 .trends__section .product-image .new-discount .new-text {
-  background-color: #DB2847;
+  background-color: #ff5500;
 }
 .trends__section .product-image .new-discount .discount-text {
   background-color: #11ACD3;
@@ -67,7 +68,7 @@
 }
 .trends__section .text-section .product-name {
   font-size: 0.7rem;
-  color: #bfbfbf;
+  color: #000000;
 }
 .trends__section .text-section .product-title {
   font-size: 0.75rem;
@@ -90,7 +91,7 @@
 .trends__section .product-price .new-price,
 .trends__section .product-price .old-price {
   font-size: 0.9rem;
-  color: #DB2847;
+  color: #ff671b;
 }
 .trends__section .product-price .old-price {
   text-decoration: line-through;
@@ -108,7 +109,7 @@
   border-radius: 0px 0px 5px 5px;
   opacity: 0;
   font-size: 0.6rem;
-  background-color: #11ACD3;
+  background-color: #ff671b;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,6 +145,30 @@
     width: 80%;
     margin: 7%;
   }
+  #details {
+    margin-bottom: 10px;
+  }
+  #details .text-section {
+    margin-bottom: 10px;
+  }
+  #details .text-section .product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  #details .text-section .product-title {
+    font-size: 1rem;
+  }
+  #details .product-price .new-price {
+    font-size: 1.2rem;
+  }
+  #details .product-price .old-price {
+    font-size: 1rem;
+    margin-left: 30px;
+  }
+  #details .rating-section {
+    width: 35%;
+  }
   .product-image .icons__section {
     width: 30%;
   }
@@ -155,5 +180,100 @@
   }
   .trends__section .popup-holder {
     background-color: red;
+  }
+}
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .trends__section {
+    width: 50%;
+    margin: 2%;
+  }
+  .trends__section .product-image .new-discount h6 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .trends__section .product-image .icons__section .shopping-bag {
+    margin-top: 70%;
+  }
+  .trends__section #details .text-section .product-name {
+    font-size: 1.3rem;
+    margin-bottom: 3%;
+  }
+  .trends__section #details .text-section .product-title {
+    margin-bottom: 5%;
+    font-size: 1.1rem;
+  }
+  .trends__section .rating-section {
+    width: 37%;
+  }
+  .trends__section .product-price .new-price {
+    font-size: 1.4rem;
+  }
+  .trends__section .product-price .old-price {
+    font-size: 1.1rem;
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .trends__section #details .text-section .product-name {
+    font-size: 1.5rem;
+  }
+  .trends__section #details .text-section .product-title {
+    font-size: 1.2rem;
+  }
+  .trends__section #details .rating-section {
+    width: 33%;
+  }
+}
+/* Big screen devices (889px and above) */
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .trends__section {
+    width: 27%;
+  }
+  .trends__section .product-image .new-discount h6 {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .trends__section #details .text-section {
+    height: 20%;
+  }
+  .trends__section #details .text-section .product-name {
+    font-size: 1.1rem;
+  }
+  .trends__section #details .text-section .product-title {
+    font-size: 1rem;
+  }
+  .trends__section #details .rating-section {
+    width: 33%;
+  }
+  .trends__section .product-price .new-price {
+    font-size: 1.2rem;
+  }
+  .trends__section .product-price .old-price {
+    font-size: 1rem;
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .trends__section {
+    width: 17%;
+  }
+  .trends__section .product-image .new-discount h6 {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .trends__section #details .text-section .product-name {
+    font-size: 1rem;
+  }
+  .trends__section #details .text-section .product-title {
+    font-size: 0.7rem;
+  }
+  .trends__section .product-price .new-price {
+    font-size: 1rem;
+  }
+  .trends__section .product-price .old-price {
+    font-size: 0.75rem;
+    margin-left: 40px;
   }
 }/*# sourceMappingURL=Trends.css.map */

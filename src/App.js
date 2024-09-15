@@ -19,6 +19,7 @@ import Electronics from './components/Electronics/Electronics';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
           <Route path='/electronics' element={<Electronics/>}></Route>
           <Route path='/wholesales' element={<WholeSales/>}></Route>
         </Routes>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

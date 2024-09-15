@@ -12,7 +12,7 @@ import kidsImage from "../../public/images/children-girlfriends-smiling-happines
 import womenImage from "../../public/images/portrait-smiley-woman-posing-studio.jpg";
 import menImage from "../../public/images/medium-shot-boy-posing-with-monochrome-outfit.jpg";
 //icons images
-import safePaymentIcon from "../../public/icons/safe-payment.svg"
+import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
 import Trends from "../Trends/Trends";
 import Marquee from "react-fast-marquee";
@@ -80,7 +80,7 @@ const Home = () => {
       <div className="trends-contents-holder">
         <div className="offers-section">
           <div className="offer-content">
-            <img className="offer-img" alt="img" src={safePaymentIcon}></img>
+            <img className="offer-img" alt="img" src={giftIcon}></img>
             <h4 className="offer-header">safe payment</h4>
             <p className="offer-text">100% secure payment</p>
           </div>

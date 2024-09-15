@@ -226,6 +226,9 @@
     text-align: center;
     font-size: 0.6rem;
   }
+  .navbar .navbar-news__section .news-text {
+    font-size: 0.6rem;
+  }
   .navbar .logo__section {
     margin-top: 14px;
     width: 20%;
@@ -260,6 +263,9 @@
   }
   .navbar .main-link {
     display: none;
+  }
+  .navbar .nav-icon .checkout__indicator {
+    right: 20px;
   }
   .navbar .nav-links__section {
     position: relative;
