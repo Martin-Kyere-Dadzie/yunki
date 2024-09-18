@@ -124,21 +124,42 @@
 
     .trends-container{
         position: relative;
-        width: 100%;
+        width: 100dvw;
         padding: 1%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: #ededed;
-        .offers-section{
-            width: 100%;
+        .trends-contents-holder{
             display: flex;
+            flex-direction: center;
             align-items: center;
-            justify-content: space-between;
-            background-color: white;
-            img{
-                width: 10%;
+            justify-content: center;
+            width: 70%;
+            // background-color: $sky-blue;
+            .offers-section{
+                width: 50dvw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // background-color: rgb(228, 31, 31);
+                .offer-content{
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    img{
+                        width: 15%;
+                    }
+                    .offer-header{
+                        font-size: .9rem;
+                    }
+                    .offer-text{
+                        font-size: .8rem;
+                    }
+                }
             }
         }
         .main-trends{
@@ -191,8 +212,15 @@
         }
         .trends-container{
             // background-color: $sky-blue;
+            // height: 100dvh;
+
+            .trends-contents-holder{
+                height: 45dvh;
+            }
             .offers-section{
+                height: 100%;
                 flex-direction: column;
+                // margin: 50px;
             }
             .main-trends{
                 // flex-direction: column;

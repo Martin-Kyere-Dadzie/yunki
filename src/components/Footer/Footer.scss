@@ -90,16 +90,25 @@
         }
         .copyright-section{
             width: 50%;
+            .copyright-text{
+                p{
+                    font-size: .7rem;
+                }
+            }
         }
     }
     .footer-link-section{
-        // width: 90%;
+        width: 100%;
         // background-color: $yellow-dark;
-        ul{
+        @include flexBox;
+        // justify-content: space-between;
+        #link{
+            width: 100%;
+            // background-color: $sky-blue;
             #nav-link{
-                font-size: .6rem;
-                margin: 3px;
-                width: 100dvw;
+                font-size: .5rem;
+                margin: 6px;
+                // width: 100dvw;
                 // background-color: $sky-blue;
             }
         }

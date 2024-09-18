@@ -49,7 +49,16 @@
 
 @media only screen and (max-width: 595px) {
     .popup{
-        background-color: $sky-blue;
-        // height: 100dvh;
+        // background-color: $sky-blue;
+        height: 90dvh;
+        top: 10dvh;
+    }
+    .popup-inner{
+        width: 90%;
+        height: 95%;
+        .close-btn{
+            width: 22px;
+            height: 22px;
+        }
     }
 }

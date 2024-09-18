@@ -2,27 +2,27 @@ import React from 'react';
 
 const FooterLinks =  [
     {
-        "name": "legalStuff",
+        "name": "Legal Stuff",
         "route": "/legalStuff",
         "to": "/legalStuff",
     },
     {
-        "name": "security",
+        "name": "Security",
         "route": "/security",
         "to": "/security"
     },
     {
-        "name": "WebsiteAccessories",
+        "name": "Website Accessories",
         "route": "/websiteAccessories",
         "to": "/websiteAccessories"
     },
     {
-        "name": "privacyPolicy",
+        "name": "Privacy Policy",
         "route": "/privacyPolicy",
         "to": "/privacyPolicy"
     },
     {
-        "name": "manageCookies",
+        "name": "Manage Cookies",
         "route": "/manageCookies",
         "to": "/manageCookies"
     }

@@ -77,24 +77,24 @@ const Home = () => {
         </NavLink>
       </div>
       <div className="trends-container">
-      <div className="trends-contents-holder">
-        <div className="offers-section">
-          <div className="offer-content">
-            <img className="offer-img" alt="img" src={giftIcon}></img>
-            <h4 className="offer-header">safe payment</h4>
-            <p className="offer-text">100% secure payment</p>
+        <div className="trends-contents-holder">
+          <div className="offers-section">
+            <div className="offer-content">
+              <img className="offer-img" alt="img" src={giftIcon}></img>
+              <h4 className="offer-header">safe payment</h4>
+              <p className="offer-text">100% secure payment</p>
+            </div>
+            <div className="offer-content">
+              <img className="offer-img" alt="img"></img>
+              <h4 className="offer-header">help center</h4>
+              <p className="offer-text">dedicated 24/7 support</p>
+            </div>
+            <div className="offer-content">
+              <img className="offer-img" alt="img"></img>
+              <h4 className="offer-header">online discount</h4>
+              <p className="offer-text">add multi-buy discounts</p>
+            </div>
           </div>
-          <div className="offer-content">
-            <img className="offer-img" alt="img"></img>
-            <h4 className="offer-header">help center</h4>
-            <p className="offer-text">dedicated 24/7 support</p>
-          </div>
-          <div className="offer-content">
-            <img className="offer-img" alt="img"></img>
-            <h4 className="offer-header">online discount</h4>
-            <p className="offer-text">add multi-buy discounts</p>
-          </div>
-      </div>
         </div>
         <div className="main-trends" id="trends">
           {

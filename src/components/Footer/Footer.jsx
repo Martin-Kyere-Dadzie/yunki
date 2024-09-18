@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='footer-link-section'>
-            <ul>
+            <ul className='links-holder' id='link'>
                 {
                     FooterLinks.map(links => {
                         return <NavLink className="main-nav-link" id='nav-link'>
