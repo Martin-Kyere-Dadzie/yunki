@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../Trends/Trends.scss'
+import '../Trends/Trends.scss'
 import { trendActions } from '../Redux/trendSlice'
 import { useDispatch } from 'react-redux'
 // import starFill from '../../public/icons/star-fill.svg';
@@ -53,6 +53,7 @@ function ShoppedProduct({images, name, newPrice, oldPrice, title, colors, rating
 
   return (
     <div className='trends__sections'>
+      <div className='product-image'>
         <div>
             {
                 images.map((image) => (
@@ -64,6 +65,7 @@ function ShoppedProduct({images, name, newPrice, oldPrice, title, colors, rating
                 ))
             }
         </div>
+      </div>
         <h3>{name}</h3>
     </div>
   )
