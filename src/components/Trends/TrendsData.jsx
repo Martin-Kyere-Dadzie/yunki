@@ -46,8 +46,8 @@ export const trendsData = [
             {imageDisplay: blackAndWhiteSneaker3},
             {imageDisplay: blackAndWhiteSneaker4},
         ],
-        name: 'rolled oat',
         ProductType: 'food',
+        productName: 'rolled oat',
         title: 'rolled oats granola',
         // colors: 0,
         oldPrice: 'Ghs100',
@@ -57,109 +57,109 @@ export const trendsData = [
         discount: '-02%',
         newItem: 1
     },
-    {
-        images:[
-            {
-                image:  woofers,
-                image1: woofers,
-                image2: woofers,            
-                image3: woofers,
-            }
-        ],
-        imageOnclick:[
-            {imageDisplay: woofers},
-            {imageDisplay: woofers},
-            {imageDisplay: woofers},
-            {imageDisplay: woofers},
-        ],
-        name: 'brown bag',
-        ProductType: 'apparel',
-        title: 'woofer sets for interiors',
-        // colors: 0,
-        oldPrice: 'Ghs200',
-        newPrice: 'Ghs150',
-        id: 2,
-        ratings: 3,
-        discount: '-05%',
-        newItem: 0
-    },
-    {
-        images:[
-            {
-                image:  jeanJacket,
-                image1: jeanJacket,
-                image2: jeanJacket,            
-                image3: jeanJacket,
-            }
-        ],
-        imageOnclick:[
-            {imageDisplay: jeanJacket},
-            {imageDisplay: jeanJacket},
-            {imageDisplay: jeanJacket},
-            {imageDisplay: jeanJacket},
-        ],
-        name: 'men jeans jacket',
-        ProductType: 'apparel',
-        title: 'men jean jacket for occasions',
-        // colors: 0,
-        // oldPrice: 320,
-        newPrice: 'Ghs450',
-        id: 3,
-        ratings: 4,
-        discount: 0,
-        newItem: 1
-    },
-    {
-        images:[
-            {
-                image:  ladiesRedBag,
-                image1: ladiesRedBag,
-                image2: ladiesRedBag,            
-                image3: ladiesRedBag,
-            }
-        ],
-        imageOnclick:[
-            {imageDisplay: ladiesRedBag},
-            {imageDisplay: ladiesRedBag},
-            {imageDisplay: ladiesRedBag},
-            {imageDisplay: ladiesRedBag},
-        ],
-        name: 'ladies hand bag',
-        ProductType: 'apparel',
-        title: 'red ladies bag for occasions and offices',
-        // colors: 0,
-        // oldPrice: 320,
-        newPrice: 'Ghs300',
-        id: 4,
-        ratings: 4.5,
-        discount: 0,
-        newItem: 0
-    },
-    {
-        images:[
-            {
-                image:  leatherTraveller,
-                image1: leatherTravellerOne,
-                image2: leatherTraveller,            
-                image3: leatherTraveller,
-            }
-        ],
-        imageOnclick:[
-            {imageDisplay: leatherTraveller},
-            {imageDisplay: leatherTraveller},
-            {imageDisplay: leatherTraveller},
-            {imageDisplay: leatherTraveller},
-        ],
-        name: 'ladies hand bag',
-        ProductType: 'apparel',
-        title: 'red ladies bag for occasions and offices',
-        // colors: 0,
-        // oldPrice: 320,
-        newPrice: 'Ghs300',
-        id: 5,
-        ratings: 3,
-        discount: 0,
-        newItem: 1
-    }
+    // {
+    //     images:[
+    //         {
+    //             image:  woofers,
+    //             image1: woofers,
+    //             image2: woofers,            
+    //             image3: woofers,
+    //         }
+    //     ],
+    //     imageOnclick:[
+    //         {imageDisplay: woofers},
+    //         {imageDisplay: woofers},
+    //         {imageDisplay: woofers},
+    //         {imageDisplay: woofers},
+    //     ],
+    //     name: 'brown bag',
+    //     ProductType: 'apparel',
+    //     title: 'woofer sets for interiors',
+    //     // colors: 0,
+    //     oldPrice: 'Ghs200',
+    //     newPrice: 'Ghs150',
+    //     id: 2,
+    //     ratings: 3,
+    //     discount: '-05%',
+    //     newItem: 0
+    // },
+    // {
+    //     images:[
+    //         {
+    //             image:  jeanJacket,
+    //             image1: jeanJacket,
+    //             image2: jeanJacket,            
+    //             image3: jeanJacket,
+    //         }
+    //     ],
+    //     imageOnclick:[
+    //         {imageDisplay: jeanJacket},
+    //         {imageDisplay: jeanJacket},
+    //         {imageDisplay: jeanJacket},
+    //         {imageDisplay: jeanJacket},
+    //     ],
+    //     name: 'men jeans jacket',
+    //     ProductType: 'apparel',
+    //     title: 'men jean jacket for occasions',
+    //     // colors: 0,
+    //     // oldPrice: 320,
+    //     newPrice: 'Ghs450',
+    //     id: 3,
+    //     ratings: 4,
+    //     discount: 0,
+    //     newItem: 1
+    // },
+    // {
+    //     images:[
+    //         {
+    //             image:  ladiesRedBag,
+    //             image1: ladiesRedBag,
+    //             image2: ladiesRedBag,            
+    //             image3: ladiesRedBag,
+    //         }
+    //     ],
+    //     imageOnclick:[
+    //         {imageDisplay: ladiesRedBag},
+    //         {imageDisplay: ladiesRedBag},
+    //         {imageDisplay: ladiesRedBag},
+    //         {imageDisplay: ladiesRedBag},
+    //     ],
+    //     name: 'ladies hand bag',
+    //     ProductType: 'apparel',
+    //     title: 'red ladies bag for occasions and offices',
+    //     // colors: 0,
+    //     // oldPrice: 320,
+    //     newPrice: 'Ghs300',
+    //     id: 4,
+    //     ratings: 4.5,
+    //     discount: 0,
+    //     newItem: 0
+    // },
+    // {
+    //     images:[
+    //         {
+    //             image:  leatherTraveller,
+    //             image1: leatherTravellerOne,
+    //             image2: leatherTraveller,            
+    //             image3: leatherTraveller,
+    //         }
+    //     ],
+    //     imageOnclick:[
+    //         {imageDisplay: leatherTraveller},
+    //         {imageDisplay: leatherTraveller},
+    //         {imageDisplay: leatherTraveller},
+    //         {imageDisplay: leatherTraveller},
+    //     ],
+    //     name: 'ladies hand bag',
+    //     ProductType: 'apparel',
+    //     title: 'red ladies bag for occasions and offices',
+    //     // colors: 0,
+    //     // oldPrice: 320,
+    //     newPrice: 'Ghs300',
+    //     id: 5,
+    //     ratings: 3,
+    //     discount: 0,
+    //     newItem: 1
+    // }
 
 ];

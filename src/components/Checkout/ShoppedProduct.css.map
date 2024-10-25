@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"ShoppedProduct.css"}
+{"version":3,"sources":["ShoppedProduct.scss","ShoppedProduct.css"],"names":[],"mappings":"AASA;EACI,sBAAA;ACRJ;;ADUA;EACI,qBAAA;ACPJ;;ADSA;EAEI,UAAA;ACPJ;;ADSA;EACI,wBAAA;ACNJ;ADOI;EACI,2BAAA;EACA,aAAA;ACLR","file":"ShoppedProduct.css"}

@@ -5,7 +5,7 @@ import starOutline from '../../public/icons/star-outline.svg';
 import './Trends.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import ProductPopUp from '../PopUps/ProductPopUp';
-//icons images
+//icons image
 import heartDarkIcon from '../../public/icons/heart-black-icon.svg';
 import shoppingBagDarkIcon from '../../public/icons/shopping-bag-black-icon.svg';
 import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
@@ -14,25 +14,9 @@ import { trendActions } from '../Redux/trendSlice';
 import Ratings from '../Ratings/Ratings';
 // import { UseDispatch, useSelector } from 'react-redux';
 
-const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newItem}) => {
+const Trends = ({images, productName, newPrice, oldPrice, title, colors, ratings, id, discount, newItem}) => {
 
     const [productPupUp, setProductPupUp] = useState(false);
-
-    const dispatch = useDispatch();
-    const addToTrends = () => {
-        dispatch(trendActions.addToTrends({
-            images,
-            name,
-            title,
-            colors,
-            newPrice,
-            oldPrice,
-            id,
-            ratings,
-            discount,
-            newItem,
-        }))
-    }
 
     // product ratings
 
@@ -50,7 +34,23 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
         )
     })
 
-  return (
+    const dispatch = useDispatch();
+    const addToTrends = () => {
+        dispatch(trendActions.addToTrends({
+            images,
+            productName,
+            title,
+            colors,
+            newPrice,
+            oldPrice,
+            id,
+            ratings,
+            discount,
+            newItem,
+        }))
+    }
+
+return (
     <div className='trends__section'>
         <div className='product-image'>
             {

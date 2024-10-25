@@ -54,7 +54,6 @@
 }
 .trends__section .product-details {
   width: 100%;
-  height: 35%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
