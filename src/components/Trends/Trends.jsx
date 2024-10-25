@@ -87,7 +87,7 @@ return (
         </div>
         <div className='product-details' id='details'>
             <div className='text-section'>
-                <p className='product-name'>{name}</p>
+                <p className='product-name'>{productName}</p>
                 <p className='product-title'>{title}</p>
             </div>
             <div className='rating-section'>

@@ -11,7 +11,7 @@ import closeBtn from '../../public/icons/close-btn.svg';
 // import Ratings from '../Ratings/Ratings';
 // import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 
-function ShoppedProduct({images, productName, newPrice, oldPrice, title, colors, ratings, id, discount, newItem}) {
+const ShoppedProduct = ({images, productName, newPrice, oldPrice, title, colors, ratings, id, discount, newItem}) => {
 
     const dispatch = useDispatch()
     const incrementTrend = () => {
@@ -87,7 +87,7 @@ function ShoppedProduct({images, productName, newPrice, oldPrice, title, colors,
       </div>
       <div className=''>
             <div className='text-section main-text'>
-                <p className='product-name'>{name}</p>
+                <p className='product-name'>{productName}</p>
                 <p className='product-title'>{title}</p>
             </div>
             <div className='rating-section'>
