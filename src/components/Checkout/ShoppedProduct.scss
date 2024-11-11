@@ -1,0 +1,38 @@
+@import '../Sass/config';
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.icons__section{
+    .close-btn-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        .close-btn{
+            // position: absolute;
+            width: 70%;
+            // right: -30px;
+            // top: -20px;
+        }
+    }
+    .increment-decrement-section{
+        margin-top: 70%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        font-weight: bolder;
+        font-size: .7rem;
+        img{
+            width: 70%;
+        }
+    }
+}

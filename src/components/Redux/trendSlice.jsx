@@ -28,13 +28,11 @@ const trendSlice = createSlice({
                     productName: newItem.name,
                     images: newItem.images,
                     name: newItem.name,
-                    // image1: newItem.image1,
                     title: newItem.title,
                     colors: newItem.color,
                     discount: newItem.discount,
                     newProduct: newItem.newProduct,
                     ratings: newItem.ratings,
-                    // priceTag: newItem.priceTag,
                 });   
                 state.totalQuantity++;
             }

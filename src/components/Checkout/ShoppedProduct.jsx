@@ -8,6 +8,8 @@ import starHalve from '../../public/icons/star-outline-half.svg';
 import starOutline from '../../public/icons/star-outline.svg';
 import heartDarkIcon from '../../public/icons/heart-black-icon.svg';
 import closeBtn from '../../public/icons/close-btn.svg';
+import incrementIcon from '../../public/icons/carousel-up-icon.svg';
+import decrementIcon from '../../public/icons/carousel-down-icon.svg';
 // import Ratings from '../Ratings/Ratings';
 // import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 
@@ -77,8 +79,17 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
                 }
             </div>
             <div className='icons__section'>
-                <div className='heart-icon icon-container'>
-                    <img className='icon-img heart-img' src={closeBtn} alt='img'></img>
+                <div className='close-btn-container'>
+                    <img className='close-btn' src={closeBtn} alt='img'></img>
+                </div>
+                <div className='increment-decrement-section'>
+                    <div className='increment-section'>
+                        <img alt='img' src={incrementIcon}></img>
+                    </div>
+                    <div className='product-count'>1</div>
+                    <div className='decrement-section'>
+                        <img alt='img' src={decrementIcon}></img>
+                    </div>
                 </div>
                 <div className='shopping-bag icon-container'>
                     <img className='icon-img bag-img' alt='img' src={heartDarkIcon}></img>

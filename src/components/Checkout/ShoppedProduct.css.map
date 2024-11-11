@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"ShoppedProduct.css"}
+{"version":3,"sources":["ShoppedProduct.scss","ShoppedProduct.css"],"names":[],"mappings":"AAUI;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,8BAAA;EACA,kBAAA;ACTR;ADUQ;EAEI,UAAA;ACTZ;ADcI;EACI,eAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,8BAAA;EACA,kBAAA;EACA,mBAAA;EACA,iBAAA;ACZR;ADaQ;EACI,UAAA;ACXZ","file":"ShoppedProduct.css"}
