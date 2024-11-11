@@ -26,10 +26,11 @@ const trendSlice = createSlice({
                     totalPrice: newItem.newPrice,
                     productName: newItem.name,
                     images: newItem.images,
+                    name: newItem.name,
                     // image1: newItem.image1,
                     title: newItem.title,
                     colors: newItem.color,
-                    // priceTag: newItem.priceTag,
+                    priceTag: newItem.priceTag,
                 });   
                 state.totalQuantity++;
             }

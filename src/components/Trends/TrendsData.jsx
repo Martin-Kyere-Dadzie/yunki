@@ -47,7 +47,7 @@ export const trendsData = [
             {imageDisplay: blackAndWhiteSneaker4},
         ],
         ProductType: 'food',
-        productName: 'rolled oat',
+        name: 'rolled oat',
         title: 'rolled oats granola',
         // colors: 0,
         oldPrice: 'Ghs100',
