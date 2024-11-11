@@ -22,7 +22,7 @@ const Checkout = () => {
               colors={item.colors}
               ratings={item.ratings}
               discount={item.discount}
-              newItem={item.newItem}
+              newProduct={item.newProduct}
             />
           </li>
         ))

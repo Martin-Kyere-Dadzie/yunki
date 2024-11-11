@@ -1,5 +1,6 @@
 // import React from 'react';
 import { createSlice } from '@reduxjs/toolkit';
+import Ratings from '../Ratings/Ratings';
 
 const trendSlice = createSlice({
     name: 'topTrends',
@@ -30,7 +31,10 @@ const trendSlice = createSlice({
                     // image1: newItem.image1,
                     title: newItem.title,
                     colors: newItem.color,
-                    priceTag: newItem.priceTag,
+                    discount: newItem.discount,
+                    newProduct: newItem.newProduct,
+                    ratings: newItem.ratings,
+                    // priceTag: newItem.priceTag,
                 });   
                 state.totalQuantity++;
             }

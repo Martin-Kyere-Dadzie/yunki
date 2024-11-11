@@ -11,7 +11,7 @@ import closeBtn from '../../public/icons/close-btn.svg';
 // import Ratings from '../Ratings/Ratings';
 // import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 
-const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newItem}) => {
+const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newProduct}) => {
 
     const dispatch = useDispatch()
     const incrementTrend = () => {
@@ -25,7 +25,7 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
             colors,
             ratings,
             discount,
-            newItem
+            newProduct
         }))
     }
 
@@ -66,7 +66,7 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
             }
             <div className='new-discount'>
                 {
-                    Array(newItem).fill().map((_, i) => (
+                    Array(newProduct).fill().map((_, i) => (
                         <h6 className='new-text'>new</h6>
                     ))
                 }

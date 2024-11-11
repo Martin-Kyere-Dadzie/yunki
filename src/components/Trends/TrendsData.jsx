@@ -55,60 +55,60 @@ export const trendsData = [
         id: 1,
         ratings: 5,
         discount: '-02%',
-        newItem: 1
+        newProduct: 1
     },
-    // {
-    //     images:[
-    //         {
-    //             image:  woofers,
-    //             image1: woofers,
-    //             image2: woofers,            
-    //             image3: woofers,
-    //         }
-    //     ],
-    //     imageOnclick:[
-    //         {imageDisplay: woofers},
-    //         {imageDisplay: woofers},
-    //         {imageDisplay: woofers},
-    //         {imageDisplay: woofers},
-    //     ],
-    //     name: 'brown bag',
-    //     ProductType: 'apparel',
-    //     title: 'woofer sets for interiors',
-    //     // colors: 0,
-    //     oldPrice: 'Ghs200',
-    //     newPrice: 'Ghs150',
-    //     id: 2,
-    //     ratings: 3,
-    //     discount: '-05%',
-    //     newItem: 0
-    // },
-    // {
-    //     images:[
-    //         {
-    //             image:  jeanJacket,
-    //             image1: jeanJacket,
-    //             image2: jeanJacket,            
-    //             image3: jeanJacket,
-    //         }
-    //     ],
-    //     imageOnclick:[
-    //         {imageDisplay: jeanJacket},
-    //         {imageDisplay: jeanJacket},
-    //         {imageDisplay: jeanJacket},
-    //         {imageDisplay: jeanJacket},
-    //     ],
-    //     name: 'men jeans jacket',
-    //     ProductType: 'apparel',
-    //     title: 'men jean jacket for occasions',
-    //     // colors: 0,
-    //     // oldPrice: 320,
-    //     newPrice: 'Ghs450',
-    //     id: 3,
-    //     ratings: 4,
-    //     discount: 0,
-    //     newItem: 1
-    // },
+    {
+        images:[
+            {
+                image:  woofers,
+                image1: woofers,
+                image2: woofers,            
+                image3: woofers,
+            }
+        ],
+        imageOnclick:[
+            {imageDisplay: woofers},
+            {imageDisplay: woofers},
+            {imageDisplay: woofers},
+            {imageDisplay: woofers},
+        ],
+        name: 'brown bag',
+        ProductType: 'apparel',
+        title: 'woofer sets for interiors',
+        // colors: 0,
+        oldPrice: 'Ghs200',
+        newPrice: 'Ghs150',
+        id: 2,
+        ratings: 3,
+        discount: '-05%',
+        newProduct: 0
+    },
+    {
+        images:[
+            {
+                image:  jeanJacket,
+                image1: jeanJacket,
+                image2: jeanJacket,            
+                image3: jeanJacket,
+            }
+        ],
+        imageOnclick:[
+            {imageDisplay: jeanJacket},
+            {imageDisplay: jeanJacket},
+            {imageDisplay: jeanJacket},
+            {imageDisplay: jeanJacket},
+        ],
+        name: 'men jeans jacket',
+        ProductType: 'apparel',
+        title: 'men jean jacket for occasions',
+        // colors: 0,
+        // oldPrice: 320,
+        newPrice: 'Ghs450',
+        id: 3,
+        ratings: 4,
+        discount: 0,
+        newProduct: 1
+    },
     // {
     //     images:[
     //         {
