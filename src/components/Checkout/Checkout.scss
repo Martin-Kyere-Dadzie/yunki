@@ -1,0 +1,26 @@
+@import '../Sass/config';
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.product-checkout-section{
+    display: flex;
+    .shoppingBasket__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 16dvh;
+    }
+    .product-checkout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

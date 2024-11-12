@@ -1,1 +1,17 @@
-/*# sourceMappingURL=Checkout.css.map */
+.product-checkout-section {
+  display: flex;
+}
+.product-checkout-section .shoppingBasket__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 16dvh;
+}
+.product-checkout-section .product-checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=Checkout.css.map */

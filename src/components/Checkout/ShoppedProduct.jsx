@@ -13,10 +13,10 @@ import decrementIcon from '../../public/icons/carousel-down-icon.svg';
 // import Ratings from '../Ratings/Ratings';
 // import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 
-const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newProduct}) => {
+const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newProduct, quantity}) => {
 
     const dispatch = useDispatch()
-    const incrementTrend = () => {
+    const incrementBagItem = () => {
         dispatch(trendActions.addToTrends({
             id,
             oldPrice,
@@ -27,16 +27,13 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
             colors,
             ratings,
             discount,
-            newProduct
+            newProduct,
+            quantity
         }))
     }
 
-    const decrementTrend = () => {
-      dispatch(trendActions(id))
-    }
-
-    const deletTrend = () => {
-      dispatch(trendActions.deletTrend(id))
+    const decrementBagItem = () => {
+      dispatch(trendActions.removeFromBag(id))
     }
 
     const productRates = Array.from({length: 5}, (elem, index) => {
@@ -84,11 +81,11 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
                 </div>
                 <div className='increment-decrement-section'>
                     <div className='increment-section'>
-                        <img alt='img' src={incrementIcon}></img>
+                        <img alt='img' src={incrementIcon} onClick={incrementBagItem}></img>
                     </div>
-                    <div className='product-count'>1</div>
+                    <div className='product-count'>{quantity}</div>
                     <div className='decrement-section'>
-                        <img alt='img' src={decrementIcon}></img>
+                        <img alt='img' src={decrementIcon} onClick={decrementBagItem}></img>
                     </div>
                 </div>
                 <div className='shopping-bag icon-container'>

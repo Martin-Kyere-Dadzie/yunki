@@ -12,9 +12,12 @@ import menuIcon from '../../public/icons/humbegar-icon.svg';
 import { NavLink } from "react-router-dom";
 import navLinks from "./NavLinks";
 import { activeLinkStyle } from "../ActiveConfig/ActiveConfig";
+import { useSelector } from "react-redux";
 
 
 const Navbar = () => {
+
+    const quantity = useSelector(state => state.topTrends.totalQuantity)
 
     const [isOpen, setIsOpen] = useState(false);
     const closeMenu = () => setIsOpen(false);
@@ -72,7 +75,7 @@ const Navbar = () => {
                         ></img>
                         <h5 className="icon-text"><span>Order</span>Checkout</h5>
                     </div>
-                    <div className="checkout__indicator" id="count-indicator">1</div>
+                    <div className="checkout__indicator" id="count-indicator">{quantity}</div>
                 </NavLink>
                 <NavLink className="nav-icon" id="link" to="/wishlist">                
                     <div className="heartIcon__section">            
@@ -84,7 +87,7 @@ const Navbar = () => {
                         ></img>
                         <h5 className="icon-text"><span>Like</span>Wishlist</h5>
                     </div>
-                    <div className="checkout__indicator" id="count-indicator">1</div>
+                    <div className="checkout__indicator" id="count-indicator">0</div>
                 </NavLink>
             </div>
         </div>
