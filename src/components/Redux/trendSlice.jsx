@@ -54,7 +54,7 @@ const trendSlice = createSlice({
             const existingItem = state.itemList.find(item => item.id === id);
             if(existingItem) {
                 state.totalQuantity --;
-                existingItem.quantity = 0;
+                existingItem.quantity ;
             }
         }
     }
