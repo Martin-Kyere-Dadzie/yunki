@@ -14,7 +14,7 @@ import { trendActions } from '../Redux/trendSlice';
 import Ratings from '../Ratings/Ratings';
 // import { UseDispatch, useSelector } from 'react-redux';
 
-const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newProduct, quantity}) => {
+const Trends = ({images, name, newPrice, oldPrice, price, title, colors, ratings, id, discount, newProduct, quantity}) => {
 
     const [productPupUp, setProductPupUp] = useState(false);
 
@@ -43,6 +43,7 @@ const Trends = ({images, name, newPrice, oldPrice, title, colors, ratings, id, d
             colors,
             newPrice,
             oldPrice,
+            price,
             id,
             ratings,
             discount,
@@ -95,7 +96,7 @@ return (
                 {productRates}
             </div>
             <div className='product-price'>
-                <h5 className='new-price'>{newPrice}</h5>
+                <h5 className='new-price'>{price}</h5>
                 <h5 className='old-price'>{oldPrice}</h5>
             </div>
         </div>

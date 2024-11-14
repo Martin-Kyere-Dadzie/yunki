@@ -1,6 +1,5 @@
 // import React from 'react';
 import { createSlice } from '@reduxjs/toolkit';
-import Ratings from '../Ratings/Ratings';
 
 const trendSlice = createSlice({
     name: 'topTrends',
@@ -17,17 +16,17 @@ const trendSlice = createSlice({
 
             if (existingItem) {
                 existingItem.quantity++;
-                existingItem.totalPrice += existingItem.newPrice;
+                existingItem.totalPrice += existingItem.price;
             } else {
                 state.itemList.push({
                     id: newItem.id,
                     oldPrice: newItem.oldPrice,
-                    newPrice: newItem.newPrice,
+                    price: newItem.price,
                     quantity: 1,
-                    totalPrice: newItem.newPrice,
                     productName: newItem.name,
                     images: newItem.images,
                     name: newItem.name,
+                    totalPrice: newItem.price,
                     title: newItem.title,
                     colors: newItem.color,
                     discount: newItem.discount,
@@ -42,11 +41,20 @@ const trendSlice = createSlice({
             
             const existingItem = state.itemList.find(item => item.id === id);
             if(existingItem.quantity === 1) {
-                state.itemList.filter(item => item.id !== id);
+                state.itemList = state.itemList.filter(item => item.id !== id);
                 state.totalQuantity --;
             }else{
                 existingItem.quantity --;
-                existingItem.totalPrice -= existingItem.newPrice;
+                existingItem.totalPrice -= existingItem.price;
+            }
+        },
+        deleteFromBag(state, action) {
+            const id = action.payload;
+
+            const existingItem = state.itemList.find(item => item.id === id);
+            if(existingItem) {
+                state.totalQuantity --;
+                existingItem.quantity = 0;
             }
         }
     }

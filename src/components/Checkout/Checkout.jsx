@@ -31,6 +31,7 @@ const Checkout = () => {
                   discount={item.discount}
                   newProduct={item.newProduct}
                   quantity={item.quantity}
+                  price={item.totalPrice}
                 />
               </li>
             ))

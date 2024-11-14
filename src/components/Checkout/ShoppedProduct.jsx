@@ -13,7 +13,7 @@ import decrementIcon from '../../public/icons/carousel-down-icon.svg';
 // import Ratings from '../Ratings/Ratings';
 // import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 
-const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newProduct, quantity}) => {
+const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newProduct, price, quantity}) => {
 
     const dispatch = useDispatch()
     const incrementBagItem = () => {
@@ -21,6 +21,7 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
             id,
             oldPrice,
             newPrice,
+            price,
             name,
             images,
             title,
@@ -34,6 +35,10 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
 
     const decrementBagItem = () => {
       dispatch(trendActions.removeFromBag(id))
+    }
+
+    const deleteFromBag = () => {
+        dispatch(trendActions.deleteFromBag(id))
     }
 
     const productRates = Array.from({length: 5}, (elem, index) => {
@@ -77,7 +82,7 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
             </div>
             <div className='icons__section'>
                 <div className='close-btn-container'>
-                    <img className='close-btn' src={closeBtn} alt='img'></img>
+                    <img className='close-btn' src={closeBtn} alt='img' onClick={deleteFromBag}></img>
                 </div>
                 <div className='increment-decrement-section'>
                     <div className='increment-section'>
@@ -102,7 +107,7 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
                 {productRates}
             </div>
             <div className='product-price'>
-                <h5 className='new-price'>{newPrice}</h5>
+                <h5 className='new-price'>{price}</h5>
                 <h5 className='old-price'>{oldPrice}</h5>
             </div>
         </div>
