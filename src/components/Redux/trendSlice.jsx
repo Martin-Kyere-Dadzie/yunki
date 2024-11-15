@@ -52,10 +52,11 @@ const trendSlice = createSlice({
             const id = action.payload;
 
             state.itemList = state.itemList.filter(item => item.id !== id);
+            state.totalQuantity --;
         },
         clearBag : (state) => {
             state.itemList = [];
-            state.totalQuantity = 0;
+            state.totalQuantity = [0];
         }
     }
 })
