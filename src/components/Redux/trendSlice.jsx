@@ -9,7 +9,7 @@ const trendSlice = createSlice({
         showTrend: false
     },
     reducers: {
-        addToTrends(state, action) {
+        addToTrends : (state, action) => {
             const newItem = action.payload;
             //first check if product already exist
             const existingItem = state.itemList.find((item) => item.id === newItem.id);
@@ -36,7 +36,7 @@ const trendSlice = createSlice({
                 state.totalQuantity++;
             }
         },
-        removeFromBag(state, action) {
+        removeFromBag : (state, action) => {
             const id =action.payload;
             
             const existingItem = state.itemList.find(item => item.id === id);
@@ -48,14 +48,14 @@ const trendSlice = createSlice({
                 existingItem.totalPrice -= existingItem.price;
             }
         },
-        deleteFromBag(state, action) {
+        deleteFromBag : (state, action) => {
             const id = action.payload;
 
-            const existingItem = state.itemList.find(item => item.id === id);
-            if(existingItem) {
-                state.totalQuantity --;
-                existingItem.quantity ;
-            }
+            state.itemList = state.itemList.filter(item => item.id !== id);
+        },
+        clearBag : (state) => {
+            state.itemList = [];
+            state.totalQuantity = 0;
         }
     }
 })

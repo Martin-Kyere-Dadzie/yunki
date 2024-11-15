@@ -1,10 +1,17 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import ShoppedProduct from '../Checkout/ShoppedProduct'
 import './Checkout.scss'
 import Subtotal from './Subtotal'
+import { trendActions } from '../Redux/trendSlice'
 
 const Checkout = () => {
+
+  const dispatch = useDispatch();
+
+  const clearBag = () => {
+    dispatch(trendActions.clearBag())
+  }
 
   const trendItem = useSelector(state => state.topTrends.itemList)
 
@@ -37,6 +44,7 @@ const Checkout = () => {
             ))
           }
       </ul>
+      <div onClick={clearBag}>clear</div>
      </div>
      <div className='checkout-totalPrice-section'>
      
