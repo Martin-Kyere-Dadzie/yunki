@@ -4,6 +4,12 @@ import { useSelector } from 'react-redux'
 import { Value } from 'sass'
 
 const Subtotal = () => {
+    let total = 0;
+    const itemList = useSelector(state => state.topTrends.itemList)
+
+    itemList.forEach(item => {
+        total += item.totalPrice;
+    });
     const quantity = useSelector(state => state.topTrends.totalQuantity)
   return (
     <div className='totalSum__container'>
@@ -12,7 +18,7 @@ const Subtotal = () => {
                 <>
                     <p>
                         Subtotal({quantity} Items):
-                        <strong>0</strong>
+                        <strong>{total}</strong>
                     </p>
                     <small className='subtotal__gift'>
                         <input type='checkbox'/>this Order contains a gift

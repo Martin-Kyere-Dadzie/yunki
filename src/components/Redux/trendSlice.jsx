@@ -57,7 +57,7 @@ const trendSlice = createSlice({
         clearBag : (state) => {
             state.itemList = [];
             state.totalQuantity = [0];
-        }
+        },
     }
 })
 

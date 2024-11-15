@@ -12,7 +12,7 @@ const Checkout = () => {
   const clearBag = () => {
     dispatch(trendActions.clearBag())
   }
-
+  
   const trendItem = useSelector(state => state.topTrends.itemList)
 
   return (
