@@ -1,7 +1,7 @@
 import React from 'react'
 import CurrencyFormat from 'react-currency-format'
 import { useSelector } from 'react-redux'
-import { Value } from 'sass'
+// import { Value } from 'sass'
 
 const Subtotal = () => {
     let total = 0;

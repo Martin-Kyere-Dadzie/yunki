@@ -15,7 +15,7 @@ import menImage from "../../public/images/medium-shot-boy-posing-with-monochrome
 import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
 import Trends from "../Trends/Trends";
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 
 //store images end
 

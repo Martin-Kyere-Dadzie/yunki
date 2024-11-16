@@ -3,7 +3,7 @@ import starFill from '../../public/icons/star-fill.svg';
 import starHalve from '../../public/icons/star-outline-half.svg';
 import starOutline from '../../public/icons/star-outline.svg';
 import './Trends.scss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import ProductPopUp from '../PopUps/ProductPopUp';
 //icons image
 import heartDarkIcon from '../../public/icons/heart-black-icon.svg';
@@ -11,7 +11,7 @@ import shoppingBagDarkIcon from '../../public/icons/shopping-bag-black-icon.svg'
 import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 import quickViewIcon from '../../public/icons/quick-view-icon.svg'
 import { trendActions } from '../Redux/trendSlice';
-import Ratings from '../Ratings/Ratings';
+// import Ratings from '../Ratings/Ratings';
 // import { UseDispatch, useSelector } from 'react-redux';
 
 const Trends = ({images, name, newPrice, oldPrice, price, title, colors, ratings, id, discount, newProduct, quantity}) => {

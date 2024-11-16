@@ -7,7 +7,7 @@ import whatsappIcon from '../../public/icons/icons8-whatsapp.svg';
 import footerLogo from '../../public/icons/yunki-black-logo.svg';
 import FooterLinks from './FooterLinks';
 import { NavLink } from 'react-router-dom';
-import { activeLinkStyle } from '../ActiveConfig/ActiveConfig';
+// import { activeLinkStyle } from '../ActiveConfig/ActiveConfig';
 
 const Footer = () => {
   return (

@@ -62,5 +62,4 @@ const trendSlice = createSlice({
 })
 
 export const trendActions = trendSlice.actions;
-
 export default trendSlice;
