@@ -44,10 +44,6 @@ const Checkout = () => {
             ))
           }
       </ul>
-      <div onClick={clearBag}>clear</div>
-     </div>
-     <div className='checkout-totalPrice-section'>
-     
      </div>
     </div>
   )

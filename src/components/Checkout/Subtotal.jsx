@@ -1,9 +1,18 @@
 import React from 'react'
 import CurrencyFormat from 'react-currency-format'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import './Subtotal.scss'
+import { trendActions } from '../Redux/trendSlice'
 // import { Value } from 'sass'
 
 const Subtotal = () => {
+
+    const dispatch = useDispatch();
+
+    const clearBag = () => {
+        dispatch(trendActions.clearBag())
+    }
+    
     let total = 0;
     const itemList = useSelector(state => state.topTrends.itemList)
 
@@ -23,6 +32,7 @@ const Subtotal = () => {
                     <small className='subtotal__gift'>
                         <input type='checkbox'/>this Order contains a gift
                     </small>
+                    <div onClick={clearBag}>clear bag</div>
                 </>
             )}
             decimalScale={2}
