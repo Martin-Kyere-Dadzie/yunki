@@ -12,6 +12,7 @@ import kidsImage from "../../public/images/children-girlfriends-smiling-happines
 import womenImage from "../../public/images/portrait-smiley-woman-posing-studio.jpg";
 import menImage from "../../public/images/medium-shot-boy-posing-with-monochrome-outfit.jpg";
 import userMultiple from '../../public/icons/user-multiple.svg';
+import handsIcon from '../../public/icons/handshake-icon.svg';
 //icons images
 import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
@@ -78,6 +79,7 @@ const Home = () => {
         </NavLink>
       </div>
       <div className="trends-container">
+      <h1>What Yunki Offers You?</h1>
         <div className="trends-contents-holder">
           <div className="offers-section">
             <div className="offer-content">
@@ -91,7 +93,7 @@ const Home = () => {
               <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems. <NavLink to='/' className='offer-link'>Apply for a Customer loyalty Discount</NavLink> today.</p>
             </div>
             <div className="offer-content">
-              <img className="offer-img" alt="img"></img>
+              <img className="offer-img" alt="img" src={handsIcon}></img>
               <h4 className="offer-header">online discount</h4>
               <p className="offer-text">add multi-buy discounts</p>
             </div>

@@ -33,7 +33,7 @@ const Navbar = () => {
         {isOpen ? <img src={closeBtn} className="close-btn" alt="img" onClick={closeMenu}></img> : <img src={menuIcon} className="menu-icon" alt="img" onClick={openMenu}></img>}
         <div className="navbar-icons__section">
             <div className="logo__section">
-                <NavLink to="/">                 
+                <NavLink to="/" className='logo-holder'>                 
                     <img 
                         className="main-logo" 
                         src={yunkiLogoIcon} 

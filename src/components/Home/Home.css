@@ -118,6 +118,9 @@
   justify-content: center;
   background-color: #ededed;
 }
+.home-section .trends-container h1 {
+  margin: 20px;
+}
 .home-section .trends-container .trends-contents-holder {
   display: flex;
   flex-direction: center;
@@ -128,10 +131,11 @@
 .home-section .trends-container .trends-contents-holder .offers-section {
   width: 95dvw;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .home-section .trends-container .trends-contents-holder .offers-section .offer-content {
+  padding: 20px;
   width: 20%;
   background-color: white;
   display: flex;
@@ -141,10 +145,11 @@
   text-align: center;
 }
 .home-section .trends-container .trends-contents-holder .offers-section .offer-content img {
-  width: 20%;
+  width: 23%;
 }
 .home-section .trends-container .trends-contents-holder .offers-section .offer-content .offer-header {
   font-size: 0.9rem;
+  margin: 5px;
 }
 .home-section .trends-container .trends-contents-holder .offers-section .offer-content .offer-text {
   font-size: 0.8rem;
