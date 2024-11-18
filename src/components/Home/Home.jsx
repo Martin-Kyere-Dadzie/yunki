@@ -11,6 +11,7 @@ import skinCareImage from "../../public/images/pngaaa.com-4674620.png";
 import kidsImage from "../../public/images/children-girlfriends-smiling-happiness-friendship-togetherness-studio-portrait_53876-38427.jpg";
 import womenImage from "../../public/images/portrait-smiley-woman-posing-studio.jpg";
 import menImage from "../../public/images/medium-shot-boy-posing-with-monochrome-outfit.jpg";
+import userMultiple from '../../public/icons/user-multiple.svg';
 //icons images
 import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
@@ -85,9 +86,9 @@ const Home = () => {
               <p className="offer-text">100% secure payment</p>
             </div>
             <div className="offer-content">
-              <img className="offer-img" alt="img"></img>
-              <h4 className="offer-header">help center</h4>
-              <p className="offer-text">dedicated 24/7 support</p>
+              <img className="offer-img" alt="img" src={userMultiple}></img>
+              <h4 className="offer-header">Customer Loyalty Discount</h4>
+              <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems. <NavLink to='/' className='offer-link'>Apply for a Customer loyalty Discount today</NavLink>.</p>
             </div>
             <div className="offer-content">
               <img className="offer-img" alt="img"></img>

@@ -136,28 +136,35 @@
             flex-direction: center;
             align-items: center;
             justify-content: center;
-            width: 70%;
+            width: 100%;
             // background-color: $sky-blue;
             .offers-section{
-                width: 50dvw;
+                width: 95dvw;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 // background-color: rgb(228, 31, 31);
                 .offer-content{
+                    width: 20%;
                     background-color: white;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
+                    text-align: center;
                     img{
-                        width: 15%;
+                        width: 20%;
                     }
                     .offer-header{
                         font-size: .9rem;
                     }
                     .offer-text{
                         font-size: .8rem;
+                    }
+                    .offer-link{
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: #3F94A6;
                     }
                 }
             }
