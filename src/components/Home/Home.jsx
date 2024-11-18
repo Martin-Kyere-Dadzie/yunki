@@ -88,7 +88,7 @@ const Home = () => {
             <div className="offer-content">
               <img className="offer-img" alt="img" src={userMultiple}></img>
               <h4 className="offer-header">Customer Loyalty Discount</h4>
-              <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems. <NavLink to='/' className='offer-link'>Apply for a Customer loyalty Discount today</NavLink>.</p>
+              <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems. <NavLink to='/' className='offer-link'>Apply for a Customer loyalty Discount</NavLink> today.</p>
             </div>
             <div className="offer-content">
               <img className="offer-img" alt="img"></img>

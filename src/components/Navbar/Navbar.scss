@@ -147,7 +147,7 @@
             width: 15px;
             height: 15px;
             border-radius: 10px;
-            background-color: #ff5500;
+            background-color: $yunki-color;
             color: white;
             display: flex;
             align-items: center;
@@ -193,7 +193,7 @@
         }
         p{
             font-size: .7rem;
-            color: #3F94A6
+            color: $yunki-color
         }
         .telephone-section{
             @include flexBox();
