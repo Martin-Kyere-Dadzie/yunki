@@ -11,18 +11,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100dvw;
+    background-color: #ededed;
     .product-checkout{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        width: 90dvw;
         .shoppingBasket__header{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             position: sticky;
-            top: 16dvh;
+            top: 12dvh;
+            z-index: 99999;
+        }
+        .main-product{
+            list-style: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 595px){
+    .product-checkout-section{
+        .product-checkout{
+            .main-product{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
 }

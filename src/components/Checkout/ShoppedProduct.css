@@ -39,4 +39,10 @@
 .trends .removeFromBag-btn:hover h6 {
   color: red;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 595px) {
+  .trends {
+    width: 72%;
+  }
 }/*# sourceMappingURL=ShoppedProduct.css.map */

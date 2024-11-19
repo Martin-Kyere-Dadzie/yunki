@@ -81,9 +81,9 @@ const Home = () => {
       <div className="trends-container">
       <h1>What Yunki Offers You?</h1>
         <div className="trends-contents-holder">
-          <div className="offers-section">
+          <div className="offers-section" id="offer">
             <div className="offer-content">
-              <img className="offer-img" alt="img" src={giftIcon}></img>
+              <img className="offer-img gift" alt="img" src={giftIcon}></img>
               <h4 className="offer-header">safe payment</h4>
               <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
             </div>

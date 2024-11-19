@@ -42,7 +42,7 @@
   font-size: 0.7rem;
   font-weight: bold;
   color: white;
-  background-image: linear-gradient(to left, #3F94A6, #59b1c2, #83d3e2, #a3e7f4, #bfedf7, #e1f7fc);
+  background-image: linear-gradient(to left, #3F94A6, #59b1c2, #83d3e2);
 }
 .navbar .navbar-icons__section {
   position: relative;

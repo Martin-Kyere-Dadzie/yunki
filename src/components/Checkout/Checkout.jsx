@@ -17,12 +17,12 @@ const Checkout = () => {
 
   return (
     <div className='product-checkout-section'>
-     <div className='product-checkout'>
+     <div className='product-checkout' id='productTo__buy'>
       <div className='shoppingBasket__header'>
         <h4>Your Shopping Items List</h4>
         <Subtotal/>
       </div>
-        <ul>
+        <ul className='main-product'>
           {
             trendItem.map(item => (
               <li key={item.id}>
