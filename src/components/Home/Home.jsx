@@ -85,7 +85,7 @@ const Home = () => {
             <div className="offer-content">
               <img className="offer-img" alt="img" src={giftIcon}></img>
               <h4 className="offer-header">safe payment</h4>
-              <p className="offer-text">100% secure payment</p>
+              <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
             </div>
             <div className="offer-content">
               <img className="offer-img" alt="img" src={userMultiple}></img>
@@ -95,7 +95,7 @@ const Home = () => {
             <div className="offer-content">
               <img className="offer-img" alt="img" src={handsIcon}></img>
               <h4 className="offer-header">online discount</h4>
-              <p className="offer-text">add multi-buy discounts</p>
+              <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
             </div>
           </div>
         </div>

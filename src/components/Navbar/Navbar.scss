@@ -47,16 +47,13 @@
         font-weight: bold;
         color: white;
         background-image: linear-gradient(
-        to right,
-        #F8B817,
-        #F09333,
-        #EA7B38,
-        #ff671b,
-        #ff5500,
-        #E14740,
-        #DD2943,
-        #D22458,
-        #BF1A81
+        to left,
+        #3F94A6,
+        #59b1c2,
+        #83d3e2,
+        #a3e7f4,
+        #bfedf7,
+        #e1f7fc,
       );
     // background-image: linear-gradient( 67.2deg,  rgba(37,208,199,1) -7.5%, rgba(165,90,240,1) 62.7% );
     }
@@ -85,8 +82,9 @@
             border: none;
             font-size: fontSizes(regular);
             font-weight: bolder;
-            color: $font-color;
-            background-color: #e8e8e8;
+            color: #a3e7f4;
+            background-color: #e1f7fc;
+            border: .5px solid $yunki-color;
         };
         .search-icon{
             width: 35px;

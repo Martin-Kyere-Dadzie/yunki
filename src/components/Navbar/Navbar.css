@@ -42,7 +42,7 @@
   font-size: 0.7rem;
   font-weight: bold;
   color: white;
-  background-image: linear-gradient(to right, #F8B817, #F09333, #EA7B38, #ff671b, #ff5500, #E14740, #DD2943, #D22458, #BF1A81);
+  background-image: linear-gradient(to left, #3F94A6, #59b1c2, #83d3e2, #a3e7f4, #bfedf7, #e1f7fc);
 }
 .navbar .navbar-icons__section {
   position: relative;
@@ -77,8 +77,9 @@
   border: none;
   font-size: 0.8rem;
   font-weight: bolder;
-  color: #575757;
-  background-color: #e8e8e8;
+  color: #a3e7f4;
+  background-color: #e1f7fc;
+  border: 0.5px solid #3F94A6;
 }
 .navbar .search__section .search-icon {
   width: 35px;
