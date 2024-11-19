@@ -84,7 +84,7 @@ const Home = () => {
           <div className="offers-section" id="offer">
             <div className="offer-content">
               <img className="offer-img gift" alt="img" src={giftIcon}></img>
-              <h4 className="offer-header">safe payment</h4>
+              <h4 className="offer-header">Free Gifts With Purchase</h4>
               <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
             </div>
             <div className="offer-content">
@@ -94,7 +94,30 @@ const Home = () => {
             </div>
             <div className="offer-content">
               <img className="offer-img" alt="img" src={handsIcon}></img>
-              <h4 className="offer-header">online discount</h4>
+              <h4 className="offer-header">24/7 customer support</h4>
+              <p className="offer-text">
+                we ensure that assistance is available
+                whenever our customers needs it,
+                regardless of time zero, by offering
+                24/7 support to our diverse customer 
+                base to enhance convenience, and ensure 
+                that potential problems are addressed 
+                promptly.
+              </p>
+            </div>
+            <div className="offer-content">
+              <img className="offer-img" alt="img" src={handsIcon}></img>
+              <h4 className="offer-header">Quantity Discount Sales</h4>
+              <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
+            </div>
+            <div className="offer-content">
+              <img className="offer-img" alt="img" src={handsIcon}></img>
+              <h4 className="offer-header">Flash Sales / One-Day Sales</h4>
+              <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
+            </div>
+            <div className="offer-content">
+              <img className="offer-img" alt="img" src={handsIcon}></img>
+              <h4 className="offer-header">Contests & Giveaway Promotions</h4>
               <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
             </div>
           </div>

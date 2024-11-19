@@ -1,18 +1,21 @@
 .product-checkout-section {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100dvw;
   background-color: #ededed;
 }
 .product-checkout-section .product-checkout {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 90dvw;
+  width: 50dvw;
 }
 .product-checkout-section .product-checkout .shoppingBasket__header {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,13 +23,34 @@
   position: sticky;
   top: 12dvh;
   z-index: 99999;
+  width: 50%;
+  height: 18dvh;
 }
-.product-checkout-section .product-checkout .main-product {
+.product-checkout-section .product-checkout .products-contents {
   list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-checkout-section .product-checkout .products-contents .main-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.product-checkout-section .delivery__information {
+  width: 50%;
+  height: 61dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 595px) {
-  .product-checkout-section .product-checkout .main-product {
+  .product-checkout-section .product-checkout .products-contents {
     display: flex;
     flex-direction: column;
     align-items: center;
