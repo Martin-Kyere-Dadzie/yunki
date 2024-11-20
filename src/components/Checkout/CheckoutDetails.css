@@ -1,0 +1,73 @@
+.delivery__information__container {
+  position: relative;
+  width: 90%;
+  height: 95%;
+  justify-content: space-between;
+}
+.delivery__information__container .delivery__information {
+  position: relative;
+  height: 20%;
+  width: 50%;
+  display: flex;
+}
+.delivery__information__container .delivery__information .delivery {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 20px;
+  position: absolute;
+  width: 46%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  border: 0.1px solid #939393;
+  border-radius: 5px;
+}
+.delivery__information__container .delivery__information .deliver {
+  left: 0;
+}
+.delivery__information__container .delivery__information .pickup {
+  right: 0;
+}
+.delivery__information__container .location__details {
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.delivery__information__container .location__details .user__details, .delivery__information__container .location__details .user {
+  width: 46%;
+}
+.delivery__information__container .location__details form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.delivery__information__container .location__details form label {
+  font-size: 0.7rem;
+}
+.delivery__information__container .location__details form input {
+  margin-bottom: 10px;
+  height: 30px;
+  width: 100%;
+  border: 0.1px solid #939393;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+.delivery__information__container input::-moz-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 0.7rem;
+  padding: 10px;
+}
+.delivery__information__container input::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 0.7rem;
+  padding: 10px;
+}/*# sourceMappingURL=CheckoutDetails.css.map */

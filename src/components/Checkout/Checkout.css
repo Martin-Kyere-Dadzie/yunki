@@ -1,7 +1,7 @@
 .product-checkout-section {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100dvw;
   background-color: #ededed;
@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   position: sticky;
-  top: 12dvh;
+  top: 2dvh;
   z-index: 99999;
   width: 50%;
   height: 18dvh;
