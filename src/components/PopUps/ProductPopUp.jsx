@@ -5,6 +5,7 @@ import { trendsData } from '../Trends/TrendsData'
 import { useDispatch, useSelector } from 'react-redux';
 import { trendActions } from '../Redux/trendSlice';
 import ShoppedProduct from '../Checkout/ShoppedProduct';
+import ProductPopUpDisplay from './ProductPopUpDisplay';
 
 function ProductPopUp(props, {images, name, newPrice, oldPrice, price, title, colors, ratings, id, discount, newProduct, quantity}) {
   
@@ -24,7 +25,21 @@ function ProductPopUp(props, {images, name, newPrice, oldPrice, price, title, co
                   {
                     trendItem.map(item => (
                       <li key={item.id}>
-                        {item.images}
+                        <ProductPopUpDisplay
+                          className = 'product-to-checkout'
+                          id={item.id}
+                          images={item.images}
+                          name={item.name}
+                          oldPrice={item.oldPrice}
+                          newPrice={item.newPrice}
+                          title={item.title}
+                          colors={item.colors}
+                          ratings={item.ratings}
+                          discount={item.discount}
+                          newProduct={item.newProduct}
+                          quantity={item.quantity}
+                          price={item.totalPrice}
+                        />
                       </li>
                     ))
                   }
