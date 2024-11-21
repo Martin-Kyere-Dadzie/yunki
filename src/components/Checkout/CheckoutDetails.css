@@ -1,42 +1,51 @@
 .delivery__information__container {
   position: relative;
   width: 90%;
-  height: 95%;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   justify-content: space-between;
 }
-.delivery__information__container .delivery__information {
+.delivery__information__container .delivery__info {
   position: relative;
-  height: 20%;
-  width: 50%;
+  height: 15%;
+  width: 70%;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.delivery__information__container .delivery__information .delivery {
+.delivery__information__container .delivery__info .delivery {
   font-size: 1rem;
-  padding: 20px;
-  position: absolute;
-  width: 46%;
-  height: 50%;
+  padding: 10px;
+  width: 30%;
+  height: 45%;
   display: flex;
   align-items: center;
   border: 0.1px solid #939393;
-  border-radius: 5px;
   background-color: white;
 }
-.delivery__information__container .delivery__information .delivery h5 {
+.delivery__information__container .delivery__info .delivery img {
+  width: 23%;
+}
+.delivery__information__container .delivery__info .delivery .pickUp__img {
+  width: 18%;
+}
+.delivery__information__container .delivery__info .delivery h5 {
   font-weight: 500;
   margin: 10px;
 }
-.delivery__information__container .delivery__information .deliver {
+.delivery__information__container .delivery__info .deliver {
   left: 0;
 }
-.delivery__information__container .delivery__information .pickup {
+.delivery__information__container .delivery__info .pickup {
   right: 0;
+  margin-left: 30px;
 }
 .delivery__information__container .location__details {
+  background-color: white;
+  padding: 20px;
   width: 70%;
   display: flex;
   align-items: flex-start;

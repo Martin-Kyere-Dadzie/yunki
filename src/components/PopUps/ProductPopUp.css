@@ -24,10 +24,14 @@
   align-items: center;
   justify-content: space-between;
 }
+.popup-inner .content__holder {
+  width: 49%;
+  height: 95%;
+}
 
 .popup-inner .close-btn {
-  width: 40px;
-  height: 40px;
+  width: 15px;
+  height: 15px;
   border: none;
   border-radius: 30px;
   background-color: transparent;

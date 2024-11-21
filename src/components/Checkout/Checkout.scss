@@ -46,15 +46,16 @@
             // background-color: red;
             .main-product{
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
+                align-items: flex-start;
+                justify-content: center;
                 width: 100%;
+                // background-color: red;
             }
         }
     }
     .delivery__information{
         width: 50%;
-        height: 61dvh;
+        height: 70dvh;
         display: flex;
         flex-direction: column;
         align-items: center;

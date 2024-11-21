@@ -10,29 +10,37 @@
 .delivery__information__container{
     position: relative;
     width: 90%;
-    height: 95%;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     justify-content: space-between;
-    .delivery__information{
+    .delivery__info{
         position: relative;
-        height: 20%;
-        width: 50%;
+        height: 15%;
+        width: 70%;
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
         // background-color: $font-color;
         .delivery{
             font-size: 1rem;
-            padding: 20px;
-            position: absolute;
-            width: 46%;
-            height: 50%;
+            padding: 10px;
+            // position: absolute;
+            width: 30%;
+            height: 45%;
             display: flex;
             align-items: center;
             border: .1px solid #939393;
-            border-radius: 5px;
+            // border-radius: 5px;
             background-color: white;
+            img{
+                width: 23%;
+            }
+            .pickUp__img{
+                width: 18%;
+            }
             h5{
                 font-weight: 500;
                 margin: 10px;
@@ -44,11 +52,13 @@
         }
         .pickup{
             right: 0;
+            margin-left: 30px;
             // background-color: $font-color;
         }
     }
     .location__details{
-        // background-color: red;
+        background-color: white;
+        padding: 20px;
         width: 70%;
         // height: 50%;
         display: flex;

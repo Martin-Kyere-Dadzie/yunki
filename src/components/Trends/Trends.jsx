@@ -101,7 +101,7 @@ return (
             </div>
         </div>
         <button 
-            onClick={() => setProductPupUp(true)} 
+            onClick={() => setProductPupUp(true)}
             className='bag-btn'
         >
          <img 

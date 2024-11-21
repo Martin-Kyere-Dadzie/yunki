@@ -36,13 +36,13 @@
 }
 .product-checkout-section .product-checkout .products-contents .main-product {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
 }
 .product-checkout-section .delivery__information {
   width: 50%;
-  height: 61dvh;
+  height: 70dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
