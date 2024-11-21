@@ -38,6 +38,21 @@ const CheckoutDetails = () => {
           </form>
         </div>
       </div>
+      <h5 className='payment-header'>Payment Method</h5>
+      <div className='payment__method'>
+        <div className='online__payment payment'>
+          <input type='radio'></input>
+          <h6>Online Payment</h6>
+        </div>
+        <div className='delivery__payment payment'>
+          <input type='radio'></input>
+          <h6>Cash on Delivery</h6>
+        </div>
+        <div className='delivery__payment payment'>
+          <input type='radio'></input>
+          <h6>Pay on Pick up</h6>
+        </div>
+      </div>
     </form>
   )
 }

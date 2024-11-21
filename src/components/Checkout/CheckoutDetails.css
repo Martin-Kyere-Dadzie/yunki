@@ -2,6 +2,10 @@
   position: relative;
   width: 90%;
   height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   justify-content: space-between;
 }
 .delivery__information__container .delivery__information {
@@ -11,8 +15,7 @@
   display: flex;
 }
 .delivery__information__container .delivery__information .delivery {
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 1rem;
   padding: 20px;
   position: absolute;
   width: 46%;
@@ -21,6 +24,11 @@
   align-items: center;
   border: 0.1px solid #939393;
   border-radius: 5px;
+  background-color: white;
+}
+.delivery__information__container .delivery__information .delivery h5 {
+  font-weight: 500;
+  margin: 10px;
 }
 .delivery__information__container .delivery__information .deliver {
   left: 0;
@@ -33,20 +41,22 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .delivery__information__container .location__details .user__details, .delivery__information__container .location__details .user {
   width: 46%;
 }
-.delivery__information__container .location__details form {
+.delivery__information__container .location__details .details__form, .delivery__information__container .location__details .location__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
-.delivery__information__container .location__details form label {
-  font-size: 0.7rem;
+.delivery__information__container .location__details .details__form label, .delivery__information__container .location__details .location__form label {
+  font-size: 0.8rem;
+  font-weight: 500;
 }
-.delivery__information__container .location__details form input {
+.delivery__information__container .location__details .details__form input, .delivery__information__container .location__details .location__form input {
   margin-bottom: 10px;
   height: 30px;
   width: 100%;
@@ -70,4 +80,30 @@
   text-align: left;
   font-size: 0.7rem;
   padding: 10px;
+}
+.delivery__information__container .payment__method {
+  width: 70%;
+  height: 12%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.delivery__information__container .payment__method .payment {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.1px solid #939393;
+}
+.delivery__information__container .payment__method .payment h6 {
+  margin: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.delivery__information__container .payment__method .payment input {
+  margin: 6px;
+}
+.delivery__information__container .payment-header {
+  font-weight: 400;
 }/*# sourceMappingURL=CheckoutDetails.css.map */
