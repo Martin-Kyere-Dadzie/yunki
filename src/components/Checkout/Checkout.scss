@@ -65,13 +65,26 @@
 
 @media only screen and (max-width: 595px){
     .product-checkout-section{
+        // background-color: red;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         .product-checkout{
+            // background-color: greenyellow;
+            width: 90%;
+            .shoppingBasket__header{
+                width: 90%;
+                top: 10dvh;
+            }
             .products-contents{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
             }
+        }
+        .delivery__information{
+            width: 90%;
         }
     }
 }

@@ -3,6 +3,7 @@ import '../Footer/Footer.scss'
 import facebookIcon from '../../public/icons/icons8-facebook.svg';
 import instagramIcon from '../../public/icons/icons8-instagram.svg';
 import twitterIcon from '../../public/icons/icons8-twitter.svg';
+import toTopIcon from '../../public/icons/carousel-up-icon.svg';
 import whatsappIcon from '../../public/icons/icons8-whatsapp.svg';
 import footerLogo from '../../public/icons/yunki-black-logo.svg';
 import FooterLinks from './FooterLinks';
@@ -11,7 +12,10 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='footer-section'>
+      <div className='footer-section'>
+        <div className='top__btn'>
+            <img alt='img' src={toTopIcon}></img>
+        </div>
         <div className='social-media-section'>
             <div className='line left-line'></div>
             <div className='social-media-icons'>
