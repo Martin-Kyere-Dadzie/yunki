@@ -11,9 +11,14 @@ import { NavLink } from 'react-router-dom';
 // import { activeLinkStyle } from '../ActiveConfig/ActiveConfig';
 
 const Footer = () => {
+
+    const top = () => {
+        window.scrollTo(0, 0)
+    };
+
   return (
       <div className='footer-section'>
-        <div className='top__btn'>
+        <div className='top__btn' onClick={top}>
             <img alt='img' src={toTopIcon}></img>
         </div>
         <div className='social-media-section'>

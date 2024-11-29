@@ -50,10 +50,25 @@
 }
 
 @media only screen and (max-width: 595px) {
+  .product-checkout-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .product-checkout-section .product-checkout {
+    width: 90%;
+  }
+  .product-checkout-section .product-checkout .shoppingBasket__header {
+    width: 90%;
+    top: 10dvh;
+  }
   .product-checkout-section .product-checkout .products-contents {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+  }
+  .product-checkout-section .delivery__information {
+    width: 90%;
   }
 }/*# sourceMappingURL=Checkout.css.map */

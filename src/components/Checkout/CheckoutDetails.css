@@ -115,4 +115,20 @@
 }
 .delivery__information__container .payment-header {
   font-weight: 400;
+}
+
+@media only screen and (max-width: 595px) {
+  .delivery__information__container {
+    width: 100%;
+  }
+  .delivery__information__container .delivery__info {
+    width: 100%;
+    justify-content: center;
+  }
+  .delivery__information__container .location__details {
+    width: 100%;
+  }
+  .delivery__information__container .payment__method {
+    width: 100%;
+  }
 }/*# sourceMappingURL=CheckoutDetails.css.map */

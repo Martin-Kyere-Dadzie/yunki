@@ -12,4 +12,4 @@ const ProductPopUpDisplay = ({images, name,newPrice, oldPrice, title, colors, ra
   )
 }
 
-export default ProductPopUpDisplay
+export default ProductPopUpDisplay;

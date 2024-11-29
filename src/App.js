@@ -20,6 +20,7 @@ import Electronics from './components/Electronics/Electronics';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ScrollToTop />
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
