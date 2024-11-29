@@ -13,7 +13,7 @@ import womenImage from "../../public/images/portrait-smiley-woman-posing-studio.
 import menImage from "../../public/images/medium-shot-boy-posing-with-monochrome-outfit.jpg";
 import userMultiple from '../../public/icons/user-multiple.svg';
 import handsIcon from '../../public/icons/handshake-icon.svg';
-import bellIcon from '../../public/icons/bell-icon.svg';
+import helpIcon from '../../public/icons/help-icon.svg';
 import discountIcon from '../../public/icons/discount-icon.svg';
 //icons images
 import giftIcon from "../../public/icons/gift-ic0n.svg"
@@ -95,7 +95,7 @@ const Home = () => {
               <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems. <NavLink to='/' className='offer-link'>Apply for a Customer loyalty Discount</NavLink> today.</p>
             </div>
             <div className="offer-content">
-              <img className="offer-img" alt="img" src={bellIcon}></img>
+              <img className="offer-img" alt="img" src={helpIcon}></img>
               <h4 className="offer-header">24/7 customer support</h4>
               <p className="offer-text">
                 we ensure that assistance is available
