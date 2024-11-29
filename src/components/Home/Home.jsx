@@ -15,6 +15,7 @@ import userMultiple from '../../public/icons/user-multiple.svg';
 import handsIcon from '../../public/icons/handshake-icon.svg';
 import helpIcon from '../../public/icons/help-icon.svg';
 import discountIcon from '../../public/icons/discount-icon.svg';
+import quantityDiscount from '../../public/icons/quantity-discount.svg';
 //icons images
 import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
@@ -108,7 +109,7 @@ const Home = () => {
               </p>
             </div>
             <div className="offer-content">
-              <img className="offer-img" alt="img" src={handsIcon}></img>
+              <img className="offer-img" alt="img" src={quantityDiscount}></img>
               <h4 className="offer-header">Quantity Discount Sales</h4>
               <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
             </div>

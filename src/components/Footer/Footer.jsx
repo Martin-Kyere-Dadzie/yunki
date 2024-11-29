@@ -19,7 +19,10 @@ const Footer = () => {
   return (
       <div className='footer-section'>
         <div className='top__btn' onClick={top}>
-            <img alt='img' src={toTopIcon}></img>
+            <div className='top-content-holder'>
+                <h5>Back to Top</h5>
+                <img alt='img' src={toTopIcon}></img>
+            </div>
         </div>
         <div className='social-media-section'>
             <div className='line left-line'></div>
