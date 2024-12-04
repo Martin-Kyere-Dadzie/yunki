@@ -7,6 +7,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: "Roboto";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./Fonts/Satoshi-Regular.ttf") format("truetype");
 }
 /* body{
 

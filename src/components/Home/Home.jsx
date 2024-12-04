@@ -1,5 +1,7 @@
 import React from "react";
 import './Home.scss';
+//fonts
+import '../../Fonts/Roboto-Medium.ttf'
 // import HomeTopLinks from "../WhyUs/HomeTopLinks";
 import { NavLink } from "react-router-dom";
 //store images
@@ -15,7 +17,7 @@ import userMultiple from '../../public/icons/user-multiple.svg';
 import handsIcon from '../../public/icons/handshake-icon.svg';
 import helpIcon from '../../public/icons/help-icon.svg';
 import discountIcon from '../../public/icons/discount-icon.svg';
-import quantityDiscount from '../../public/icons/quantity-discount.svg';
+import HandShake from '../../public/icons/handshake-icon.svg';
 //icons images
 import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
@@ -109,12 +111,12 @@ const Home = () => {
               </p>
             </div>
             <div className="offer-content">
-              <img className="offer-img" alt="img" src={quantityDiscount}></img>
+              <img className="offer-img" alt="img" src={discountIcon}></img>
               <h4 className="offer-header">Quantity Discount Sales</h4>
               <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
             </div>
             <div className="offer-content">
-              <img className="offer-img" alt="img" src={discountIcon}></img>
+              <img className="offer-img" alt="img" src={HandShake}></img>
               <h4 className="offer-header">Flash Sales / One-Day Sales</h4>
               <p className="offer-text">Our enterprise customer receives dedicated amount management, special discount offers and better payment systems.</p>
             </div>
