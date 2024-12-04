@@ -1,4 +1,7 @@
 .footer-section {
+  position: relative;
+  height: 22dvh;
+  width: 100dvw;
   width: 100dvw;
   position: relative;
   display: flex;
@@ -9,6 +12,8 @@
 }
 .footer-section .top__btn {
   position: fixed;
+  bottom: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -79,12 +79,22 @@ return (
                 }
             </div>
             <div className='icons__section'>
-                <div className='heart-icon icon-container'>
+                <button className='heart-icon icon-container'>
                     <img className='icon-img heart-img' src={heartDarkIcon} alt='img'></img>
-                </div>
-                <div className='shopping-bag icon-container' onClick={addToTrends}>
+                </button>
+                <button className='shopping-bag icon-container' onClick={addToTrends}>
                     <img className='icon-img bag-img' alt='img' src={shoppingBagDarkIcon}></img>
-                </div>
+                </button>
+                <button 
+                    onClick={ () => { setProductPupUp(true); addToTrends()}}
+                    className='view icon-container'
+                    >
+                    <img 
+                        alt='img' 
+                        className='icon-img view-icon' 
+                        src={quickViewIcon}>
+                    </img>
+                </button>
             </div>
         </div>
         <div className='product-details' id='details'>
@@ -100,19 +110,6 @@ return (
                 <h5 className='old-price'>{oldPrice}</h5>
             </div>
         </div>
-        <button 
-            onClick={ () => { setProductPupUp(true); addToTrends()}}
-            className='bag-btn'
-        >
-         <img 
-            alt='img' 
-            className='bag-icon' 
-            src={quickViewIcon}
-            onMouseOver={e => (e.currentTarget.src= shoppingBagWhite)}
-            onMouseLeave={e => (e.currentTarget.src= shoppingBagDarkIcon)}>
-         </img>
-         <p>quick view</p>
-        </button>
         <div className='popup-holder'>
             <ProductPopUp trigger={productPupUp} setTrigger={setProductPupUp} id='product-popup'></ProductPopUp>
         </div>
