@@ -21,7 +21,7 @@ const Wishlist = () => {
         {
           trendItem.map(item => (
             <li key={item.id} className='main-product'>
-              
+              <WishListed />
             </li>
           ))
         }

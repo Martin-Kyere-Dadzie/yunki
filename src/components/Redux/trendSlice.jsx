@@ -5,6 +5,7 @@ const trendSlice = createSlice({
     name: 'topTrends',
     initialState: {
         itemList: [],
+        wishList: [],
         totalQuantity: 0,
         showTrend: false
     },
@@ -34,6 +35,31 @@ const trendSlice = createSlice({
                     ratings: newItem.ratings,
                 });   
                 state.totalQuantity++;
+            }
+        },
+        addToWishList : (state, action) => {
+            const newWishList = action.payload;
+            //Check if product already exist
+            const pickedItem = state.wishList.find((item) => item.id === newWishList.id)
+
+            if (pickedItem) {
+                prompt('product is already in your wishlist')
+            } else {
+                state.wishList.push({
+                    id: newWishList.id,
+                    oldPrice: newWishList.oldPrice,
+                    price: newWishList.price,
+                    quantity: 1,
+                    productName: newWishList.name,
+                    images: newWishList.images,
+                    name: newWishList.name,
+                    totalPrice: newWishList.price,
+                    title: newWishList.title,
+                    colors: newWishList.color,
+                    discount: newWishList.discount,
+                    newProduct: newWishList.newProduct,
+                    ratings: newWishList.ratings,
+                }); 
             }
         },
         removeFromBag : (state, action) => {
