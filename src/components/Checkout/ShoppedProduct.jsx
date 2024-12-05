@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Trends/Trends.scss'
 import './ShoppedProduct.scss'
 import { trendActions } from '../Redux/trendSlice'
@@ -7,14 +7,18 @@ import starFill from '../../public/icons/star-fill.svg';
 import starHalve from '../../public/icons/star-outline-half.svg';
 import starOutline from '../../public/icons/star-outline.svg';
 import heartDarkIcon from '../../public/icons/heart-black-icon.svg';
-import closeCircleBlack from '../../public/icons/close-circle-black.svg';
+import comments from '../../public/icons/comments.svg';
+import quickViewIcon from '../../public/icons/quick-view-icon.svg'
 import closeCircleRed from '../../public/icons/close-circle-red.svg';
 import incrementIcon from '../../public/icons/carousel-up-icon.svg';
 import decrementIcon from '../../public/icons/carousel-down-icon.svg';
+import ProductPopUp from '../PopUps/ProductPopUp'
 // import Ratings from '../Ratings/Ratings';
 // import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 
 const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, ratings, id, discount, newProduct, price, quantity}) => {
+
+    const [productPupUp, setProductPupUp] = useState(false);
 
     const dispatch = useDispatch()
     const incrementBagItem = () => {
@@ -94,6 +98,19 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
                 <div className='shopping-bag icon-container'>
                     <img className='icon-img bag-img' alt='img' src={heartDarkIcon}></img>
                 </div>
+                <div className='comments icon-container'>
+                    <img className='icon-img bag-img' alt='img' src={comments}></img>
+                </div>
+                <button 
+                    onClick={ () => setProductPupUp(true)}
+                    className='view icon-container'
+                    >
+                    <img 
+                        alt='img' 
+                        className='icon-img view-icon' 
+                        src={quickViewIcon}>
+                    </img>
+                </button>
             </div>
       </div>
       <div className='product-details checkout__details' id='details'>
@@ -115,6 +132,9 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
                 alt='img' src={closeCircleRed}>
             </img>
         </button>
+        <div className='popup-holder'>
+            <ProductPopUp trigger={productPupUp} setTrigger={setProductPupUp} id='product-popup'></ProductPopUp>
+        </div>
     </div>
   )
 }

@@ -8,7 +8,7 @@ import ProductPopUp from '../PopUps/ProductPopUp';
 //icons image
 import heartDarkIcon from '../../public/icons/heart-black-icon.svg';
 import shoppingBagDarkIcon from '../../public/icons/shopping-bag-black-icon.svg';
-import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
+import comments from '../../public/icons/comments.svg';
 import quickViewIcon from '../../public/icons/quick-view-icon.svg'
 import { trendActions } from '../Redux/trendSlice';
 // import Ratings from '../Ratings/Ratings';
@@ -52,6 +52,12 @@ const Trends = ({images, name, newPrice, oldPrice, price, title, colors, ratings
         }))
     }
 
+    const addToWish = () => {
+        dispatch(trendActions.addToTrends({
+            name
+        }))
+    }
+
 return (
     <div className='trends__section'>
         <div className='product-image'>
@@ -79,14 +85,17 @@ return (
                 }
             </div>
             <div className='icons__section'>
-                <button className='heart-icon icon-container'>
+                <button className='heart-icon icon-container' onClick={addToWish}>
                     <img className='icon-img heart-img' src={heartDarkIcon} alt='img'></img>
                 </button>
                 <button className='shopping-bag icon-container' onClick={addToTrends}>
                     <img className='icon-img bag-img' alt='img' src={shoppingBagDarkIcon}></img>
                 </button>
+                <button className='comments icon-container'>
+                    <img className='icon-img bag-img' alt='img' src={comments}></img>
+                </button>
                 <button 
-                    onClick={ () => { setProductPupUp(true); addToTrends()}}
+                    onClick={ () => setProductPupUp(true)}
                     className='view icon-container'
                     >
                     <img 

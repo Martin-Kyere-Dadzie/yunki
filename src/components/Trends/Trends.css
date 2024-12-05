@@ -118,6 +118,7 @@
 
 .trends__section .popup-holder {
   width: 100vw;
+  z-index: 99999999;
 }
 
 .trends__section:hover {

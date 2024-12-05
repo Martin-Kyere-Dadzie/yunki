@@ -133,6 +133,7 @@
 .trends__section .popup-holder{
     // background-color: #11ACD3;
     width: 100vw;
+    z-index: 99999999;
 }
 .trends__section:hover{
     box-shadow: 0px .3px 5px 0px var($font-color)
