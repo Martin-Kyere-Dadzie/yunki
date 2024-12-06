@@ -18,6 +18,7 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
 
     const quantity = useSelector(state => state.topTrends.totalQuantity)
+    const wishQuantity = useSelector(state => state.wishListed.totalQuantity)
 
     const [isOpen, setIsOpen] = useState(false);
     const closeMenu = () => setIsOpen(false);
@@ -87,7 +88,7 @@ const Navbar = () => {
                         ></img>
                         <h5 className="icon-text"><span>Like</span>Wishlist</h5>
                     </div>
-                    <div className="checkout__indicator" id="count-indicator">0</div>
+                    <div className="checkout__indicator" id="count-indicator">{wishQuantity}</div>
                 </NavLink>
             </div>
         </div>

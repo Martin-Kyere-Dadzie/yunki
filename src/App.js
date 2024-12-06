@@ -25,7 +25,10 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
 
   const trendItems = useSelector(state => state.topTrends.itemList)
-    console.log(trendItems);
+  console.log(trendItems);
+  const wishItems = useSelector(state => state.wishListed.wishlist)
+  console.log(wishItems);
+  
 
   return (
     <BrowserRouter>

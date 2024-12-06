@@ -1,27 +1,41 @@
 import React from 'react';
 import './Wishlist.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { trendActions } from '../Redux/trendSlice';
-import WishListed from './WishListed'
+import { wishActions } from '../Redux/wishSlice';
+import WishedProduct from './WishedProduct'
 
 const Wishlist = () => {
 
   const dispatch = useDispatch();
 
-  const clearWishlist = () => {
-    dispatch(trendActions.clearBag())
-  };
+  // const clearWishlist = () => {
+  //   dispatch(wishActions.clearBag())
+  // };
 
-  const trendItem = useSelector(state => state.topTrends.itemList);
+  const wishItem = useSelector(state => state.wishListed.wishlist);
 
   return (
     <div className='wishlist__container'>
-      <div className='trend__summery'></div>
+      <div className='trend__summery'>Wish Summery</div>
       <ul className='wishlist__contents'>
         {
-          trendItem.map(item => (
+          wishItem.map(item => (
             <li key={item.id} className='main-product'>
-              <WishListed />
+              <WishedProduct
+                className='wished-product'
+                id={item.id}
+                images={item.images}
+                name={item.name}
+                oldPrice={item.oldPrice}
+                newPrice={item.newPrice}
+                title={item.title}
+                colors={item.colors}
+                ratings={item.ratings}
+                discount={item.discount}
+                newProduct={item.newProduct}
+                quantity={item.quantity}
+                price={item.price}
+              />
             </li>
           ))
         }

@@ -11,6 +11,7 @@ import shoppingBagDarkIcon from '../../public/icons/shopping-bag-black-icon.svg'
 import comments from '../../public/icons/comments.svg';
 import quickViewIcon from '../../public/icons/quick-view-icon.svg'
 import { trendActions } from '../Redux/trendSlice';
+import { wishActions } from '../Redux/wishSlice';
 // import Ratings from '../Ratings/Ratings';
 // import { UseDispatch, useSelector } from 'react-redux';
 
@@ -53,8 +54,19 @@ const Trends = ({images, name, newPrice, oldPrice, price, title, colors, ratings
     }
 
     const addToWish = () => {
-        dispatch(trendActions.addToTrends({
-            name
+        dispatch(wishActions.addToWish({
+            name,
+            name,
+            title,
+            colors,
+            newPrice,
+            oldPrice,
+            price,
+            id,
+            ratings,
+            discount,
+            newProduct,
+            quantity
         }))
     }
 
