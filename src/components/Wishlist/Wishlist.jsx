@@ -2,7 +2,7 @@ import React from 'react';
 import './Wishlist.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { wishActions } from '../Redux/wishSlice';
-import WishedProduct from './WishedProduct'
+import WishToBuy from './WishToBuy'
 
 const Wishlist = () => {
 
@@ -21,7 +21,7 @@ const Wishlist = () => {
         {
           wishItem.map(item => (
             <li key={item.id} className='main-product'>
-              <WishedProduct
+              <WishToBuy
                 className='wished-product'
                 id={item.id}
                 images={item.images}
@@ -34,7 +34,7 @@ const Wishlist = () => {
                 discount={item.discount}
                 newProduct={item.newProduct}
                 quantity={item.quantity}
-                price={item.price}
+                price={item.totalPrice}
               />
             </li>
           ))

@@ -18,7 +18,7 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
 
     const quantity = useSelector(state => state.topTrends.totalQuantity)
-    const wishQuantity = useSelector(state => state.wishListed.totalQuantity)
+    const wishQuantity = useSelector(state => state.wishListed.numOfWish)
 
     const [isOpen, setIsOpen] = useState(false);
     const closeMenu = () => setIsOpen(false);

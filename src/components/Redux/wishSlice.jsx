@@ -5,43 +5,49 @@ const wishSlice = createSlice({
     name: 'wishListed',
     initialState: {
         wishlist: [],
-        totalQuantity: 0,
+        numOfWish: 0,
         showWish: false
     },
     reducers: {
         addToWish : (state, action) => {
-            const newItem = action.payload;
+            const newWish = action.payload;
 
-            const existingItem = state.wishlist.find((item) => item.id === newItem.id);
-            console.log(existingItem);
+            const existingWish = state.wishlist.find((item) => item.id === newWish.id);
+            console.log(existingWish);
             
 
-            if (existingItem) {
-                prompt('product already exist in your wishlist')
+            if (existingWish) {
+                prompt('product already exist in your wishlist');
             } else {
                 state.wishlist.push({
-                    id: newItem.id,
-                    oldPrice: newItem.oldPrice,
-                    price: newItem.price,
+                    id: newWish.id,
+                    oldPrice: newWish.oldPrice,
+                    price: newWish.price,
                     quantity: 1,
-                    productName: newItem.name,
-                    images: newItem.images,
-                    name: newItem.name,
-                    totalPrice: newItem.price,
-                    title: newItem.title,
-                    colors: newItem.color,
-                    discount: newItem.discount,
-                    newProduct: newItem.newProduct,
-                    ratings: newItem.ratings,
+                    productName: newWish.name,
+                    images: newWish.images,
+                    name: newWish.name,
+                    totalPrice: newWish.price,
+                    title: newWish.title,
+                    colors: newWish.color,
+                    discount: newWish.discount,
+                    newProduct: newWish.newProduct,
+                    ratings: newWish.ratings,
                 })
-                state.totalQuantity++;
+                state.numOfWish++;
             }
         },
-        setShowWish : (state) => {
-            state.showWish = true;
-        }
+        deleteFromWish : (state, action) => {
+            const id = action.payload;
+
+            state.wishlist = state.wishlist.filter(item => item.id !== id);
+            state.numOfWish --;
+        },
+        // setShowWish : (state) => {
+        //     state.showWish = true;
+        // }
     }
 })
 
 export const wishActions = wishSlice.actions;
-export default wishSlice;
+export default wishSlice; 

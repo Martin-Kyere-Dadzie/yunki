@@ -13,6 +13,7 @@ import closeCircleRed from '../../public/icons/close-circle-red.svg';
 import incrementIcon from '../../public/icons/carousel-up-icon.svg';
 import decrementIcon from '../../public/icons/carousel-down-icon.svg';
 import ProductPopUp from '../PopUps/ProductPopUp'
+import { wishActions } from '../Redux/wishSlice'
 // import Ratings from '../Ratings/Ratings';
 // import shoppingBagWhite from '../../public/icons/shopping-bag-icon.svg';
 
@@ -31,6 +32,23 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
             images,
             title,
             colors,
+            ratings,
+            discount,
+            newProduct,
+            quantity
+        }))
+    }
+    
+    const addToWish = () => {
+        dispatch(wishActions.addToWish({
+            images,
+            name,
+            title,
+            colors,
+            newPrice,
+            oldPrice,
+            price,
+            id,
             ratings,
             discount,
             newProduct,
@@ -87,20 +105,20 @@ const ShoppedProduct = ({images, name, newPrice, oldPrice, title, colors, rating
             </div>
             <div className='icons__section'>
                 <div className='increment-decrement-section'>
-                    <div className='increment-section'>
+                    <button className='increment-section'>
                         <img alt='img' src={incrementIcon} onClick={incrementBagItem}></img>
-                    </div>
+                    </button>
                     <div className='product-count'>{quantity}</div>
-                    <div className='decrement-section'>
+                    <button className='decrement-section'>
                         <img alt='img' src={decrementIcon} onClick={decrementBagItem}></img>
-                    </div>
+                    </button>
                 </div>
-                <div className='shopping-bag icon-container'>
+                <button className='shopping-bag icon-container' onClick={addToWish}>
                     <img className='icon-img bag-img' alt='img' src={heartDarkIcon}></img>
-                </div>
-                <div className='comments icon-container'>
+                </button>
+                <button className='comments icon-container'>
                     <img className='icon-img bag-img' alt='img' src={comments}></img>
-                </div>
+                </button>
                 <button 
                     onClick={ () => setProductPupUp(true)}
                     className='view icon-container'

@@ -1,1 +1,13 @@
-/*# sourceMappingURL=Wishlist.css.map */
+.wishlist__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100dvw;
+}
+.wishlist__container .wishlist__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=Wishlist.css.map */

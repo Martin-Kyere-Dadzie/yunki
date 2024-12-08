@@ -55,7 +55,7 @@ const Trends = ({images, name, newPrice, oldPrice, price, title, colors, ratings
 
     const addToWish = () => {
         dispatch(wishActions.addToWish({
-            name,
+            images,
             name,
             title,
             colors,
