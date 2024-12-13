@@ -1,0 +1,34 @@
+@import '../Sass/config';
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+.wish__total__container{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: .1px solid #dcdcdc;
+    .holder{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .text{
+            position: absolute;
+            left: 0;
+            margin: 10px;
+            font-weight: lighter;
+        }
+        .quantity{
+            position: absolute;
+            right: 0;
+            margin: 10px;
+        }
+    }
+}

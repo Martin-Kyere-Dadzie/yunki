@@ -1,0 +1,26 @@
+.wish__total__container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.1px solid #dcdcdc;
+}
+.wish__total__container .holder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wish__total__container .holder .text {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+  font-weight: lighter;
+}
+.wish__total__container .holder .quantity {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+}/*# sourceMappingURL=WishSubtotal.css.map */

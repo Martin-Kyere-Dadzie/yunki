@@ -8,16 +8,50 @@
 };
 
 .wishlist__container{
-    // background-color: red;
+    background-color: #ededed;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100dvw;
+    .trend__summery{
+        // background-color: $font-color;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 12dvh;
+        z-index: 99999;
+        width: 50%;
+        height:18dvh;
+    }
     .wishlist__contents{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .wishlist__container{
+        .trend__summery{
+            width: 80%;
+            height: 12dvh;
+        }
+        .wishlist__contents{
+            // background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .main-product{
+                display: flex;
+                width: 75%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 }

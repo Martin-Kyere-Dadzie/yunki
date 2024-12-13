@@ -3,6 +3,7 @@ import './Wishlist.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { wishActions } from '../Redux/wishSlice';
 import WishToBuy from './WishToBuy'
+import WishSubtotal from './WishSubtotal';
 
 const Wishlist = () => {
 
@@ -16,7 +17,10 @@ const Wishlist = () => {
 
   return (
     <div className='wishlist__container'>
-      <div className='trend__summery'>Wish Summery</div>
+      <div className='trend__summery'>
+        <h5>Wish Summery</h5>
+        <WishSubtotal/>
+      </div>
       <ul className='wishlist__contents'>
         {
           wishItem.map(item => (

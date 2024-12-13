@@ -12,6 +12,7 @@ import comments from '../../public/icons/comments.svg';
 import quickViewIcon from '../../public/icons/quick-view-icon.svg'
 import { trendActions } from '../Redux/trendSlice';
 import { wishActions } from '../Redux/wishSlice';
+import LoginPopUp from '../PopUps/LoginPopUp';
 // import Ratings from '../Ratings/Ratings';
 // import { UseDispatch, useSelector } from 'react-redux';
 
@@ -130,6 +131,9 @@ return (
                 <h5 className='new-price'>{price}</h5>
                 <h5 className='old-price'>{oldPrice}</h5>
             </div>
+        </div>
+        <div className='login__popUp'>
+            <LoginPopUp trigger={productPupUp} setTrigger={setProductPupUp}></LoginPopUp>
         </div>
         <div className='popup-holder'>
             <ProductPopUp trigger={productPupUp} setTrigger={setProductPupUp} id='product-popup'></ProductPopUp>

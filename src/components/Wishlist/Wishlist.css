@@ -1,13 +1,44 @@
 .wishlist__container {
+  background-color: #ededed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100dvw;
 }
+.wishlist__container .trend__summery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 12dvh;
+  z-index: 99999;
+  width: 50%;
+  height: 18dvh;
+}
 .wishlist__container .wishlist__contents {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 595px) {
+  .wishlist__container .trend__summery {
+    width: 80%;
+    height: 12dvh;
+  }
+  .wishlist__container .wishlist__contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wishlist__container .wishlist__contents .main-product {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Wishlist.css.map */
