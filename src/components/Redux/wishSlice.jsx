@@ -17,7 +17,8 @@ const wishSlice = createSlice({
             
 
             if (existingWish) {
-                prompt ('Product already exist in your wishlist')
+                const errMessage = 'Product already exist in your wishlist';
+                return errMessage;
                 // prompt('product already exist in your wishlist');
             } else {
                 state.wishlist.push({

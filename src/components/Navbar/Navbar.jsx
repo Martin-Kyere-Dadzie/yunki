@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './Navbar.scss';
 import yunkiLogoIcon from '../../public/icons/yunki-black-logo.svg';
 import searchIcon from '../../public/icons/search-white-icon.svg';
@@ -13,6 +13,7 @@ import { NavLink } from "react-router-dom";
 import navLinks from "./NavLinks";
 import { activeLinkStyle } from "../ActiveConfig/ActiveConfig";
 import { useSelector } from "react-redux";
+import LoginPopUp from "../PopUps/LoginPopUp";
 
 
 const Navbar = () => {

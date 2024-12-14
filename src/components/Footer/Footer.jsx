@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../Footer/Footer.scss'
 import facebookIcon from '../../public/icons/icons8-facebook.svg';
 import instagramIcon from '../../public/icons/icons8-instagram.svg';
@@ -8,10 +8,10 @@ import whatsappIcon from '../../public/icons/icons8-whatsapp.svg';
 import footerLogo from '../../public/icons/yunki-black-logo.svg';
 import FooterLinks from './FooterLinks';
 import { NavLink } from 'react-router-dom';
+import LoginPopUp from '../PopUps/LoginPopUp';
 // import { activeLinkStyle } from '../ActiveConfig/ActiveConfig';
 
 const Footer = () => {
-
     const top = () => {
         window.scrollTo(0, 0)
     };

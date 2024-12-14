@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Home.scss';
 //fonts
 import '../../Fonts/Roboto-Medium.ttf'
@@ -22,13 +22,26 @@ import flameIcon from '../../public/icons/flame-icon.svg';
 import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
 import Trends from "../Trends/Trends";
+import LoginPopUp from "../PopUps/LoginPopUp";
 // import Marquee from "react-fast-marquee";
 
 //store images end
 
 const Home = () => {
+
+  const [signInPupUp, setSignInPopUp] = useState(false)
+
+  useEffect(() => {
+      setTimeout(() => {
+          setSignInPopUp(true)
+      }, 6000)
+  }, [])
+  
   return (
     <div className="home-section">
+      <div className='login__popUp'>
+        <LoginPopUp trigger={signInPupUp} setTrigger={setSignInPopUp}></LoginPopUp>
+      </div>
       <div className="stores-shortcut__links">
         <NavLink to="/pets"  className="store-shortcut pets" id="pet-store">
           <div className="imageText-container">

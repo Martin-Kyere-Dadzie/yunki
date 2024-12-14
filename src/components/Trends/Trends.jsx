@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import starFill from '../../public/icons/star-fill.svg';
 import starHalve from '../../public/icons/star-outline-half.svg';
 import starOutline from '../../public/icons/star-outline.svg';
@@ -19,7 +19,6 @@ import LoginPopUp from '../PopUps/LoginPopUp';
 const Trends = ({images, name, newPrice, oldPrice, price, title, colors, ratings, id, discount, newProduct, quantity}) => {
 
     const [productPupUp, setProductPupUp] = useState(false);
-
     // product ratings
 
     const productRates = Array.from({length: 5}, (elem, index) => {
@@ -131,9 +130,6 @@ return (
                 <h5 className='new-price'>{price}</h5>
                 <h5 className='old-price'>{oldPrice}</h5>
             </div>
-        </div>
-        <div className='login__popUp'>
-            <LoginPopUp trigger={productPupUp} setTrigger={setProductPupUp}></LoginPopUp>
         </div>
         <div className='popup-holder'>
             <ProductPopUp trigger={productPupUp} setTrigger={setProductPupUp} id='product-popup'></ProductPopUp>
