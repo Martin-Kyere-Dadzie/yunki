@@ -1,0 +1,65 @@
+@import './Sass/config';
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.dealOfTheDay__container{
+    position: relative;
+    width: 95dvw;
+    height: 70dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $yunki-color;
+    color: white;
+    .deal__img, .deal__text{
+        width: 49%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        // background-color: $yellow-dark;
+    }
+    .deal__img{
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .deal__item{
+            width: 90%;
+        }
+    }
+    .deal__text{
+        height: 30%;
+        position: absolute;
+        right: 0;
+        top: 12%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .time__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .time__countdown{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .time__holder{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 5px;
+            }
+        }
+    }
+}

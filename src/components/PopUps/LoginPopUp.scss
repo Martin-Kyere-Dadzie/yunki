@@ -10,9 +10,11 @@
     // background-color: $yellow-dark;
     display: flex;
     flex-direction: column;
+    top: 0;
+    height: 100dvh;
 }
 .login-close{
-    bottom: 5%;
+    // bottom: 1%;
     width: 20%;
     height: 60%;
     display: flex;

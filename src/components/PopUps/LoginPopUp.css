@@ -1,10 +1,11 @@
 .login__popup {
   display: flex;
   flex-direction: column;
+  top: 0;
+  height: 100dvh;
 }
 
 .login-close {
-  bottom: 5%;
   width: 20%;
   height: 60%;
   display: flex;

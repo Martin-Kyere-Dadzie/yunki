@@ -1,0 +1,55 @@
+.dealOfTheDay__container {
+  position: relative;
+  width: 95dvw;
+  height: 70dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3F94A6;
+  color: white;
+}
+.dealOfTheDay__container .deal__img, .dealOfTheDay__container .deal__text {
+  width: 49%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.dealOfTheDay__container .deal__img {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dealOfTheDay__container .deal__img .deal__item {
+  width: 90%;
+}
+.dealOfTheDay__container .deal__text {
+  height: 30%;
+  position: absolute;
+  right: 0;
+  top: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.dealOfTheDay__container .time__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.dealOfTheDay__container .time__section .time__countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dealOfTheDay__container .time__section .time__countdown .time__holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}/*# sourceMappingURL=DealOfTheDay.css.map */

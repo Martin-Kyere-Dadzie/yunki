@@ -63,12 +63,17 @@
             align-items: center;
             justify-content: space-between;
             .icon-container{
-                width: 23px;
-                height: 23px;
-                padding: 2px;
-                background-color: white;
+                width: 28px;
+                height: 28px;
+                border-radius: 20px;
+                padding: 5px;
+                // background-color: rgb(151, 15, 15);
                 border: none;
                 margin: 10px;
+                cursor: pointer;
+            }
+            .icon-container:active{
+                background-color: #83d3e2,;
             }
             .heart-icon{
                 margin-top: 0;

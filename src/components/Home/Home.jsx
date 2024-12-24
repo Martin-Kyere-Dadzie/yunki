@@ -23,6 +23,7 @@ import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
 import Trends from "../Trends/Trends";
 import LoginPopUp from "../PopUps/LoginPopUp";
+import DealOfTheDay from "../DealOfTheDay";
 // import Marquee from "react-fast-marquee";
 
 //store images end
@@ -149,6 +150,9 @@ const Home = () => {
             })
           }
         </div>
+      </div>
+      <div className="deal__section">
+          <DealOfTheDay/>
       </div>
     </div>
   )
