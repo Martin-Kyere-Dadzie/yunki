@@ -11,7 +11,7 @@ const DealOfTheDay = () => {
         <div className='deal__text'>
             <h5 className='deal__header'>Deal Of The Day!</h5>
             <h4 className='product__name'>Electronic and gas cooking stove for your kitchen</h4>
-            <p className='product__title'>affordable electronic stove with 50% discount available for your kitchen, place your order now! </p>
+            <p className='product__title'>loremIrure in veniam nostrud velit voluptate sint aute consequat esse fugiat ad irure. Aliqua incididunt sit laborum adipisicing. Velit ullamco sit aute excepteur qui aliquip sint sit ea tempor anim. Sunt irure voluptate aliqua dolor officia ut aliqua do do.</p>
             <div className='time__section'>
                 <div className='time__header'>HURRY UP! OFFER ENDS IN</div>
                 <div className='time__countdown'>
