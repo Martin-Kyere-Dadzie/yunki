@@ -32,7 +32,7 @@
   width: 100%;
 }
 .pets__banner__section .big__banner .banner__item h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   text-align: center;
   width: 90%;
   color: white;
@@ -49,7 +49,12 @@
 .pets__banner__section .big__banner .banner__item button:active {
   background-color: #a3e7f4;
 }
+.pets__banner__section .big__banner .pets__banner__img {
+  margin-left: 15%;
+}
 .pets__banner__section .big__banner .pets__banner__text {
+  margin-right: 15%;
+  width: 68%;
   flex-direction: column;
   height: 65%;
 }
@@ -72,6 +77,13 @@
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0;
+}
+.pets__banner__section .link__holder .link img {
+  width: 50%;
+}
+.pets__banner__section .link__holder .link h2 {
+  color: white;
+  font-size: 2rem;
 }
 .pets__banner__section .link__holder .one {
   background-image: url(../../public/images/abstract-textured-backgound.jpg);
