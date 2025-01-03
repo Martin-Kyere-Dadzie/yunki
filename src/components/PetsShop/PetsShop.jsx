@@ -1,15 +1,24 @@
 import React from 'react';
 import './PetsShop.scss';
-import petsBannerImage from '../../public/images/hamster-basket-isolated-white-table_2829-19759.png'
+import petsBannerImage from '../../public/images/hamster-basket-isolated-white-table_2829-19759.png';
 import catImage from '../../public/images/bengal-cat-studio_87557-3561.png';
-import dogImage from '../../public/images/young-jack-russel-terrier-toys_87557-7792.png'
-import birdImage from '../../public/images/ara-ararauna-studio_87557-2719.png'
+import dogImage from '../../public/images/young-jack-russel-terrier-toys_87557-7792.png';
+import birdImage from '../../public/images/ara-ararauna-studio_87557-2719.png';
+import angleLeft from '../../public/icons/carousel-left.svg';
+import angleRight from '../../public/icons/carousel-right.svg';
+import { PetShopSliderData } from './PetShopSliderData';
 
 const PetsShop = () => {
   return (
     <div className='pets__banner__section'>
       <div className='big__banner'>
         <div className='slider__holder'>
+          <div className='carousel__angle__holder'>
+            <div className='carousel__container'>
+              <img alt='img' src={angleLeft}></img>
+              <img alt='img' src={angleRight}></img>
+            </div>
+          </div>
           <div className='pets__banner__img banner__item'>
             <img alt='img' src={petsBannerImage}></img>
           </div>

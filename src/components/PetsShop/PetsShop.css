@@ -21,6 +21,38 @@
   align-items: center;
   justify-content: space-between;
 }
+.pets__banner__section .big__banner .slider__holder .carousel__angle__holder {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pets__banner__section .big__banner .slider__holder .carousel__angle__holder .carousel__container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pets__banner__section .big__banner .slider__holder .carousel__angle__holder .carousel__container img {
+  width: 3%;
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.584);
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0px 0.3px 4px 0px var(#a3e7f4);
+}
+.pets__banner__section .big__banner .slider__holder .carousel__angle__holder .carousel__container img:hover {
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+.pets__banner__section .big__banner .slider__holder .carousel__angle__holder .carousel__container img:active {
+  background-color: #a3e7f4;
+}
 .pets__banner__section .big__banner .banner__item {
   width: 48%;
   height: 90%;
