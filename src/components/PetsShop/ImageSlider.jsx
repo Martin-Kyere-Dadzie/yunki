@@ -21,6 +21,10 @@ const next = () => {
     setCurrentSlide(newIndex)
 }
 
+const manualSlide = slideIndex => {
+    setCurrentSlide(slideIndex)
+}
+
 const sliderHolder = {
     width: '100%',
     height: '100%',
@@ -48,8 +52,8 @@ const mainSlider = {
         <div className='radioBtn__holder'>
             {
                 slides.map((slide, slideIndex) => (
-                    <div key={slideIndex} >
-                        <input type='radio'></input>
+                    <div className='manualSlide__selector'>
+                        <input type='radio' key={slideIndex}  onClick={() => manualSlide(slideIndex)}></input>
                     </div>
                 ))
             }

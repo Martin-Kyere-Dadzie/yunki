@@ -31,21 +31,23 @@ const PetsShop = ({slides}) => {
                   )
                 })
               }
-            <button className='banner__btn'>shop now</button>
           </div>
         </div>
         <div className='link__holder'>
           <div className='link one'>
-            <img alt='img' src={dogImage}></img>
             <h2>Save Big, Make Pet Giggle And Wiggle!</h2>
+            <button className='banner__btn'>shop now</button>
+            <img alt='img' src={dogImage}></img>
           </div>
           <div className='link two'>
-            <img alt='img' src={catImage}></img>
             <h2>Satisfy Your Cat with Quality Cat Foods</h2>
+            <button className='banner__btn'>shop now</button>
+            <img alt='img' src={catImage}></img>
           </div>
           <div className='link three'>
-            <img alt='img' src={birdImage}></img>
             <h2>Enjoy Discounts On Nutritious Bird Foods</h2>
+            <button className='banner__btn'>shop now</button>
+            <img alt='img' src={birdImage}></img>
           </div>
         </div>
       </div>
