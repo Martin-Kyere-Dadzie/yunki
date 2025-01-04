@@ -1,0 +1,21 @@
+@import '../Sass/config';
+
+@mixin flexBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+.radioBtn__holder{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    width: 8%;
+    // height: 10dvh;
+    // background-color: $yellow-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}

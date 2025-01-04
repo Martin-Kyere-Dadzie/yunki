@@ -4,44 +4,24 @@ import petsBannerImage from '../../public/images/hamster-basket-isolated-white-t
 import catImage from '../../public/images/bengal-cat-studio_87557-3561.png';
 import dogImage from '../../public/images/young-jack-russel-terrier-toys_87557-7792.png';
 import birdImage from '../../public/images/ara-ararauna-studio_87557-2719.png';
-import angleLeft from '../../public/icons/carousel-left.svg';
-import angleRight from '../../public/icons/carousel-right.svg';
 import { PetShopSliderData } from './PetShopSliderData';
+import ImageSlider from './ImageSlider';
 
-const PetsShop = () => {
-
-  const [curr, setCurr] = useState(0);
-
-  const next = () => {
-    setCurr((curr) => (
-      curr === 0 ? PetShopSliderData.length -1 : curr - 1
-    ))
-  }
-
-  const prev = () => {
-    setCurr((curr) => (
-      curr === PetShopSliderData.length -1 ? 0 : curr + 1
-    ))
-  }
+const PetsShop = ({slides}) => {
 
   return (
     <div className='pets__banner__section'>
       <div className='big__banner'>
         <div className='slider__holder'>
-          <div className='carousel__angle__holder'>
-            <div className='carousel__container'>
-              <img alt='img' src={angleLeft} onClick={prev}></img>
-              <img alt='img' src={angleRight} onClick={next}></img>
-            </div>
-          </div>
           <div className='pets__banner__img banner__item'>
             {
-              PetShopSliderData.map((images) => {
-                return(
-                  <img alt='img' src={images.image}></img>
-                )
-              })
+              // PetShopSliderData.map((images) => {
+              //   return(
+              //     <img alt='img' src={images.image}></img>
+              //   )
+              // })
             }
+            <ImageSlider slides = {PetShopSliderData}/>
           </div>
           <div className='pets__banner__text banner__item'>
           {
