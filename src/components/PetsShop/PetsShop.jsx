@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './PetsShop.scss';
 import petsBannerImage from '../../public/images/hamster-basket-isolated-white-table_2829-19759.png';
 import catImage from '../../public/images/bengal-cat-studio_87557-3561.png';
@@ -9,21 +9,48 @@ import angleRight from '../../public/icons/carousel-right.svg';
 import { PetShopSliderData } from './PetShopSliderData';
 
 const PetsShop = () => {
+
+  const [curr, setCurr] = useState(0);
+
+  const next = () => {
+    setCurr((curr) => (
+      curr === 0 ? PetShopSliderData.length -1 : curr - 1
+    ))
+  }
+
+  const prev = () => {
+    setCurr((curr) => (
+      curr === PetShopSliderData.length -1 ? 0 : curr + 1
+    ))
+  }
+
   return (
     <div className='pets__banner__section'>
       <div className='big__banner'>
         <div className='slider__holder'>
           <div className='carousel__angle__holder'>
             <div className='carousel__container'>
-              <img alt='img' src={angleLeft}></img>
-              <img alt='img' src={angleRight}></img>
+              <img alt='img' src={angleLeft} onClick={prev}></img>
+              <img alt='img' src={angleRight} onClick={next}></img>
             </div>
           </div>
           <div className='pets__banner__img banner__item'>
-            <img alt='img' src={petsBannerImage}></img>
+            {
+              PetShopSliderData.map((images) => {
+                return(
+                  <img alt='img' src={images.image}></img>
+                )
+              })
+            }
           </div>
           <div className='pets__banner__text banner__item'>
-            <h2>Proident in cupidatat incididunt elit aute consectetur cupidatat ea veniam irure .</h2>
+          {
+            PetShopSliderData.map((texts) => {
+              return(
+                    <h2 className='carousel__title'>{texts.title}</h2>
+                  )
+                })
+              }
             <button className='banner__btn'>shop now</button>
           </div>
         </div>

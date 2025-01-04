@@ -35,6 +35,8 @@
                 align-items: center;
                 justify-content: center;
                 .carousel__container{
+                    transition: 2s ease-in-out;
+                    transform: translateX(100);
                     // background-color: $sky-blue;
                     width: 90%;
                     display: flex;
@@ -63,6 +65,7 @@
             }
         }
         .banner__item{
+            overflow: hidden;
             width: 48%;
             height: 90%;
             display: flex;
@@ -71,13 +74,9 @@
             img{
                 width: 100%;
             }
-            h2{
-                font-size: 2.6rem;
-                text-align: center;
-                width: 90%;
-                color: white;
-            }
             button{
+                position: absolute;
+                bottom: 37%;
                 width: 150px;
                 height: 45px;
                 font-size: 1rem;
@@ -95,9 +94,21 @@
         }
         .pets__banner__text{
             margin-right: 15%;
-            width: 68%;
-            flex-direction: column;
+            margin-bottom: 40px;
+            // width: 68%;
             height: 65%;
+            // background-color: $sky-blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            h2{
+                // background-color: $yellow-dark;
+                font-size: 2.6rem;
+                text-align: center;
+                // width: 100%;
+                color: white;
+            }
         }
     }
     .link__holder{
@@ -124,7 +135,7 @@
             }
             h2{
                 color: white;
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
         .one{
