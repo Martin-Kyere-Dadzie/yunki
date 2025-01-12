@@ -29,6 +29,7 @@ const trendSlice = createSlice({
                     totalPrice: newItem.price,
                     title: newItem.title,
                     colors: newItem.color,
+                    productType: newItem.productType,
                     discount: newItem.discount,
                     newProduct: newItem.newProduct,
                     ratings: newItem.ratings,

@@ -154,5 +154,40 @@
             background-image: url(../../public/images/abstract-blur-pastel-beautiful-peach-pink-color-sky-warm-tone-background-design-as-banner-slide-show-others_1258-83003.avif);
         }
     }
+    .allPetsProducts__display{
+        width: 100dvw;
+        background-color: #ededed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .big__banner{
+        .slider__holder{
+            flex-direction: column;
+            .pets__banner__img{
+                width: 95%;
+                // background-color: red;
+                margin-left: 30%;
+            }
+            .pets__banner__text{
+                margin: 0;
+                width: 90%;
+                // background-color: #a3e7f4;
+                h2{
+                    font-size: 2.2rem;
+                }
+            }
+            .link__holder{
+                flex-direction: column;
+                .link{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
 }
 

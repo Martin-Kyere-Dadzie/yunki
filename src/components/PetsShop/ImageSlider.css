@@ -1,0 +1,17 @@
+.radioBtn__holder {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  width: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.manualSlide__selector {
+  width: 100%;
+}
+.manualSlide__selector input {
+  background-color: red;
+}/*# sourceMappingURL=ImageSlider.css.map */

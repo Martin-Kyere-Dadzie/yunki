@@ -1,22 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
 import starFill from '../../public/icons/star-fill.svg';
 import starHalve from '../../public/icons/star-outline-half.svg';
-import starOutline from '../../public/icons/star-outline.svg';
-import './Trends.scss';
-import { useDispatch } from 'react-redux';
-import ProductPopUp from '../PopUps/ProductPopUp';
-//icons image
+import starOutline from '../../public/icons/star-outline.svg'
 import heartDarkIcon from '../../public/icons/heart-black-icon.svg';
 import shoppingBagDarkIcon from '../../public/icons/shopping-bag-black-icon.svg';
 import comments from '../../public/icons/comments.svg';
-import quickViewIcon from '../../public/icons/quick-view-icon.svg'
+import quickViewIcon from '../../public/icons/quick-view-icon.svg';
 import { trendActions } from '../Redux/trendSlice';
 import { wishActions } from '../Redux/wishSlice';
-import LoginPopUp from '../PopUps/LoginPopUp';
-// import Ratings from '../Ratings/Ratings';
-// import { UseDispatch, useSelector } from 'react-redux';
+import ProductPopUp from '../PopUps/ProductPopUp';
 
-const Trends = ({images, name, newPrice, oldPrice, price, title, colors, productType, ratings, id, discount, newProduct, quantity}) => {
+const AllPetsProducts = ({images, name, newPrice, oldPrice, price, title, colors, productType, ratings, id, discount, newProduct, quantity}) => {
 
     const [productPupUp, setProductPupUp] = useState(false);
     // product ratings
@@ -140,4 +135,4 @@ return (
   )
 }
 
-export default Trends;
+export default AllPetsProducts

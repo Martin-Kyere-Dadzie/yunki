@@ -6,6 +6,9 @@ import dogImage from '../../public/images/young-jack-russel-terrier-toys_87557-7
 import birdImage from '../../public/images/ara-ararauna-studio_87557-2719.png';
 import { PetShopSliderData } from './PetShopSliderData';
 import ImageSlider from './ImageSlider';
+import { trendsData } from '../Trends/TrendsData';
+import AllPetsProducts from './AllPetsProducts';
+import Trends from '../Trends/Trends';
 
 const PetsShop = ({slides}) => {
 
@@ -24,12 +27,12 @@ const PetsShop = ({slides}) => {
             <ImageSlider slides = {PetShopSliderData}/>
           </div>
           <div className='pets__banner__text banner__item'>
-          {
-            PetShopSliderData.map((texts) => {
-              return(
-                    <h2 className='carousel__title'>{texts.title}</h2>
-                  )
-                })
+            {
+              PetShopSliderData.map((texts) => {
+                return(
+                      <h2 className='carousel__title'>{texts.title}</h2>
+                    )
+                  })
               }
           </div>
         </div>
@@ -50,6 +53,17 @@ const PetsShop = ({slides}) => {
             <img alt='img' src={birdImage}></img>
           </div>
         </div>
+      </div>
+      <div className='allPetsProducts__display'>
+        {
+          trendsData.map((product, index) => {
+            if (product.productType === 'pets') {
+              return(
+                <Trends key={index} {...product}/>
+              )
+            } 
+          })
+        }
       </div>
       </div>
   )
