@@ -6,6 +6,7 @@ import blackAndWhiteSneaker2 from '../../public/images/black_and_white2.png'
 import blackAndWhiteSneaker1 from '../../public/images/black_and_white1.png'
 import blackAndWhiteSneaker3 from '../../public/images/black-and-white-sneaker-back.png';
 import blackAndWhiteSneaker4 from '../../public/images/black_and_white4.png';
+import petsCage from '../../public/images/animal-carrier-cage-isolated-white-surface_93675-98490.png';
 import ladiesRedBag from '../../public/images/ladies-red-bag.png';
 import jeanJacket from '../../public/images/Jean-Jacket-PNG-Isolated-Photos.png'
 import leatherTraveller from '../../public/images/leather-traveller.png'
@@ -213,6 +214,32 @@ export const trendsData = [
         ratings: 3.5,
         discount: 0,
         newItem: 0
+    },
+    {
+        images:[
+            {
+                image:  petsCage,
+                image1: petsCage,
+                image2: petsCage,            
+                image3: petsCage,
+            }
+        ],
+        imageOnclick:[
+            {imageDisplay: petsCage},
+            {imageDisplay: petsCage},
+            {imageDisplay: petsCage},
+            {imageDisplay: petsCage},
+        ],
+        name: 'Pets Cage',
+        productType: 'pets',
+        title: 'pet cage for pets safety and hiking',
+        // colors: 0,
+        // oldPrice: 320,
+        price: 300,
+        id: 8,
+        ratings: 2.5,
+        discount: 0,
+        newItem: 1
     }
 
 ];

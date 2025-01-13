@@ -182,9 +182,48 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #ededed;
 }
-
+.home-section .trends-container .main-trends .product__holder {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-section .trends-container .main-trends .product__holder .trend__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-section .trends-container .main-trends .product__holder .trend__text h3 {
+  font-size: 1.5rem;
+}
+.home-section .trends-container .main-trends .product__holder .topTrends__products {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-section .trends-container .main-trends .product__holder .carousel__icons {
+  position: absolute;
+  top: 50%;
+  width: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-section .trends-container .main-trends .product__holder .carousel__icons img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.584);
+  border-radius: 50px;
+}
+.home-section .trends-container .main-trends .product__holder .carousel__icons img:active {
+  background-color: #8fecff;
+}
 @media only screen and (max-width: 595px) {
   .home-section .stores-shortcut__links {
     padding: 10px;

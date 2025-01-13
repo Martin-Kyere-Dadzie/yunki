@@ -18,6 +18,8 @@ import handsIcon from '../../public/icons/handshake-icon.svg';
 import helpIcon from '../../public/icons/help-icon.svg';
 import discountIcon from '../../public/icons/discount-icon.svg';
 import flameIcon from '../../public/icons/flame-icon.svg';
+import PrevIcon from '../../public/icons/carousel-left.svg'
+import nextIcon from '../../public/icons/carousel-right.svg'
 //icons images
 import giftIcon from "../../public/icons/gift-ic0n.svg"
 import { trendsData } from "../Trends/TrendsData";
@@ -142,13 +144,37 @@ const Home = () => {
           </div>
         </div>
         <div className="main-trends" id="trends">
-          {
-            trendsData.map((product, index) => {
-              return(
-                <Trends key={index} {...product}/>
-              )
-            })
-          }
+          <div className="topTrending__section product__holder">
+            <div className="trend__text">
+              <h3>Our Most Trending Products</h3>
+            </div>
+            <div className="topTrends__products">
+              {
+                trendsData.map((product, index) => {
+                  if (product.ratings >= 4) {
+                    return(
+                      <Trends key={index} {...product}/>
+                    )
+                  } 
+                })
+              }
+            </div>
+            <div className="carousel__icons">
+              <img alt="img" src={PrevIcon} className="prev"></img>
+              <img alt="img" src={nextIcon} className="next"></img>
+            </div>
+          </div>
+          <div className="product__holder allProduct__holder">
+            {
+              trendsData.map((product, index) => {
+                if (product.ratings < 4) {
+                  return(
+                    <Trends key={index} {...product}/>
+                  )
+                } 
+              })
+            }
+          </div>
         </div>
       </div>
       <div className="deal__section">
