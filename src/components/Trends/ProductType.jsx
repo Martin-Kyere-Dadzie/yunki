@@ -1,17 +1,21 @@
 import cars from '../../public/images/cars.png';
+import homeDecor from '../../public/images/pngaaa.com-3563100.png';
+import beauty from '../../public/images/pngaaa.com-6889630.png';
+import health from '../../public/images/cocpine curls cream and oil.png';
+import perfume from '../../public/images/625fe2a3794231633801c0e8_610cfb8bacbdd50a08b37b63_2.png';
 
 const productType = [
     {
         "name": "Auto and Tires",
         "route": "/auto",
         "to": "/Auto",
-        "url": '../../public/images/cars.png'
+        "url": cars,
     },
     {
         "name": 'Home Improvement',
         "route": "/home",
         "to": "/Home",
-        'url': "../../public/images/pngaaa.com-3037481.png"
+        'url': homeDecor,
     },
     {
         "name": "Toys",
@@ -23,7 +27,7 @@ const productType = [
         "name": "Beauty",
         "route": "/beauty",
         "to": "/Beauty",
-        "url": "../../public/images/pngaaa.com-3037481.png"
+        "url": beauty,
     },
     {
         "name": "Patio and Gardens",
@@ -41,13 +45,13 @@ const productType = [
         "name": "Health and Wellness",
         "route": "/health",
         "to": "/Health",
-        "url": "../../public/images/pngaaa.com-3037481.png"
+        "url": health,
     },
     {
         "name": "Fashion",
         "route": "/fashion",
         "to": "/Fashion",
-        "url": "../../public/images/pngaaa.com-3037481.png"
+        "url": perfume,
     }
 ];
 
