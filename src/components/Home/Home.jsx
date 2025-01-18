@@ -26,6 +26,7 @@ import { trendsData } from "../Trends/TrendsData";
 import Trends from "../Trends/Trends";
 import LoginPopUp from "../PopUps/LoginPopUp";
 import DealOfTheDay from "../DealOfTheDay";
+import productType from "../Trends/ProductType";
 // import Marquee from "react-fast-marquee";
 
 //store images end
@@ -167,6 +168,20 @@ const Home = () => {
             </div>
           </div>
           <div className="productList__links">
+              <ul>
+                {
+                  productType.map(links => {
+                    return <NavLink
+                      key={links.name}
+                      className='product__links'
+                      to={links.route}
+                      href={links.route}>
+                      <img src={links.url}></img>
+                      <h4>{links.name}</h4> 
+                    </NavLink>
+                  })
+                }
+              </ul>
           </div>
           <div className="product__holder allProduct__holder">
             {

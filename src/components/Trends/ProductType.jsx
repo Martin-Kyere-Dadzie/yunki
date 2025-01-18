@@ -1,9 +1,11 @@
+import cars from '../../public/images/cars.png';
+
 const productType = [
     {
         "name": "Auto and Tires",
         "route": "/auto",
         "to": "/Auto",
-        "url": "../../public/images/pngaaa.com-3037481.png"
+        "url": '../../public/images/cars.png'
     },
     {
         "name": 'Home Improvement',
