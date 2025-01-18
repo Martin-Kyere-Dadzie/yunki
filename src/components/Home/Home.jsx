@@ -146,7 +146,9 @@ const Home = () => {
         <div className="main-trends" id="trends">
           <div className="topTrending__section product__holder">
             <div className="trend__text">
+            <div className="empty"></div>
               <h3>Our Most Trending Products</h3>
+              <NavLink className="trends__link">Shop Now</NavLink>
             </div>
             <div className="topTrends__products">
               {
@@ -163,6 +165,8 @@ const Home = () => {
               <img alt="img" src={PrevIcon} className="prev"></img>
               <img alt="img" src={nextIcon} className="next"></img>
             </div>
+          </div>
+          <div className="productList__links">
           </div>
           <div className="product__holder allProduct__holder">
             {

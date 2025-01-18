@@ -192,12 +192,21 @@
   justify-content: space-between;
 }
 .home-section .trends-container .main-trends .product__holder .trend__text {
+  right: 0;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 10%;
 }
 .home-section .trends-container .main-trends .product__holder .trend__text h3 {
   font-size: 1.5rem;
+}
+.home-section .trends-container .main-trends .product__holder .trend__text .trends__link {
+  color: #575757;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  text-decoration: underline;
 }
 .home-section .trends-container .main-trends .product__holder .topTrends__products {
   width: 100%;

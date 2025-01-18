@@ -208,11 +208,22 @@
                 align-items: center;
                 justify-content: space-between;
                 .trend__text{
+                    // background-color: red;
+                    // position: absolute;
+                    right: 0;
+                    width: 100%;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: space-between;
+                    margin-top: 10%;
                     h3{
                         font-size: 1.5rem;
+                    }
+                    .trends__link{
+                        color: $font-color;
+                        font-size: .8rem;
+                        font-weight: bolder;
+                        text-decoration: underline;
                     }
                 }
                 .topTrends__products{
