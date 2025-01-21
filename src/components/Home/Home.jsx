@@ -174,6 +174,7 @@ const Home = () => {
                     return <NavLink
                       key={links.name}
                       className='product__links'
+                      id="link"
                       to={links.route}
                       href={links.route}>
                       <img src={links.url}></img>

@@ -372,6 +372,22 @@
                     height: 30%;
                 }
             }
+            .productList__links{
+                // background-color: $sky-blue;
+                ul{
+                    flex-direction: column;
+                    #link{
+                        // background-color: $sky-blue;
+                        margin: 80px;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 100px;
+                        h4{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -233,6 +233,38 @@
 .home-section .trends-container .main-trends .product__holder .carousel__icons img:active {
   background-color: #8fecff;
 }
+.home-section .trends-container .main-trends .productList__links {
+  width: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.home-section .trends-container .main-trends .productList__links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.home-section .trends-container .main-trends .productList__links ul .product__links {
+  width: 110px;
+  height: 110px;
+  background-color: #3F94A6;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+}
+.home-section .trends-container .main-trends .productList__links ul .product__links img {
+  width: 100%;
+}
+.home-section .trends-container .main-trends .productList__links ul .product__links h4 {
+  font-size: 0.8rem;
+  color: #575757;
+}
 @media only screen and (max-width: 595px) {
   .home-section .stores-shortcut__links {
     padding: 10px;
@@ -297,6 +329,18 @@
   .home-section .trends-container .main-trends .marquee {
     background-color: #DB2847;
     height: 30%;
+  }
+  .home-section .trends-container .productList__links ul {
+    flex-direction: column;
+  }
+  .home-section .trends-container .productList__links ul #link {
+    margin: 80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
+  .home-section .trends-container .productList__links ul #link h4 {
+    font-size: 1.5rem;
   }
 }
 /* Small screen devices (600px and above) */
