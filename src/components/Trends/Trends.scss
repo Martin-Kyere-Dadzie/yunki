@@ -20,6 +20,15 @@
     justify-content: space-between;
     background-color: #ffffff;
     margin-left: 10%;
+    .trends__section :hover .icons__section{
+        // opacity: 1;
+        display: 1;
+        // display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff671b;
+    }
     .product-image{
         position: relative;
         margin: 10px;
@@ -35,7 +44,8 @@
         .new-discount{
             position: absolute;
             margin: 10px;
-            width: 35%;
+            width: 70px;
+            height: 18px;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
@@ -45,14 +55,17 @@
             color: white;
             .new-text,.discount-text{
                 padding: 1px;
-                width: 43%;
+                width: 41%;
+                height: 100%;
                 text-align: center;
+                border-radius: 1.5px;
             }
             .new-text{
-                background-color: $yunki-color;
+                background-color: #12B7CE;
             }
             .discount-text{ 
-                background-color: red;
+                background-color: rgb(255, 192, 212);
+                color: red;
             }
         }
         .icons__section{
@@ -61,7 +74,8 @@
             width: 10%;
             right: 0;
             top: 0;
-            display: flex;
+            // display: flex;
+            display: none;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
@@ -96,9 +110,9 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        background-color: #efefef;
+        background-color: #f4f4f4;
         padding: 10px;
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 5px;
     }
     .rating-section{

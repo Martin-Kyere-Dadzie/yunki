@@ -286,6 +286,13 @@
                 }
             }
             .allProduct__holder{
+                overflow-y: auto;
+                display: grid;
+                // width: 90%;
+                grid-template-columns: repeat(5, 5fr);
+                gap: 10px;
+                grid-auto-rows: minmax(100px, auto);
+                align-self: flex-start; 
             }
             
         }
