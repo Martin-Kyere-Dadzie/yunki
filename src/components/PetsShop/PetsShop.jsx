@@ -54,6 +54,13 @@ const PetsShop = ({slides}) => {
           </div>
         </div>
       </div>
+      <div className='petsCare__contents'>
+        <div className='petsCare__holder'>
+          <div className='care__contents'></div>
+          <div className='care__contents'></div>
+          <div className='care__contents'></div>
+        </div>
+      </div>
       <div className='allPetsProducts__display'>
         {
           trendsData.map((product, index) => {
