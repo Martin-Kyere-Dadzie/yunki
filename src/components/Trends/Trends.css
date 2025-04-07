@@ -126,14 +126,15 @@
 .trends__section .product-price .new-price,
 .trends__section .product-price .old-price {
   font-size: 0.9rem;
-  color: #ff671b;
+  font-weight: bolder;
+  color: #12B7CE;
 }
 .trends__section .product-price .old-price {
   text-decoration: line-through;
-  font-size: 0.7rem;
-  color: #797979;
+  font-size: 0.9rem;
+  color: #4eabb7;
   margin-top: 5px;
-  font-weight: light;
+  font-weight: bolder;
 }
 
 .trends__section .popup-holder {
@@ -273,9 +274,10 @@
   }
   .trends__section .product-price .new-price {
     font-size: 1rem;
+    margin-top: 5px;
   }
   .trends__section .product-price .old-price {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     margin-left: 40px;
   }
 }/*# sourceMappingURL=Trends.css.map */

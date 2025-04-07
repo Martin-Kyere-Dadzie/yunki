@@ -284,6 +284,10 @@
                         }
                     }
                 }
+                .product__links:hover{
+                background-color: $yellow-dark;
+                transition: .5s ease-in-out;
+            }
             }
             .allProduct__holder{
                 overflow-y: auto;

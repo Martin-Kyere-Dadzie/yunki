@@ -60,7 +60,7 @@
   height: 30px;
   margin: 10px;
   border: none;
-  background-color: #3F94A6;
+  background-color: #12B7CE;
   color: white;
   font-weight: 600;
 }
@@ -72,13 +72,13 @@
   font-weight: 600;
 }
 .login__section .forgot__password {
-  color: #3F94A6;
+  color: #12B7CE;
 }
 .login__section .account__text {
   margin: 3px;
 }
 .login__section .login__form span {
-  color: #3F94A6;
+  color: #12B7CE;
   text-decoration: none;
 }
 

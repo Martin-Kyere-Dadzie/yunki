@@ -158,7 +158,11 @@ const Home = () => {
                     return(
                       <Trends key={index} {...product}/>
                     )
-                  } 
+                  } else{
+                    return(
+                      null
+                    )
+                  }
                 })
               }
             </div>
@@ -177,7 +181,7 @@ const Home = () => {
                       id="link"
                       to={links.route}
                       href={links.route}>
-                      <img src={links.url}></img>
+                      <img src={links.url} alt="img"></img>
                       <h4>{links.name}</h4> 
                     </NavLink>
                   })
@@ -191,7 +195,11 @@ const Home = () => {
                   return(
                     <Trends key={index} {...product}/>
                   )
-                } 
+                } else{
+                  return(
+                    null
+                  )
+                }
               })
             }
           </div>

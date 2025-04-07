@@ -164,7 +164,7 @@
 .home-section .trends-container .trends-contents-holder .offers-section .offer-content .offer-header {
   font-size: 0.9rem;
   margin: 5px;
-  color: #3F94A6;
+  color: #12B7CE;
 }
 .home-section .trends-container .trends-contents-holder .offers-section .offer-content .offer-text {
   font-size: 0.8rem;
@@ -172,7 +172,7 @@
 .home-section .trends-container .trends-contents-holder .offers-section .offer-content .offer-link {
   font-weight: bold;
   text-decoration: none;
-  color: #3F94A6;
+  color: #12B7CE;
 }
 .home-section .trends-container .main-trends {
   position: relative;
@@ -249,7 +249,7 @@
 .home-section .trends-container .main-trends .productList__links ul .product__links {
   width: 110px;
   height: 110px;
-  background-color: #3F94A6;
+  background-color: #12B7CE;
   border-radius: 80px;
   display: flex;
   flex-direction: column;

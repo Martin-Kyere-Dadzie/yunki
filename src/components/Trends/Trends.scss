@@ -147,14 +147,15 @@
         .new-price,
         .old-price{
             font-size: .9rem;
-            color: #ff671b;
+            font-weight: bolder;
+            color: $yunki-color;
         }
         .old-price{
             text-decoration: line-through;
-            font-size: .7rem;
-            color: #797979;
+            font-size: .9rem;
+            color: $yunki-light-color;
             margin-top: 5px;
-            font-weight: light;
+            font-weight: bolder;
         }
     }
 }
@@ -362,9 +363,10 @@
         .product-price{
             .new-price{
                 font-size: 1rem;
+                margin-top: 5px;
             }
             .old-price{
-                font-size: .75rem;
+                font-size: .90rem;
                 margin-left: 40px;
             }
         }

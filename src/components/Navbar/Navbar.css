@@ -87,7 +87,7 @@
   font-weight: bolder;
   color: #a3e7f4;
   background-color: #e1f7fc;
-  border: 0.5px solid #3F94A6;
+  border: 0.5px solid #12B7CE;
 }
 .navbar .search__section .search-icon {
   width: 35px;
@@ -95,7 +95,7 @@
   position: absolute;
   right: 0.3%;
   z-index: 5;
-  background-color: #3F94A6;
+  background-color: #12B7CE;
   padding: 8px;
   border-radius: 20px;
   cursor: pointer;
@@ -156,7 +156,7 @@
   width: 15px;
   height: 15px;
   border-radius: 10px;
-  background-color: #3F94A6;
+  background-color: #12B7CE;
   color: white;
   display: flex;
   align-items: center;
@@ -205,7 +205,7 @@
 }
 .navbar .nav-links__section p {
   font-size: 0.7rem;
-  color: #3F94A6;
+  color: #12B7CE;
 }
 .navbar .nav-links__section .telephone-section {
   position: relative;

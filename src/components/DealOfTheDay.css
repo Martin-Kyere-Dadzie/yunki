@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3F94A6;
+  background-color: #12B7CE;
   color: white;
 }
 .dealOfTheDay__container .deal__img, .dealOfTheDay__container .deal__text {
@@ -91,7 +91,7 @@
   border: 1px solid white;
 }
 .dealOfTheDay__container .time__section .button__section .shop__now {
-  background-color: #3F94A6;
+  background-color: #12B7CE;
   color: white;
 }
 .dealOfTheDay__container .time__section .button__section .shop__now:hover {
