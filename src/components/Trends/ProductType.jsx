@@ -3,7 +3,7 @@ import homeDecor from '../../public/images/pngaaa.com-2902406.png';
 import beauty from '../../public/images/pngaaa.com-6889630.png';
 import health from '../../public/images/cocpine curls cream and oil.png';
 import perfume from '../../public/images/625fe2a3794231633801c0e8_610cfb8bacbdd50a08b37b63_2.png';
-import toys from '../../public/images/pngaaa.com-1049472.png';
+import toys from '../../public/images/toys.png';
 import gardens from '../../public/images/pngaaa.com-224713.png';
 import babies from '../../public/images/pngaaa.com-1833049.png';
 
@@ -15,7 +15,7 @@ const productType = [
         "url": cars,
     },
     {
-        "name": 'Home Improvement',
+        "name": 'Home',
         "route": "/home",
         "to": "/Home",
         'url': homeDecor,
