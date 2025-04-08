@@ -34,21 +34,13 @@
   text-decoration: none;
   overflow: hidden;
 }
-.home-section .stores-shortcut__links .store-shortcut h5 {
-  font-size: large;
-  z-index: 2;
-  color: white;
-}
-.home-section .stores-shortcut__links .store-shortcut p {
-  color: white;
-  z-index: 2;
-}
 .home-section .stores-shortcut__links .store-shortcut .imageText-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  width: 100%;
 }
 .home-section .stores-shortcut__links .store-shortcut::before {
   content: "";

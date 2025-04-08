@@ -27,6 +27,7 @@ import Trends from "../Trends/Trends";
 import LoginPopUp from "../PopUps/LoginPopUp";
 import DealOfTheDay from "../DealOfTheDay";
 import productType from "../Trends/ProductType";
+import WomenShopSlider from "../Slider/WomenShop/WomenShopSlider";
 // import Marquee from "react-fast-marquee";
 
 //store images end
@@ -56,9 +57,7 @@ const Home = () => {
         </NavLink>
         <NavLink to="/women" className="store-shortcut women" id="women-store">
           <div className="imageText-container">
-            <img className="womenImage" src={womenImage} alt="womenImage"></img>
-            <h5>save on women fashion & more</h5>
-            <p></p>
+            <WomenShopSlider />
           </div>
         </NavLink>
         <NavLink to="/electronics" className="store-shortcut electronics" id="electronic-store">
