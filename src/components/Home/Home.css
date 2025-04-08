@@ -265,6 +265,10 @@
   font-size: 0.8rem;
   color: #575757;
 }
+.home-section .trends-container .main-trends .productList__links .product__links:hover {
+  background-color: #F8B817;
+  transition: 0.5s ease-in-out;
+}
 .home-section .trends-container .main-trends .allProduct__holder {
   overflow-y: auto;
   display: grid;
