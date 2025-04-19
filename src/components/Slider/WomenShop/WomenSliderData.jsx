@@ -8,7 +8,7 @@ export const womenSliderData = [
     // },
     {
         image: imageTwo,
-        title: 'beautiful-young-african-american-woman-applying-cream-skin-'
+        title: 'beautiful-young-african-american-woman-applying-cream-skin'
     },
     {
         image: imageOne,

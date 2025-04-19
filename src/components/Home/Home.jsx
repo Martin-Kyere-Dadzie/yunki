@@ -28,6 +28,9 @@ import LoginPopUp from "../PopUps/LoginPopUp";
 import DealOfTheDay from "../DealOfTheDay";
 import productType from "../Trends/ProductType";
 import WomenShopSlider from "../Slider/WomenShop/WomenShopSlider";
+import PetsShopSlider from "../Slider/PetsShop/PetsShopSlider";
+import ElectronicsShopSlide from "../Slider/ElectronicsShop/ElectronicsShopSlide"
+import GroceriesShop from "../Slider/Groceries/GroceriesShopSlide";
 // import Marquee from "react-fast-marquee";
 
 //store images end
@@ -50,9 +53,7 @@ const Home = () => {
       <div className="stores-shortcut__links">
         <NavLink to="/pets"  className="store-shortcut pets" id="pet-store">
           <div className="imageText-container">
-            <img className="petImage" src={PetsImage} alt="pet"></img>
-            <h5>pets days save big</h5>
-            <p></p>
+            <PetsShopSlider/>
           </div>
         </NavLink>
         <NavLink to="/women" className="store-shortcut women" id="women-store">
@@ -62,16 +63,12 @@ const Home = () => {
         </NavLink>
         <NavLink to="/electronics" className="store-shortcut electronics" id="electronic-store">
           <div className="imageText-container">
-            <img className="electronicsImage" src={electronicImage} alt="electronics"></img>
-            <h5>electronics</h5>
+            <ElectronicsShopSlide/>
           </div>
         </NavLink>
         <NavLink to="/food" className="store-shortcut food" id="food-store">
           <div className="imageText-container">
-            <img className="foodImage" src={foodImage} alt="food"></img>
-            <h5>
-              buy on discount groceries & essentials
-            </h5>
+            <GroceriesShop/>
           </div>
         </NavLink>
         <NavLink to="/men" className="store-shortcut men" id="men-store">

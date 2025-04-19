@@ -1,17 +1,17 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { petSliderData } from './PetsShopSliderData'
+import {GroceriesSliderData} from  './GroceriesSliderData'
 
 
-const PetsShopSlider = () => {
+const GroceriesShop = () => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    const slideLength = petSliderData.length;
+    const slideLength = GroceriesSliderData.length;
 
     const autoScroll = true;
     let slideInterval;
-    let intervalTime = 17000;
+    let intervalTime = 20000;
 
     const nexSlide = () => {
         setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
@@ -39,7 +39,7 @@ const PetsShopSlider = () => {
   return (
     <div className='slider'>
             {
-                petSliderData.map((slide, index) => {
+                GroceriesSliderData.map((slide, index) => {
                     return(
                         <div className={index === currentSlide ? "slide current" : "slide"} key={index}>
                             {
@@ -58,4 +58,4 @@ const PetsShopSlider = () => {
   )
 }
 
-export default PetsShopSlider
+export default GroceriesShop

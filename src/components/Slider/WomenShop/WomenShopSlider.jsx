@@ -8,7 +8,7 @@ const WomenShopSlider = () => {
 
     const autoScroll = true;
     let slideInterval;
-    let intervalTime = 5000;
+    let intervalTime = 15000;
 
     const nexSlide = () => {
         setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
