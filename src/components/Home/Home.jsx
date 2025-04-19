@@ -31,6 +31,8 @@ import WomenShopSlider from "../Slider/WomenShop/WomenShopSlider";
 import PetsShopSlider from "../Slider/PetsShop/PetsShopSlider";
 import ElectronicsShopSlide from "../Slider/ElectronicsShop/ElectronicsShopSlide"
 import GroceriesShop from "../Slider/Groceries/GroceriesShopSlide";
+import MensShopSlider from "../Slider/MenShop/MensShopSlider";
+import SkinCareSlider from "../Slider/SkinCareShop/SkinCareShopSlider";
 // import Marquee from "react-fast-marquee";
 
 //store images end
@@ -73,14 +75,12 @@ const Home = () => {
         </NavLink>
         <NavLink to="/men" className="store-shortcut men" id="men-store">
           <div className="imageText-container">
-            <img className="menImage" src={menImage} alt="men"></img>
-            <h5>low prices on men fashion and more</h5>
+            <MensShopSlider/>
           </div>
         </NavLink>  
         <NavLink to="/fashionAndBeauty" className="store-shortcut fashion-and-beauty" id="fashion-store">
           <div className="imageText-container">
-            <img className="skinCareImage" src={skinCareImage} alt="skincare"></img>
-            <h5>skin care</h5>
+            <SkinCareSlider/>
           </div>
         </NavLink>
         <NavLink to="/phonesAndLaptops" className="store-shortcut phones-laptops" id="phones-laptops">

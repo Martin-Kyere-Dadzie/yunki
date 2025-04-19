@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import {GroceriesSliderData} from  './GroceriesSliderData'
+import {MenShopSliderData} from  './MensShopSliderData';
 
 
-const GroceriesShop = () => {
+const MensShopSlider = () => {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    const slideLength = GroceriesSliderData.length;
+    const slideLength = MenShopSliderData.length;
 
     const autoScroll = true;
     let slideInterval;
@@ -39,7 +39,7 @@ const GroceriesShop = () => {
   return (
     <div className='slider'>
             {
-                GroceriesSliderData.map((slide, index) => {
+                MenShopSliderData.map((slide, index) => {
                     return(
                         <div className={index === currentSlide ? "slide current" : "slide"} key={index}>
                             {
@@ -58,4 +58,4 @@ const GroceriesShop = () => {
   )
 }
 
-export default GroceriesShop
+export default MensShopSlider;
