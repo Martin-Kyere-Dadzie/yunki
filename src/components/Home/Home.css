@@ -5,6 +5,7 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100dvw;
+  flex-grow: 1;
 }
 .home-section .login__popUp {
   position: sticky;

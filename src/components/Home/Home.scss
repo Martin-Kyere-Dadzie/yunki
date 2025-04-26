@@ -11,6 +11,7 @@
     @include flexBox;
     flex-direction: column;
     width: 100dvw;
+    flex-grow: 1;
     .login__popUp{
         position: sticky;
         top: 68%;

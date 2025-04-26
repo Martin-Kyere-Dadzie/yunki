@@ -15,6 +15,6 @@
   src: local("AirbnbCerealLight"),
     url("./Fonts/Satoshi-Regular.ttf") format("truetype");
 }
-/* body{
-
-} */
+body{
+flex-grow: 1;
+}

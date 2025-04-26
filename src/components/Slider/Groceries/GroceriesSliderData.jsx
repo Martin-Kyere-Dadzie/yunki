@@ -1,5 +1,5 @@
-import groceriesOne from '../../../public/images/pngaaa.com-89266.png';
-import groceriesTwo from '../../../public/images/pngaaa.com-1539688 (1).png';
+import groceriesOne from '../../../public/images/istockphoto-700076882-2048x2048.jpg';
+import groceriesTwo from '../../../public/images/istockphoto-1470885442-2048x2048.jpg';
 import groceriesThree from '../../../public/images/pngaaa.com-7174720.png';
 
 export const GroceriesSliderData = [

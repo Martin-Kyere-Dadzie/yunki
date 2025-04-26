@@ -1,5 +1,5 @@
-import petImageOne from '../../../public/images/beijaflor-bebendo-agua-doce_637104-25.png';
-import petImageTwo from '../../../public/images/hamster-basket-isolated-white-table_2829-19759.png';
+import petImageOne from '../../../public/images/istockphoto-1355290974-2048x2048.jpg';
+import petImageTwo from '../../../public/images/istockphoto-1482354724-2048x2048.jpg';
 import petImageThree from '../../../public/images/young-pitbull-terrier_87557-8924.png';
 
 export const petSliderData = [
