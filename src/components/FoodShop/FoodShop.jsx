@@ -3,6 +3,8 @@ import bannerImage from '../../public/images/istockphoto-1220319507-2048x2048.jp
 import foodShopTopLinks from './FoodShopTopLinks';
 import { NavLink } from 'react-router-dom';
 import './FoodShop.scss'
+import { trendsData } from '../Trends/TrendsData';
+import Trends from '../Trends/Trends';
 
 const FoodShop = () => {
   return (
@@ -30,6 +32,21 @@ const FoodShop = () => {
             })
           }
         </ul>
+      </div>
+      <div className='allFoodsProducts__display'>
+          {
+            trendsData.map((product, index) => {
+              if (product.productType === 'grocery') {
+                return(
+                  <Trends key={index} {...product}/>
+                )
+              } else {
+                return(
+                  null
+                )
+              }
+            })
+          }
       </div>
     </div>
   )

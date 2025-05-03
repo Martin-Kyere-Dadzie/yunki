@@ -283,13 +283,18 @@
             }
             }
             .allProduct__holder{
-                overflow-y: auto;
+                // overflow-y: auto;
+                // display: grid;
+                // grid-template-columns: repeat(5, 5fr);
+                // grid-auto-rows: minmax(100px, auto);
+                // gap: 10px;
+                width: 90%;
                 display: grid;
-                // width: 90%;
-                grid-template-columns: repeat(5, 5fr);
-                gap: 10px;
-                grid-auto-rows: minmax(100px, auto);
-                align-self: flex-start; 
+                grid-template-columns: repeat(3, 4fr);
+                grid-template-rows: repeat(1, 3fr);
+                grid-gap: 15px;
+                // margin: 0 auto; 
+                // align-self: flex-start; 
             }
             
         }

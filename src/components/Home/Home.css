@@ -263,12 +263,11 @@
   transition: 0.5s ease-in-out;
 }
 .home-section .trends-container .main-trends .allProduct__holder {
-  overflow-y: auto;
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(5, 5fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  align-self: flex-start;
+  grid-template-columns: repeat(3, 4fr);
+  grid-template-rows: repeat(1, 3fr);
+  grid-gap: 15px;
 }
 
 @media only screen and (max-width: 595px) {

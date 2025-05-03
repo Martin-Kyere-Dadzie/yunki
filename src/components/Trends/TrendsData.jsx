@@ -12,7 +12,8 @@ import jeanJacket from '../../public/images/Jean-Jacket-PNG-Isolated-Photos.png'
 import leatherTraveller from '../../public/images/leather-traveller.png'
 import leatherTravellerOne from '../../public/images/leather-traveller1.png'
 import petLeash from '../../public/images/pet leash.png';
-
+import swimSuite from '../../public/images/626bb5a3c561673851fd842f_5 39302.png';
+import bottleFood from '../../public/images/bottle-food 2.png';
 // const Rating = ({ratings}) => {
 //     const heartRating = Array.from({length: 5}, (elem, index) => {
 //         let number = index + 0.5;
@@ -48,7 +49,7 @@ export const trendsData = [
             {imageDisplay: blackAndWhiteSneaker3},
             {imageDisplay: blackAndWhiteSneaker4},
         ],
-        productType: 'food',
+        productType: 'grocery',
         name: 'rolled oat',
         title: 'rolled oats granola',
         // colors: 0,
@@ -238,6 +239,58 @@ export const trendsData = [
         price: 300,
         id: 8,
         ratings: 2.5,
+        discount: 0,
+        newItem: 1
+    },
+    {
+        images:[
+            {
+                image:  swimSuite,
+                image1: swimSuite,
+                image2: swimSuite,            
+                image3: swimSuite,
+            }
+        ],
+        imageOnclick:[
+            {imageDisplay: swimSuite},
+            {imageDisplay: swimSuite},
+            {imageDisplay: swimSuite},
+            {imageDisplay: swimSuite},
+        ],
+        name: 'Swimming costume',
+        productType: 'apparel',
+        title: 'swimming costume for girls',
+        // colors: 0,
+        // oldPrice: 320,
+        price: 300,
+        id: 9,
+        ratings: 3.5,
+        discount: 0,
+        newItem: 1
+    },
+    {
+        images:[
+            {
+                image:  bottleFood,
+                image1: bottleFood,
+                image2: bottleFood,            
+                image3: bottleFood,
+            }
+        ],
+        imageOnclick:[
+            {imageDisplay: bottleFood},
+            {imageDisplay: bottleFood},
+            {imageDisplay: bottleFood},
+            {imageDisplay: bottleFood},
+        ],
+        name: 'Red Pepper',
+        productType: 'grocery',
+        title: 'organic red pepper stuffed with olive oil',
+        // colors: 0,
+        // oldPrice: 320,
+        price: 300,
+        id: 10,
+        ratings: 2,
         discount: 0,
         newItem: 1
     }

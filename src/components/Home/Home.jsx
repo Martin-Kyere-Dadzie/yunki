@@ -184,7 +184,7 @@ const Home = () => {
                 }
               </ul>
           </div>
-          <div className="product__holder allProduct__holder" id="trends">
+          <div className="allProduct__holder" id="trends">
             {
               trendsData.map((product, index) => {
                 if (product.ratings < 4) {
